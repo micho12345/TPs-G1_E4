@@ -1,0 +1,71 @@
+Removed Pin From Net: NetName=NetC2_2 Pin=Q1-1
+Removed Pin From Net: NetName=GND Pin=Q4-1
+Removed Pin From Net: NetName=NetQ1_2 Pin=Q4-2
+Change Component Footprint: Designator=R2 Old Footprint=0805 New Footprint=RES400
+Change Component Footprint: Designator=Q4 Old Footprint=FP-135AR-MFG New Footprint=STM-TO-18-3
+Change Component Footprint: Designator=Q1 Old Footprint=ONSC-TO-92-3-29-11_AM_BL New Footprint=MLTC-TO-18-3
+Change Component Comment : Designator=Q1 Old Comment=BC547BRL1G New Comment=2N2222
+Change Component Comment : Designator=Q4 Old Comment=BC557BTF New Comment=2N2907A
+Change Component Comment : Designator=R2 Old Comment=Rg New Comment=22
+Change Managed Component Library Link : Designator=Q1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=D4616EAE-93A8-4394-A04D-02B032C3A624 New ItemGUID=8ACE089F-BDF6-42D4-9EFE-D2F75C56F417 Old RevisionGUID=9DD0FE67-D7E5-4F74-AB2E-88B82D836662 New RevisionGUID=E951E6B2-BA19-4D89-9248-B4F3E0CB9015
+Change Managed Component Library Link : Designator=Q4 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=BCA4553B-B554-43CD-9E11-C654AB5920CA New ItemGUID=8D69E4DF-3A29-47D9-8CFB-CB8FE454C28E Old RevisionGUID=06273113-1DBD-4E6B-BE2E-9EF4A117370E New RevisionGUID=9F49B139-8118-425F-AC90-19BAB7D82443
+Change component parameters: Designator = "Q1" ("Q1"); Footprint = "ONSC-TO-92-3-29-11_AM_BL"; UniqueID = "\FHZCCDOE" ("\FHZCCDOE")
+Change component parameters (AddParameter): Name = "Collector Emitter Voltage V(br)ceo"; Value = "30V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Collector Emitter Voltage Vces"; Value = "400mV"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Continuous Collector Current Ic Max"; Value = "800mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Ic @ Vce Sat"; Value = "150mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Ic Continuous a Max"; Value = "800mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Ic hFE"; Value = "150mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet URL"; Value = "http://www.farnell.com/datasheets/1662272.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Version"; Value = "Rev. 1.1, 05/2012"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Collector Current"; Value = "800mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Current Gain hFE"; Value = "100"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Full Power Rating Temperature"; Value = "25degC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gain Bandwidth ft Min"; Value = "250MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gain Bandwidth ft Typ"; Value = "250MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Hfe Min"; Value = "100"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Multicomp"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer URL"; Value = "http://uk.farnell.com/b/multicomp"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "No. of Pins"; Value = "3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "No. of Transistors"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "TO-18"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Description"; Value = "3-Pin Transistor Outline Package (TO-18), Dia 5.54 mm, Pitch Pitch 1.485mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Reference"; Value = "TO-18-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Configuration"; Value = "a"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Dissipation Pd"; Value = "500mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Dissipation Ptot Max"; Value = "500mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SVHC"; Value = "NoSVHC(19-Dec-2012)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Transistor Case Style"; Value = "TO-18"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Transistor Polarity"; Value = "NPN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Vcbo"; Value = "60V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Q4" ("Q4"); Footprint = "FP-135AR-MFG"; UniqueID = "\LAAOJNPH" ("\LAAOJNPH")
+Change component parameters (AddParameter): Name = "Automotive Qualification Standard"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Collector Emitter Voltage V(br)ceo"; Value = "-60V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/16614/cd00003088-16614659.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Version"; Value = "02/2003"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Collector Current"; Value = "-600mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Current Gain hFE"; Value = "300hFE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer URL"; Value = "http://www.st.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "ThroughHole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MSL"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "No. of Pins"; Value = "3Pins"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Max"; Value = "175°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Description"; Value = "3-Pin Through Hole Device, Dia 5.8 mm, Pitch 1.27 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Reference"; Value = "TO-18-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Dissipation Pd"; Value = "400mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Range"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SVHC"; Value = "NoSVHC(17-Dec-2015)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Transistor Case Style"; Value = "TO-18"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Transistor Polarity"; Value = "PNP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Transition Frequency ft"; Value = "200MHz"; VariantName = "[No Variations]"
+Added Component: Designator=TP1(TPTH)
+Added Pin To Net: NetName=NetC2_2 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_2 Pin=Q4-1
+Added Pin To Net: NetName=GND Pin=Q4-2
+Added Pin To Net: NetName=NetD1_1 Pin=TP1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q4-3
+Added Pin To Net: NetName=NetQ1_1 Pin=R2-1
+Added Net: Name=NetQ1_1
+Added Member To Class: ClassName=Boost Member=Component TP1 TP
