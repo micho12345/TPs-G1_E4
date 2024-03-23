@@ -1,0 +1,42 @@
+* C:\Users\Nico Bustelo\Desktop\Electronics\0-GitHub\TPs-G1_E4\TP1\Simulaciones\TP1.asc
+Vd N002 0 9
+V1 N007 0 PULSE(2 0 0 0.1u 0.1u 10.1u 18.1818u)
+R6 N008 N007 50
+R3 N009 N008 100
+R5 N001 N004 1k
+R1 Gate N005 22
+L1 N002 Drain 220µ Ipk=1 Rser=0.73 Rpar=138200 Cpar=3.475p
+Ro Vo 0 200
+Q1 0 N004 N005 0 2N2907
+Q2 N001 N004 N005 0 2N2222
+Q3 N004 N009 0 0 BC547B
+C1 Vo 0 4.7µ
+C2 N002 0 1µ
+Vgg N001 0 15
+D1 Drain Vo MUR160
+C3 N001 0 1µ
+XU1 Drain Gate 0 IRF540
+Vd1 N003 0 9
+V2 N006 0 PULSE(0 15 0 0.1u 0.1u 10u 18.1818u)
+L2 N003 DrainIdeal 220µ Ipk=1 Rser=0 Rpar=138200 Cpar=3.475p
+Ro1 VoIdeal 0 68
+C4 VoIdeal 0 4.7µ
+C5 N003 0 1µ
+D2 DrainIdeal VoIdeal DidI
+XU2 DrainIdeal GateIdeal 0 IRF540
+R2 GateIdeal N006 47
+.model D D
+.lib C:\Users\Nico Bustelo\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Nico Bustelo\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 0 4.02m 3.999m 100u
+* Rserie = 0.73
+* Boost Converter Real
+.model DidI D(Ron=0.0001 Roff=100G Vfwd=0)
+* Diodo ideal Von = 0V
+* Rserie = 0
+* Boost Converter Ideal
+.lib ..\sym\ZZZ\MOS\IRF\LIB\irf540.spi
+.backanno
+.end
