@@ -1,4 +1,0 @@
-Circuit: * C:\Users\Nico Bustelo\Desktop\Electronics\0-GitHub\TPs-G1_E4\TP2\Simulaciones\TP2.asc
-
-Fatal Error: Unknown subcircuit called in:
-   xu2 vfb vref_c n018 n019 n020 n021 n020 n023 vcomp 0 n022 0 n017 vcontrol n017 n016 sg3525
