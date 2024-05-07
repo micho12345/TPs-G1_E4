@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 01:13:20 On 07/05/2024
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Schematic Document [Flyback_Schematic.SchDoc]
+   Generated File[Bill of Materials-Flyback_Schematic.xlsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 01:13:21 On 07/05/2024
