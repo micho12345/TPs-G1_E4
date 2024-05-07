@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Nico Bustelo\Desktop\TP2_Flyback\Flyback_PCB.PcbDoc
+PCB File : C:\Users\Nico Bustelo\Desktop\Electronics\0-GitHub\TPs-G1_E4\TP2\Altium\TP2_Flyback\Flyback_PCB.PcbDoc
 Date     : 07/05/2024
-Time     : 01:16:14
+Time     : 19:25:44
 
 Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
 Rule Violations :0
@@ -10,13 +10,12 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net NetR8_3 Between Pad R8-3(550mil,2450mil) on Multi-Layer And Pad R10-1(1250mil,2410mil) on Bottom Layer [Unplated] 
-Rule Violations :1
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=20mil) (Max=60mil) (Preferred=40mil) (All)
+Processing Rule : Width Constraint (Min=30mil) (Max=60mil) (Preferred=40mil) (All)
 Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
@@ -44,6 +43,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 1
+Violations Detected : 0
 Waived Violations : 0
 Time Elapsed        : 00:00:01
