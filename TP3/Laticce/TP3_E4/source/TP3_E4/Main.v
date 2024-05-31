@@ -34,24 +34,24 @@ module Main (
 
     // Instantiate the comparators
     Comparator comp1 (
-        .In1(sine_wave1),
-        .In2(tri_wave),
-        .Out1(Va),
-		.Out2(Van)
+        .sen(sine_wave1),
+        .triang(tri_wave),
+        .Signal(Va),
+		.Signal_n(Van)
     );
 
     Comparator comp2 (
-        .In1(sine_wave2),
-        .In2(tri_wave),
-        .Out1(Vb),
-		.Out2(Vbn)
+        .sen(sine_wave2),
+        .triang(tri_wave),
+        .Signal(Vb),
+		.Signal_n(Vbn)
     );
 
     Comparator comp3 (
-        .In1(sine_wave3),
-        .In2(tri_wave),
-        .Out1(Vc),
-		.Out2(Vcn)
+        .sen(sine_wave3),
+        .triang(tri_wave),
+        .Signal(Vc),
+		.Signal_n(Vcn)
     );
 
 endmodule

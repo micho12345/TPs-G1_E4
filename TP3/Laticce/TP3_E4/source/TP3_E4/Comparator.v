@@ -2,28 +2,28 @@
 
 module Comparator
           (
-           In1, 
-           In2, 
-           Out1, 
-		   Out2
+           sen, 
+           triang, 
+           Signal, 
+		   Signal_n
           );
 
 
-  input   signed [15:0] In1;  
-  input   signed [15:0] In2;  
-  output  Out1;
-  output  Out2;
+  input   signed [15:0] sen;  
+  input   signed [15:0] triang;  
+  output  Signal;
+  output  Signal_n;
 
 
   wire comp;
 
 
-  assign comp = (In1 > In2 ? 1'b1 : 1'b0);
+  assign comp = (sen > triang ? 1'b1 : 1'b0);
 
 
 
-  assign Out1 = comp;
-  assign Out2 = !comp;
+  assign Signal = comp;
+  assign Signal_n = !comp;
 
 
 endmodule  // Comparator
