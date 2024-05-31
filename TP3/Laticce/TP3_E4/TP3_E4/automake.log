@@ -1,0 +1,204 @@
+
+"D:/2023.2.0.38.1_Radiant/tcltk/windows/bin/tclsh" "TP3_E4_TP3_E4_synthesize.tcl"
+
+synthesis -f TP3_E4_TP3_E4_lattice.synproj
+synthesis:  version Radiant Software (64-bit) 2023.2.0.38.1
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Fri May 31 00:13:28 2024
+
+
+Command Line:  D:\2023.2.0.38.1_Radiant\ispfpga\bin\nt64\synthesis.exe -f TP3_E4_TP3_E4_lattice.synproj -gui -msgset C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml 
+
+INFO <35002000> - synthesis: Lattice Synthesis Engine Launched.
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+                                                          
+
+
+##########################################################
+
+
+### Lattice Family     : iCE40UP
+
+
+### Device             : iCE40UP5K
+
+
+### Package            : SG48
+
+
+### Performance Grade  : High-Performance_1.2V
+
+
+                                                         
+
+
+INFO <35001786> - User-Selected Strategy Settings
+Optimization goal = Area
+Top-level module name = Main.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output HDL file name = TP3_E4_TP3_E4.vm.
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-sdc option: SDC file input is C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/TP3_E4.sdc.
+-path C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4 (searchpath added)
+-path C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/TP3_E4 (searchpath added)
+-path D:/2023.2.0.38.1_Radiant/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file = D:/2023.2.0.38.1_Radiant/ip/pmi/pmi_iCE40UP.v
+Verilog design file = C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/Comparator.v
+Verilog design file = C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/ModulatingWaves.v
+Verilog design file = C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/TriangularWaves.v
+Verilog design file = C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/SineWaveLUT.v
+Verilog design file = C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/Main.v
+VHDL library = pmi
+VHDL design file = D:/2023.2.0.38.1_Radiant/ip/pmi/pmi_iCE40UP.vhd
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+WARNING <35935050> - input port TRIM9 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM8 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM7 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM6 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM5 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM4 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM3 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM2 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM1 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port TRIM0 is not connected on this instance. VDB-5050
+WARNING <35935050> - input port I is not connected on this instance. VDB-5050
+Compile design.
+Compile Design Begin
+Analyzing Verilog file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(1): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_addsub.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_addsub.v(40): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(2): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_add.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_add.v(50): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(3): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_complex_mult.v(52): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(4): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_counter.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_counter.v(39): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(5): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_fifo.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_fifo.v(44): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../avant/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(6): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_fifo_dc.v(47): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../avant/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(7): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_mac.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_mac.v(52): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(8): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(9): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_multaddsub.v(52): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(10): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_mult.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_mult.v(51): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(11): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dp.v(48): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(12): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dq.v(45): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(13): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_rom.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_rom.v(45): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../avant/rom/rtl/lscc_rom.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(14): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_sub.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_sub.v(50): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(15): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../avant/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(16): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/../avant/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO <35901328> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v(17): analyzing included file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/comparator.v. VERI-1482
+Analyzing Verilog file c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/modulatingwaves.v. VERI-1482
+Analyzing Verilog file c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/triangularwaves.v. VERI-1482
+Analyzing Verilog file c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/sinewavelut.v. VERI-1482
+Analyzing Verilog file c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/main.v. VERI-1482
+Analyzing VHDL file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.vhd
+
+INFO <35921014> - d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+INFO <35921504> - The default VHDL library search path is now "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/TP3_E4". VHDL-1504
+Top module language type = Verilog.
+Top module name (Verilog, mixed language): Main
+INFO <35901018> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/main.v(1): compiling module Main. VERI-1018
+INFO <35901018> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/triangularwaves.v(5): compiling module triangular_wave. VERI-1018
+WARNING <35901209> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/triangularwaves.v(22): expression size 32 truncated to fit in target size 16. VERI-1209
+WARNING <35901209> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/triangularwaves.v(28): expression size 32 truncated to fit in target size 16. VERI-1209
+INFO <35901018> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/modulatingwaves.v(2): compiling module SineWaveGenerator. VERI-1018
+INFO <35901018> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/sinewavelut.v(1): compiling module SineWaveLUT. VERI-1018
+WARNING <35901209> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/modulatingwaves.v(26): expression size 32 truncated to fit in target size 15. VERI-1209
+WARNING <35901209> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/modulatingwaves.v(27): expression size 32 truncated to fit in target size 15. VERI-1209
+WARNING <35901209> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/modulatingwaves.v(28): expression size 32 truncated to fit in target size 15. VERI-1209
+INFO <35901018> - c:/users/valen/downloads/upduino-v3.0-master/rtl/radiant-reveal/tp3_e4/source/tp3_e4/comparator.v(2): compiling module Comparator. VERI-1018
+                                                         
+
+
+### Number of Logic Cells: 5280
+
+
+### Number of RAM Blocks: 30
+
+
+### Number of DSP Blocks: 8
+
+
+### Number of PLLs: 1
+
+
+### Number of IO Pins: 56
+
+
+##########################################################
+
+
+                                                         
+
+
+
+
+
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001045> - No available RAMs found.
+WARNING <35001779> - Initial value found on instance \sine_gen/address3_i0 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address2_i1 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address2_i3 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address2_i9 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address2_i11 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address2_i12 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address3_i2 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address3_i4 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address3_i10 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address3_i12 will be ignored.
+WARNING <35001779> - Initial value found on instance \sine_gen/address3_i13 will be ignored.
