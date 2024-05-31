@@ -1,25 +1,29 @@
 
+
 module Comparator
           (
-           In1, //Modulating Signals
-           In2, //Triangular waves
-           Out1 //IGBT gate control signals
+           In1, 
+           In2, 
+           Out1, 
+		   Out2
           );
 
 
-  input   signed [15:0] In1;  // int16
-  input   signed [15:0] In2;  // int16
+  input   signed [15:0] In1;  
+  input   signed [15:0] In2;  
   output  Out1;
+  output  Out2;
 
 
-  wire Relational_Operator_relop1;
+  wire comp;
 
 
-  assign Relational_Operator_relop1 = (In1 > In2 ? 1'b1 :
-              1'b0);
+  assign comp = (In1 > In2 ? 1'b1 : 1'b0);
 
 
 
-  assign Out1 = Relational_Operator_relop1;
+  assign Out1 = comp;
+  assign Out2 = !comp;
+
 
 endmodule  // Comparator

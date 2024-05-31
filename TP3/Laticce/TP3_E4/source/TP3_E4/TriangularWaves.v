@@ -2,13 +2,16 @@
 
 
 
+
+
+
 module triangular_wave (
     input wire clk,        // Clock input
     input wire reset,      // Reset signal
     output reg [15:0] count // 16-bit counter
 );
 
-    parameter MAX_COUNT = 16'd83; // Max count value (83 for 300 kHz triangular wave with 50 MHz clock)
+    parameter MAX_COUNT = 16'd15151; // Max count value for 1650 Hz triangular wave with 50 MHz clock
 
     reg direction; // 0 for up, 1 for down
 

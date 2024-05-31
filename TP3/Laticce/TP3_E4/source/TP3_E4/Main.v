@@ -1,9 +1,16 @@
+
+
+
+
 module Main (
     input wire clk,        // Clock input
     input wire reset,      // Reset signal
     output wire Va,        // Output signal for phase A
+	output wire Van,       // Output signal for phase A negado
     output wire Vb,        // Output signal for phase B
-    output wire Vc         // Output signal for phase C
+	output wire Vbn,       // Output signal for phase B negado
+    output wire Vc,        // Output signal for phase C
+	output wire Vcn        // Output signal for phase C negado
 );
 
     // Internal signals
@@ -29,19 +36,22 @@ module Main (
     Comparator comp1 (
         .In1(sine_wave1),
         .In2(tri_wave),
-        .Out1(Va)
+        .Out1(Va),
+		.Out2(Van)
     );
 
     Comparator comp2 (
         .In1(sine_wave2),
         .In2(tri_wave),
-        .Out1(Vb)
+        .Out1(Vb),
+		.Out2(Vbn)
     );
 
     Comparator comp3 (
         .In1(sine_wave3),
         .In2(tri_wave),
-        .Out1(Vc)
+        .Out1(Vc),
+		.Out2(Vcn)
     );
 
 endmodule

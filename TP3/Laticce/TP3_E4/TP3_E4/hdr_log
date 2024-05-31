@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Fri May 31 00:13:28 2024
+Fri May 31 17:26:43 2024
 
 
 Command Line:  D:\2023.2.0.38.1_Radiant\ispfpga\bin\nt64\synthesis.exe -f TP3_E4_TP3_E4_lattice.synproj -gui -msgset C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml 
