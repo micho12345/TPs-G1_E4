@@ -1,0 +1,68 @@
+---------------------------------------------------
+Report for cell Main
+   Instance path: Main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1773        100.0
+                               LUTGATE	       1365        100.0
+                                LUTCCU	        408        100.0
+                                 IOBUF	          8        100.0
+                                PFUREG	        103        100.0
+                                   DSP	          1        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                            Comparator	          1         0.5
+                         Comparator_U0	          1         0.5
+                         Comparator_U1	          1         0.5
+                     SineWaveGenerator	          1        63.6
+                       triangular_wave	          1        31.8
+---------------------------------------------------
+Report for cell Comparator
+   Instance path: Main/comp3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.5
+                               LUTGATE	          8         0.6
+---------------------------------------------------
+Report for cell Comparator_U0
+   Instance path: Main/comp2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.5
+                               LUTGATE	          8         0.6
+---------------------------------------------------
+Report for cell Comparator_U1
+   Instance path: Main/comp1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.5
+                               LUTGATE	          8         0.6
+---------------------------------------------------
+Report for cell triangular_wave
+   Instance path: Main/tw_gen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        564        31.8
+                               LUTGATE	        204        14.9
+                                LUTCCU	        360        88.2
+                                PFUREG	         17        16.5
+                                   DSP	          1        100.0
+---------------------------------------------------
+Report for cell SineWaveGenerator
+   Instance path: Main/sine_gen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1128        63.6
+                               LUTGATE	       1080        79.1
+                                LUTCCU	         48        11.8
+                                PFUREG	         86        83.5
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           SineWaveLUT	          1        51.8
+---------------------------------------------------
+Report for cell SineWaveLUT
+   Instance path: Main/sine_gen/lut
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        919        51.8
+                               LUTGATE	        919        67.3

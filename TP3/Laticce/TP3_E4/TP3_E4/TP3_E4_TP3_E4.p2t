@@ -1,9 +1,0 @@
--w
--gui
--msgset "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml"
--n 1
--t 1
--s 1
--cores 1
--hsp m
--exp parPathBased=ON
