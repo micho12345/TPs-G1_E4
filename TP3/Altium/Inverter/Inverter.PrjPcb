@@ -84,7 +84,7 @@ GenerateClassCluster=0
 DocumentUniqueId=YXCKDXGJ
 
 [Document3]
-DocumentPath=..\InverterPCBLib.PcbLib
+DocumentPath=Output.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -101,7 +101,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document4]
-DocumentPath=..\InverterSchLib.SchLib
+DocumentPath=..\InverterPCBLib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -115,10 +115,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=BTLHAGZE
+DocumentUniqueId=
 
 [Document5]
-DocumentPath=Output.OutJob
+DocumentPath=..\InverterSchLib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
