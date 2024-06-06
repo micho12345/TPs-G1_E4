@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2023.2.0.38.1" title="Caca" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="caca">
+    <Options/>
+    <Implementation title="caca" dir="caca" description="caca" synthesis="lse" default_strategy="Strategy1">
+        <Options/>
+        <Source name="source/caca/Comparator.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Comparator"/>
+        </Source>
+        <Source name="source/caca/SineWaveLUT.v" type="Verilog" type_short="Verilog">
+            <Options top_module="SineWaveLUT"/>
+        </Source>
+        <Source name="source/caca/ModulatingWaves.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/caca/caca.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/caca/caca.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Caca1.sty"/>
+</RadiantProject>

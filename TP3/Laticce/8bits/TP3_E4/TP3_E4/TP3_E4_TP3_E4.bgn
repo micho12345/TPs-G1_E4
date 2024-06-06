@@ -4,10 +4,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jun  2 20:16:58 2024
+Tue Jun  4 19:25:59 2024
 
 
-Command: bitgen -w -gui -msgset C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml -freq 0 TP3_E4_TP3_E4.udb C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/TP3_E4/TP3_E4_TP3_E4 
+Command: bitgen -w -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/promote.xml -freq 0 TP3_E4_TP3_E4.udb D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/TP3_E4/TP3_E4_TP3_E4 
 
 Running DRC.
 DRC detected 0 errors and 0 warnings.
@@ -21,5 +21,5 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/TP3_E4/TP3_E4_TP3_E4.bin".
+Saving bit stream in "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/TP3_E4/TP3_E4_TP3_E4.bin".
 Bitstream generation complete!

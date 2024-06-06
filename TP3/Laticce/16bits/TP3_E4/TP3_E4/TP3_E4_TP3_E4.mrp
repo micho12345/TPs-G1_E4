@@ -8,34 +8,37 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.2.0.38.1
-Mapped on: Sun Jun  2 20:16:14 2024
+Mapped on: Thu Jun  6 17:40:41 2024
 
 Design Information
 ------------------
 
-Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc C:/Users/valen/Downloads/UPdui
-     no-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/TP3_E4.pdc -o
-     TP3_E4_TP3_E4_map.udb -mp TP3_E4_TP3_E4.mrp -hierrpt -gui -msgset C:/Users/
-     valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml
+Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc D:/Facultad ITBA/Ano
+     5/Cuatrimestre
+     1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.pdc -o
+     TP3_E4_TP3_E4_map.udb -mp TP3_E4_TP3_E4.mrp -hierrpt -gui -msgset
+     D:/Facultad ITBA/Ano 5/Cuatrimestre
+     1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/promote.xml
 
 Design Summary
 --------------
 
-   Number of slice registers: 103 out of  5280 (2%)
+   Number of slice registers: 166 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           1773 out of  5280 (34%)
-      Number of logic LUT4s:             1365
-      Number of ripple logic:            204 (408 LUT4s)
-   Number of IO sites used:   8 out of 39 (21%)
-      Number of IO sites used for general PIO: 8
+   Number of LUT4s:           9904 out of  5280 (188%)
+      Number of logic LUT4s:             8838
+      Number of replicated LUT4s:         22
+      Number of ripple logic:            522 (1044 LUT4s)
+   Number of IO sites used:   7 out of 39 (18%)
+      Number of IO sites used for general PIO: 7
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 8 out of 36 (22%)
+      Number of IO sites used for PIO+I3C: 7 out of 36 (19%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 8 out of 39 (21%)
-   Number of DSPs:             1 out of 8 (13%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 7 out of 39 (18%)
+   Number of DSPs:             2 out of 8 (25%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
    Number of Low Speed OSCs:   0 out of 1 (0%)
@@ -48,18 +51,15 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net clk_c: 75 loads, 75 rising, 0 falling (Driver: Port clk)
+      Net clk_c: 130 loads, 130 rising, 0 falling (Driver: Port clk)
    Number of Clock Enables:  2
-      Net sine_gen.n6771: 15 loads, 15 SLICEs
-      Net sine_gen.n6736: 8 loads, 8 SLICEs
-   Number of LSRs:  2
-      Pin reset: 10 loads, 10 SLICEs (Net: reset_c)
-      Net sine_gen.n6800: 8 loads, 8 SLICEs
+      Net sine_gen.n30749: 22 loads, 22 SLICEs
+      Net sine_gen.n30714: 8 loads, 8 SLICEs
+   Number of LSRs:  1
+      Net sine_gen.n31479: 8 loads, 8 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net sine_gen.address[6]: 325 loads
-      Net sine_gen.address[5]: 315 loads
-      Net sine_gen.address[7]: 263 loads
-      Net sine_gen.address[4]: 208 loads
+      Net sine_gen.address[2]: 1032 loads
+      Net sine_gen.maxfan_replicated_net_999_2: 1030 loads
 
                                     Page 1
 
@@ -69,82 +69,42 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net sine_gen.address[8]: 178 loads
-      Net VCC_net: 157 loads
-      Net sine_gen.address[9]: 126 loads
-      Net sine_gen.address[3]: 116 loads
-      Net sine_gen.address[2]: 78 loads
-      Net sine_gen.state[0]: 63 loads
+      Net sine_gen.address[3]: 1028 loads
+      Net sine_gen.maxfan_replicated_net_999: 1023 loads
+      Net sine_gen.address[4]: 1021 loads
+      Net sine_gen.address[5]: 1008 loads
+      Net sine_gen.address[6]: 1005 loads
+      Net sine_gen.address[7]: 1003 loads
+      Net sine_gen.address[1]: 993 loads
+      Net sine_gen.address[0]: 945 loads
 
 
 
 
 
-   Number of warnings:  0
-   Number of errors:    0
+   Number of warnings:  4
+   Number of errors:    1
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
-
-IO (PIO) Attributes
--------------------
-
-+---------------------+-----------+-----------+-------+-------+-----------+
-| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
-|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Van                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Va                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| reset               | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| clk                 | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vcn                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vc                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vbn                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vb                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-
-Removed logic
--------------
-
-Block i1 was optimized away.
-
-ASIC Components
----------------
-
-Instance Name: tw_gen/mult_384
-         Type: DSP
-
-Constraint Summary
-------------------
-
-   Total number of constraints: 8
-
-                                    Page 2
-
-
-
-
-
-Constraint Summary (cont)
--------------------------
-   Total number of constraints dropped: 0
+WARNING <1026001> - map: D:/Facultad ITBA/Ano 5/Cuatrimestre
+     1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.pdc (1) : No
+     port matched 'reset'.
+WARNING <1027013> - map: No port matched 'reset'.
+WARNING <1014301> - map: Can't resolve object 'reset' in constraint
+     'ldc_set_location -site {12} [get_ports reset]'.
+WARNING <1011001> - map: Remove invalid constraint 'ldc_set_location -site {12}
+     [get_ports reset]'.
+ERROR <51001122> - map: Design doesn't fit into device specified, refer to the
+     design summary section for more details.
 
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 82 MB
-Checksum -- map: 3fbd9b7e526c6ea7cb37ec69a2498b76f9caa60
+   Total CPU Time: 7 secs
+   Total REAL Time: 8 secs
+   Peak Memory Usage: 231 MB
 
 
 
@@ -168,33 +128,7 @@ Checksum -- map: 3fbd9b7e526c6ea7cb37ec69a2498b76f9caa60
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 3
+                                    Page 2
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

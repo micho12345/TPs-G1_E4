@@ -1,0 +1,11 @@
+#Start recording tcl command: 6/6/2024 17:42:10
+#Project Location: D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/Caca; Project name: Caca
+prj_create -name "Caca" -impl "caca" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/Caca/source/caca/caca.sdc" "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/Caca/source/caca/caca.pdc"
+prj_save 
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/Caca/source/caca/Comparator.v"
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/Caca/source/caca/SineWaveLUT.v"
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/Caca/source/caca/ModulatingWaves.v"
+prj_save 
+prj_close
+#Stop recording: 6/6/2024 17:49:04

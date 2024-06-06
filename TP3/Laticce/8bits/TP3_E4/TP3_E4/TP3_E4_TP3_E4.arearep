@@ -1,13 +1,13 @@
 ----------------------------------------------------------------------
-Report for cell Main.TECH
+Report for cell main.TECH
 Register bits:  103 of 5280 (1.951%)
-I/O cells:      8
+I/O cells:      7
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2       204          100.0
                             FD1P3XZ       103          100.0
-                                 IB         2          100.0
-                               LUT4      1364          100.0
+                                 IB         1          100.0
+                               LUT4     21520          100.0
                               MAC16         1          100.0
                                  OB         6          100.0
 SUB MODULES
@@ -15,30 +15,8 @@ SUB MODULES
                       Comparator_U0         1
                       Comparator_U1         1
                   SineWaveGenerator         1
-                        SineWaveLUT         1
                     triangular_wave         1
-                              TOTAL      1686
-----------------------------------------------------------------------
-Report for cell Comparator.v1
-Instance Path : comp3
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         8            0.6
-                              TOTAL         8
-----------------------------------------------------------------------
-Report for cell Comparator_U0.v1
-Instance Path : comp2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         8            0.6
-                              TOTAL         8
-----------------------------------------------------------------------
-Report for cell Comparator_U1.v1
-Instance Path : comp1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         8            0.6
-                              TOTAL         8
+                              TOTAL     21840
 ----------------------------------------------------------------------
 Report for cell triangular_wave.v1
 Instance Path : tw_gen
@@ -46,9 +24,23 @@ Instance Path : tw_gen
                                cell     count   Res Usage(%)
                                 FA2       180           88.2
                             FD1P3XZ        17           16.5
-                               LUT4       207           15.2
+                               LUT4       209            1.0
                               MAC16         1          100.0
-                              TOTAL       405
+                              TOTAL       407
+----------------------------------------------------------------------
+Report for cell Comparator_U0.v1
+Instance Path : comp2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8            0.0
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell Comparator_U1.v1
+Instance Path : comp1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         8            0.0
+                              TOTAL         8
 ----------------------------------------------------------------------
 Report for cell SineWaveGenerator.v1
 Instance Path : sine_gen
@@ -56,14 +48,12 @@ Instance Path : sine_gen
                                cell     count   Res Usage(%)
                                 FA2        24           11.8
                             FD1P3XZ        86           83.5
-                               LUT4      1133           83.1
-SUB MODULES
-                        SineWaveLUT         1
-                              TOTAL      1244
+                               LUT4     21287           98.9
+                              TOTAL     21397
 ----------------------------------------------------------------------
-Report for cell SineWaveLUT.v1
-Instance Path : sine_gen.lut
+Report for cell Comparator.v1
+Instance Path : comp3
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4       963           70.6
-                              TOTAL       963
+                               LUT4         8            0.0
+                              TOTAL         8

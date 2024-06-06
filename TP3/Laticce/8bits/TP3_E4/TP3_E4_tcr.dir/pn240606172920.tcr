@@ -1,0 +1,8 @@
+#Start recording tcl command: 6/6/2024 17:18:23
+#Project Location: D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4; Project name: TP3_E4
+prj_open "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/TP3_E4.rdf"
+prj_run PAR -impl TP3_E4
+prj_run Export -impl TP3_E4
+prj_run Map -impl TP3_E4 -task MapTrace
+prj_close
+#Stop recording: 6/6/2024 17:29:20

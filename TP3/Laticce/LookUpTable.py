@@ -1,26 +1,19 @@
 import numpy as np
 
 # Parámetros
-num_samples = 20000  # 20,000 muestras
-amplitude = (2**7) - 1  # Amplitud de 8 bits (0-127)
-offset = 2**7  # Offset de 8 bits (128)
+num_samples = 20000
+amplitude = 2**7 - 1  # 8-bit amplitude (máximo valor positivo para 8 bits)
+offset = 128  # Offset para centrar la onda sinusoidal en 8 bits sin signo
 
-# Generar valores de onda senoidal
-sine_wave = (np.sin(2 * np.pi * np.arange(num_samples) / num_samples) * amplitude + offset).astype(int)
+# Generar las muestras de la onda sinusoidal
+t = np.linspace(0, 2 * np.pi, num_samples, endpoint=False)
+sine_wave = amplitude * np.sin(t) + offset
 
-# Generar el archivo Verilog
-with open("sine_wave_lut_8bit.v", "w") as f:
-    f.write("module SineWaveLUT (\n")
-    f.write("    input wire [14:0] address,\n")
-    f.write("    output reg [7:0] data\n")
-    f.write(");\n")
-    f.write("    always @(*) begin\n")
-    f.write("        case (address)\n")
-    for i, val in enumerate(sine_wave):
-        f.write(f"            15'b{i:015b} : data = 8'b{val:08b};\n")
-    f.write("            default : data = 8'b00000000;\n")
-    f.write("        endcase\n")
-    f.write("    end\n")
-    f.write("endmodule\n")
+# Convertir las muestras a enteros de 8 bits
+sine_wave_int = sine_wave.astype(np.uint8)
 
-print("Archivo Verilog generado: sine_wave_lut_8bit.v")
+# Guardar las muestras en un archivo .mem
+with open("sine_wave_8bit.mem", "w") as f:
+    for sample in sine_wave_int:
+        # Escribir cada muestra en formato hexadecimal de 2 dígitos
+        f.write(f"{sample:02X}\n")
