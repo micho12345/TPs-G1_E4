@@ -1,0 +1,70 @@
+----------------------------------------------------------------------
+Report for cell Main.TECH
+Register bits:  138 of 5280 (2.614%)
+I/O cells:      8
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2       128          100.0
+                            FD1P3XZ       138          100.0
+                                 IB         2          100.0
+                               LUT4      1209          100.0
+                              MAC16         1          100.0
+                                 OB         6          100.0
+SUB MODULES
+                         Comparator         1
+                      Comparator_U0         1
+                      Comparator_U1         1
+                  SineWaveGenerator         1
+                        SineWaveLUT         1
+                    triangular_wave         1
+                              TOTAL      1490
+----------------------------------------------------------------------
+Report for cell Comparator.v1
+Instance Path : comp3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        15            1.2
+                              TOTAL        15
+----------------------------------------------------------------------
+Report for cell Comparator_U0.v1
+Instance Path : comp2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        15            1.2
+                              TOTAL        15
+----------------------------------------------------------------------
+Report for cell Comparator_U1.v1
+Instance Path : comp1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        15            1.2
+                              TOTAL        15
+----------------------------------------------------------------------
+Report for cell SineWaveGenerator.v1
+Instance Path : sine_gen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        24           18.8
+                            FD1P3XZ       122           88.4
+                               LUT4       918           75.9
+SUB MODULES
+                        SineWaveLUT         1
+                              TOTAL      1065
+----------------------------------------------------------------------
+Report for cell SineWaveLUT.v1
+Instance Path : sine_gen.lut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        15           10.9
+                               LUT4       841           69.6
+                              TOTAL       856
+----------------------------------------------------------------------
+Report for cell triangular_wave.v1
+Instance Path : tw_gen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2       104           81.2
+                            FD1P3XZ        16           11.6
+                               LUT4       246           20.3
+                              MAC16         1          100.0
+                              TOTAL       367
