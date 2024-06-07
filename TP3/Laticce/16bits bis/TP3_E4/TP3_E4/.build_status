@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1717451715">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1717451715"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1717451716"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1717451720"/>
+        <Milestone name="Export" build_result="2" build_time="1717711923">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1717711923"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1717711924"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1717711932"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1717451648">
-            <Task name="Map" build_result="2" update_result="0" update_time="1717451648"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1717451649"/>
+        <Milestone name="Map" build_result="2" build_time="1717711847">
+            <Task name="Map" build_result="2" update_result="0" update_time="1717711847"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1717711849"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1717451694">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1717451694"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1717451697"/>
+        <Milestone name="PAR" build_result="2" build_time="1717711910">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1717711910"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1717711917"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="1716926231"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1717451636">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1717451636"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1717451636"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1717711841">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1717711841"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1717711932"/>
             <Task name="SynTrace" build_result="0" update_result="2" update_time="1717451547"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1717451547"/>
         </Milestone>
-        <Report name="IBIS/TP3_E4_TP3_E4.ibs" last_build_time="1717451716" last_build_size="54191"/>
-        <Report name="TP3_E4_TP3_E4.bgn" last_build_time="1717451715" last_build_size="1230"/>
-        <Report name="TP3_E4_TP3_E4.bin" last_build_time="1717451715" last_build_size="104156"/>
+        <Report name="IBIS/TP3_E4_TP3_E4.ibs" last_build_time="1717711924" last_build_size="54190"/>
+        <Report name="TP3_E4_TP3_E4.bgn" last_build_time="1717711923" last_build_size="1274"/>
+        <Report name="TP3_E4_TP3_E4.bin" last_build_time="1717711923" last_build_size="104156"/>
         <Report name="TP3_E4_TP3_E4.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="TP3_E4_TP3_E4.tw1.html" last_build_time="1717451649" last_build_size="12524"/>
-        <Report name="TP3_E4_TP3_E4.twr.html" last_build_time="1717451697" last_build_size="12528"/>
+        <Report name="TP3_E4_TP3_E4.tw1.html" last_build_time="1717711849" last_build_size="12538"/>
+        <Report name="TP3_E4_TP3_E4.twr.html" last_build_time="1717711917" last_build_size="12542"/>
         <Report name="TP3_E4_TP3_E4.tws.html" last_build_time="1717450404" last_build_size="11994"/>
-        <Report name="TP3_E4_TP3_E4.udb" last_build_time="1717451693" last_build_size="184389"/>
-        <Report name="TP3_E4_TP3_E4_map.udb" last_build_time="1717451648" last_build_size="90669"/>
-        <Report name="TP3_E4_TP3_E4_rtl.udb" last_build_time="1717451603" last_build_size="14090"/>
-        <Report name="TP3_E4_TP3_E4_syn.udb" last_build_time="1717451636" last_build_size="55867"/>
-        <Report name="TP3_E4_TP3_E4_vo.sdf" last_build_time="1717451720" last_build_size="1073391"/>
-        <Report name="TP3_E4_TP3_E4_vo.vo" last_build_time="1717451720" last_build_size="903348"/>
+        <Report name="TP3_E4_TP3_E4.udb" last_build_time="1717711910" last_build_size="379183"/>
+        <Report name="TP3_E4_TP3_E4_map.udb" last_build_time="1717711846" last_build_size="180267"/>
+        <Report name="TP3_E4_TP3_E4_rtl.udb" last_build_time="1717711728" last_build_size="12356"/>
+        <Report name="TP3_E4_TP3_E4_syn.udb" last_build_time="1717711840" last_build_size="109619"/>
+        <Report name="TP3_E4_TP3_E4_vo.sdf" last_build_time="1717711931" last_build_size="2242825"/>
+        <Report name="TP3_E4_TP3_E4_vo.vo" last_build_time="1717711931" last_build_size="1835477"/>
     </Strategy>
 </BuildStatus>
+                                                                                                    

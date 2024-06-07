@@ -48,22 +48,23 @@ Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 2023.2.1.288.0
-Mapped on: Mon Jun  3 18:54:07 2024
+Mapper:    version Radiant Software (64-bit) 2023.2.0.38.1
+Mapped on: Thu Jun  6 19:10:45 2024
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc C:/Users/pedro/OneDrive/Escrit
-     orio/ITBA/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.pdc -o
-     TP3_E4_TP3_E4_map.udb -mp TP3_E4_TP3_E4.mrp -hierrpt -gui -msgset C:/Users/
-     pedro/OneDrive/Escritorio/ITBA/TP3/Laticce/16bits/TP3_E4/promote.xml
+Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc D:/Facultad ITBA/Ano
+     5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits
+     bis/TP3_E4/source/TP3_E4/TP3_E4.pdc -o TP3_E4_TP3_E4_map.udb -mp
+     TP3_E4_TP3_E4.mrp -hierrpt -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre
+     1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/promote.xml
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of slice registers: 138 out of  5280 (3%)
+   Number of slice registers: 151 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           1511 out of  5280 (29%)
-      Number of logic LUT4s:             1210
+   Number of LUT4s:           3125 out of  5280 (59%)
+      Number of logic LUT4s:             2824
       Number of inserted feedthru LUT4s:  45
       Number of ripple logic:            128 (256 LUT4s)
    Number of IO sites used:   8 out of 39 (21%)
@@ -88,28 +89,28 @@ Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc C:/Users/pedro/OneDrive/Escrit
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net clk_c: 117 loads, 117 rising, 0 falling (Driver: Port clk)
-   Number of Clock Enables:  5
-      Net sine_gen.n5139: 23 loads, 23 SLICEs
-      Net sine_gen.n5168: 15 loads, 15 SLICEs
-      Net sine_gen.n4479: 15 loads, 15 SLICEs
-      Net sine_gen.n5138: 15 loads, 15 SLICEs
-      Net tw_gen.n716: 15 loads, 15 SLICEs
-   Number of LSRs:  3
-      Net sine_gen.n5233: 8 loads, 8 SLICEs
-      Net sine_gen.lut.n4920: 14 loads, 14 SLICEs
+      Net clk_c: 130 loads, 130 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  1
+      Net tw_gen.n268: 15 loads, 15 SLICEs
+   Number of LSRs:  7
+      Net sine_gen.n10146: 8 loads, 8 SLICEs
+      Net sine_gen.n9727: 14 loads, 14 SLICEs
+      Net sine_gen.n10145: 8 loads, 8 SLICEs
+      Net sine_gen.n10144: 8 loads, 8 SLICEs
+      Net sine_gen.n9716: 14 loads, 14 SLICEs
+      Net sine_gen.lut.n9741: 14 loads, 14 SLICEs
       Pin reset: 16 loads, 16 SLICEs (Net: reset_c)
    Top 10 highest fanout non-clock nets:
-      Net sine_gen.address[3]: 393 loads
-      Net sine_gen.address[2]: 357 loads
-      Net sine_gen.address[1]: 352 loads
-      Net sine_gen.address[0]: 346 loads
-      Net sine_gen.address[4]: 244 loads
-      Net sine_gen.address[5]: 202 loads
-      Net VCC_net: 163 loads
-      Net sine_gen.address[6]: 104 loads
-      Net sine_gen.address[7]: 61 loads
-      Net sine_gen.state[0]: 47 loads
+      Net sine_gen.address3[3]: 391 loads
+      Net sine_gen.address2[3]: 384 loads
+      Net sine_gen.address1[3]: 382 loads
+      Net sine_gen.address1[2]: 361 loads
+      Net sine_gen.address2[2]: 360 loads
+      Net sine_gen.address3[2]: 360 loads
+      Net sine_gen.address2[1]: 356 loads
+      Net sine_gen.address3[1]: 355 loads
+      Net sine_gen.address1[1]: 354 loads
+      Net sine_gen.address2[0]: 354 loads
 
    Number of warnings:  0
    Number of errors:    0
@@ -158,9 +159,9 @@ Instance Name: tw_gen/mult_17
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 
    Total CPU Time: 1 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 82 MB
-Checksum -- map: ae8e04dd6f5991ff3aac2169e0c35bad117b52d5
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 104 MB
+Checksum -- map: 44781c6b4e83a9c921c48a38911fdde829da2418
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.

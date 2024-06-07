@@ -4,8 +4,8 @@
 set ret 0
 if {[catch {
 
-sys_set_attribute -gui on -msg {C:/Users/pedro/OneDrive/Escritorio/ITBA/TP3/Laticce/16bits/TP3_E4/promote.xml}
-msg_load {C:/Users/pedro/OneDrive/Escritorio/ITBA/TP3/Laticce/16bits/TP3_E4/promote.xml}
+sys_set_attribute -gui on -msg {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/promote.xml}
+msg_load {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/promote.xml}
 des_set_project_udb -in {TP3_E4_TP3_E4_map.udb} -out {TP3_E4_TP3_E4.udb} -milestone par -pm ice40tp
 # par option
 par_set_option { disable_timing_driven false placement_iterations 1 placement_iteration_start_point 1 placement_save_best_run "1"  number_of_host_machine_cores "1" path_based_placement on  stop_once_timing_is_met false   set_speed_grade_for_hold_optimization m disable_auto_hold_timing_correction false prioritize_hold_correction_over_setup_performance false run_placement_only false}

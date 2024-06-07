@@ -8,36 +8,34 @@ module SineWaveGenerator (
 );
 
     // Instancia de la LUT
-    wire [15:0] data;
-    reg [14:0] address;
+    wire [15:0] data1;
+	wire [15:0] data2;
+	wire [15:0] data3;
+    reg [14:0] address1;
+    reg [14:0] address2;
+    reg [14:0] address3;
 
-    SineWaveLUT lut(.clk (clk), .address(address), .data(data));
+    SineWaveLUT lut(.clk (clk), .address1(address1), .address2(address2), .address3(address3), .data1(data1), .data2(data2), .data3(data3));
 
-    reg [14:0] address1 = 0;
-    reg [14:0] address2 = 6666;  // 120 grados desfasado (1/3 de 20000 muestras)
-    reg [14:0] address3 = 13333; // -120 grados desfasado (2/3 de 20000 muestras)
+    reg [14:0] p1 = 0;
+    reg [14:0] p2 = 6666;  // 120 grados desfasado (1/3 de 20000 muestras)
+    reg [14:0] p3 = 13333; // -120 grados desfasado (2/3 de 20000 muestras)
 
-    reg [1:0] state = 0;
 
     always @(posedge clk) begin
-        case (state)
-            2'b00: begin
-                address <= address1;
-                Out1 <= data;
-                address1 <= (address1 == 19999) ? 0 : address1 + 1;
-            end
-            2'b01: begin
-                address <= address2;
-                Out2 <= data;
-                address2 <= (address2 == 19999) ? 0 : address2 + 1;
-            end
-            2'b10: begin
-                address <= address3;
-                Out3 <= data;
-                address3 <= (address3 == 19999) ? 0 : address3 + 1;
-            end
-        endcase
-        state <= state + 1;
+        
+		address1 <= p1;
+		address2 <= p2;
+		address3 <= p3;
+		
+		Out1 <= data1;
+		Out2 <= data2;
+		Out3 <= data3;
+		
+		address1 <= (address1 == 19999) ? 0 : address1 + 1;
+		address2 <= (address2 == 19999) ? 0 : address2 + 1;
+		address3 <= (address3 == 19999) ? 0 : address3 + 1;
+          
     end
 endmodule
 

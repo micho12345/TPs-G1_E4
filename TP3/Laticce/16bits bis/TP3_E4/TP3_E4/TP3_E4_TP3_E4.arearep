@@ -1,13 +1,13 @@
 ----------------------------------------------------------------------
 Report for cell Main.TECH
-Register bits:  138 of 5280 (2.614%)
+Register bits:  151 of 5280 (2.860%)
 I/O cells:      8
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2       128          100.0
-                            FD1P3XZ       138          100.0
+                            FD1P3XZ       151          100.0
                                  IB         2          100.0
-                               LUT4      1209          100.0
+                               LUT4      2823          100.0
                               MAC16         1          100.0
                                  OB         6          100.0
 SUB MODULES
@@ -17,27 +17,27 @@ SUB MODULES
                   SineWaveGenerator         1
                         SineWaveLUT         1
                     triangular_wave         1
-                              TOTAL      1490
+                              TOTAL      3117
 ----------------------------------------------------------------------
 Report for cell Comparator.v1
 Instance Path : comp3
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        15            1.2
+                               LUT4        15            0.5
                               TOTAL        15
 ----------------------------------------------------------------------
 Report for cell Comparator_U0.v1
 Instance Path : comp2
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        15            1.2
+                               LUT4        15            0.5
                               TOTAL        15
 ----------------------------------------------------------------------
 Report for cell Comparator_U1.v1
 Instance Path : comp1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        15            1.2
+                               LUT4        15            0.5
                               TOTAL        15
 ----------------------------------------------------------------------
 Report for cell SineWaveGenerator.v1
@@ -45,26 +45,26 @@ Instance Path : sine_gen
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        24           18.8
-                            FD1P3XZ       122           88.4
-                               LUT4       918           75.9
+                            FD1P3XZ       135           89.4
+                               LUT4      2533           89.7
 SUB MODULES
                         SineWaveLUT         1
-                              TOTAL      1065
+                              TOTAL      2693
 ----------------------------------------------------------------------
 Report for cell SineWaveLUT.v1
 Instance Path : sine_gen.lut
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ        15           10.9
-                               LUT4       841           69.6
-                              TOTAL       856
+                            FD1P3XZ        45           29.8
+                               LUT4      2509           88.9
+                              TOTAL      2554
 ----------------------------------------------------------------------
 Report for cell triangular_wave.v1
 Instance Path : tw_gen
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2       104           81.2
-                            FD1P3XZ        16           11.6
-                               LUT4       246           20.3
+                            FD1P3XZ        16           10.6
+                               LUT4       245            8.7
                               MAC16         1          100.0
-                              TOTAL       367
+                              TOTAL       366
