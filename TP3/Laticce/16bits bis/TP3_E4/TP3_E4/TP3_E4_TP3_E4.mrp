@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.2.0.38.1
-Mapped on: Thu Jun  6 19:10:45 2024
+Mapped on: Fri Jun  7 18:33:48 2024
 
 Design Information
 ------------------
@@ -22,11 +22,11 @@ Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc D:/Facultad ITBA/Ano
 Design Summary
 --------------
 
-   Number of slice registers: 151 out of  5280 (3%)
+   Number of slice registers: 172 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           3125 out of  5280 (59%)
-      Number of logic LUT4s:             2824
-      Number of inserted feedthru LUT4s:  45
+   Number of LUT4s:           24642 out of  5280 (467%)
+      Number of logic LUT4s:             24305
+      Number of inserted feedthru LUT4s:  81
       Number of ripple logic:            128 (256 LUT4s)
    Number of IO sites used:   8 out of 39 (21%)
       Number of IO sites used for general PIO: 8
@@ -50,16 +50,16 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net clk_c: 130 loads, 130 rising, 0 falling (Driver: Port clk)
+      Net clk_c: 160 loads, 160 rising, 0 falling (Driver: Port clk)
    Number of Clock Enables:  1
       Net tw_gen.n268: 15 loads, 15 SLICEs
-   Number of LSRs:  7
-      Net sine_gen.n10146: 8 loads, 8 SLICEs
-      Net sine_gen.n9727: 14 loads, 14 SLICEs
-      Net sine_gen.n10145: 8 loads, 8 SLICEs
-      Net sine_gen.n10144: 8 loads, 8 SLICEs
-      Net sine_gen.n9716: 14 loads, 14 SLICEs
-      Net sine_gen.lut.n9741: 14 loads, 14 SLICEs
+   Number of LSRs:  4
+      Net sine_gen.n84794: 18 loads, 18 SLICEs
+      Net sine_gen.n84793: 18 loads, 18 SLICEs
+      Net sine_gen.n84792: 18 loads, 18 SLICEs
+      Pin reset: 16 loads, 16 SLICEs (Net: reset_c)
+   Top 10 highest fanout non-clock nets:
+      Net sine_gen.address2[2]: 1043 loads
 
                                     Page 1
 
@@ -69,88 +69,35 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Pin reset: 16 loads, 16 SLICEs (Net: reset_c)
-   Top 10 highest fanout non-clock nets:
-      Net sine_gen.address3[3]: 391 loads
-      Net sine_gen.address2[3]: 384 loads
-      Net sine_gen.address1[3]: 382 loads
-      Net sine_gen.address1[2]: 361 loads
-      Net sine_gen.address2[2]: 360 loads
-      Net sine_gen.address3[2]: 360 loads
-      Net sine_gen.address2[1]: 356 loads
-      Net sine_gen.address3[1]: 355 loads
-      Net sine_gen.address1[1]: 354 loads
-      Net sine_gen.address2[0]: 354 loads
+      Net sine_gen.address3[2]: 1040 loads
+      Net sine_gen.address1[2]: 1038 loads
+      Net sine_gen.address2[3]: 1026 loads
+      Net sine_gen.address3[3]: 1026 loads
+      Net sine_gen.address1[3]: 1019 loads
+      Net sine_gen.address3[4]: 1015 loads
+      Net sine_gen.address1[4]: 1012 loads
+      Net sine_gen.address3[5]: 1010 loads
+      Net sine_gen.address2[5]: 1009 loads
 
 
 
 
 
    Number of warnings:  0
-   Number of errors:    0
+   Number of errors:    1
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
-
-IO (PIO) Attributes
--------------------
-
-+---------------------+-----------+-----------+-------+-------+-----------+
-| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
-|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Van                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Va                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| reset               | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| clk                 | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vcn                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vc                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vbn                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vb                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-
-Removed logic
--------------
-
-Block i1 was optimized away.
-
-ASIC Components
----------------
-
-Instance Name: tw_gen/mult_17
-
-                                    Page 2
-
-
-
-
-
-ASIC Components (cont)
-----------------------
-         Type: DSP
-
-Constraint Summary
-------------------
-
-   Total number of constraints: 8
-   Total number of constraints dropped: 0
+ERROR <51001122> - map: Design doesn't fit into device specified, refer to the
+     design summary section for more details.
 
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs
-   Total REAL Time: 2 secs
-   Peak Memory Usage: 104 MB
-Checksum -- map: 44781c6b4e83a9c921c48a38911fdde829da2418
+   Total CPU Time: 49 secs
+   Total REAL Time: 50 secs
+   Peak Memory Usage: 539 MB
 
 
 
@@ -181,20 +128,7 @@ Checksum -- map: 44781c6b4e83a9c921c48a38911fdde829da2418
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 3
+                                    Page 2
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

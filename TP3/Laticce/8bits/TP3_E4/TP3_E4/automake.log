@@ -1,89 +1,34 @@
 
-pnmainc -run pnmain "TP3_E4_TP3_E4_map.tcl"
-map:  version Radiant Software (64-bit) 2023.2.0.38.1
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-
-Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc -o TP3_E4_TP3_E4_map.udb -mp TP3_E4_TP3_E4.mrp -hierrpt -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/promote.xml 
-
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "TP3_E4_TP3_E4.twr" "TP3_E4_TP3_E4.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt TP3_E4_TP3_E4.twr TP3_E4_TP3_E4.udb -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/promote.xml
+Starting design reading...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/2023.2.0.38.1_Radiant/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
-
-
-
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
 Design:  main
 Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
-Performance Grade:  High-Performance_1.2V
-
-Running general design DRC...
+Performance Grade:   High-Performance_1.2V
 
 
 
+Successfully loading udb, 0.17 seconds
 
-Design Summary:
-   Number of slice registers: 103 out of  5280 (2%)
-   Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           21956 out of  5280 (416%)
-      Number of logic LUT4s:             21519
-      Number of inserted feedthru LUT4s:  29
-      Number of ripple logic:            204 (408 LUT4s)
-   Number of IO sites used:   7 out of 39 (18%)
-      Number of IO sites used for general PIO: 7
-      Number of IO sites used for I3C: 0 out of 2 (0%)
-      (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 7 out of 36 (19%)
-      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
-      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
-       see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 7 out of 39 (18%)
-   Number of DSPs:             1 out of 8 (13%)
-   Number of I2Cs:             0 out of 2 (0%)
-   Number of High Speed OSCs:  0 out of 1 (0%)
-   Number of Low Speed OSCs:   0 out of 1 (0%)
-   Number of RGB PWM:          0 out of 1 (0%)
-   Number of RGB Drivers:      0 out of 1 (0%)
-   Number of SCL FILTERs:      0 out of 2 (0%)
-   Number of SRAMs:            0 out of 4 (0%)
-   Number of WARMBOOTs:        0 out of 1 (0%)
-   Number of SPIs:             0 out of 2 (0%)
-   Number of EBRs:             0 out of 30 (0%)
-   Number of PLLs:             0 out of 1 (0%)
-   Number of Clocks:  1
-      Net clk_c: 81 loads, 81 rising, 0 falling (Driver: Port clk)
-   Number of Clock Enables:  0
-   Number of LSRs:  3
-      Net sine_gen.n70500: 15 loads, 15 SLICEs
-      Net sine_gen.n70499: 16 loads, 16 SLICEs
-      Net sine_gen.n70501: 16 loads, 16 SLICEs
-   Top 10 highest fanout non-clock nets:
-      Net sine_gen.address3[3]: 1028 loads
-      Net sine_gen.address2[3]: 1018 loads
-      Net sine_gen.address3[4]: 1015 loads
-      Net sine_gen.address1[4]: 1011 loads
-      Net sine_gen.address1[3]: 1010 loads
-      Net sine_gen.maxfan_replicated_net_999_2: 1010 loads
-      Net sine_gen.address2[4]: 1009 loads
-      Net sine_gen.address2[5]: 1007 loads
-      Net sine_gen.maxfan_replicated_net_999: 1007 loads
-      Net sine_gen.maxfan_replicated_net_999_5: 1007 loads
-ERROR <51001122> - Design doesn't fit into device specified, refer to the design summary section for more details.
- 
+Initializing timer
+Starting design annotation....
+High-Performance_1.2V
 
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  37  counted  9762  covered  0
+Changing speed to m;   changing temperature to -40
 
-   Number of warnings:  0
-   Number of errors:    1
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 5 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 129 MB
 
+ 5.278232s wall, 4.890625s user + 0.125000s system = 5.015625s CPU (95.0%)
 
-
-Total CPU Time: 37 secs  
-Total REAL Time: 39 secs  
-Peak Memory Usage: 482 MB
-
-Error: the command map_run failed.
-Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /39 secs 

@@ -11,11 +11,11 @@ module SineWaveLUT(
 	output reg [15:0] data2,
 	output reg [15:0] data3
 );
-
+//
 reg [14:0] data_tbl [0:((1<<15)-1)]; 
 
 initial begin
-	$readmemb("tbl.mem", data_tbl);
+	$readmemb("sine_wave_lut.mem", data_tbl);
 end
 //
 always @(posedge clk) begin

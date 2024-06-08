@@ -1,6 +1,0 @@
-#Start recording tcl command: 6/4/2024 18:29:34
-#Project Location: D:/Facultad ITBA/Año 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/FPGA_TP4; Project name: FPGA_TP4
-prj_create -name "FPGA_TP4" -impl "FPGA_TP4" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
-prj_add_source "D:/Facultad ITBA/Año 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/FPGA_TP4/source/FPGA_TP4/FPGA_TP4.sdc" "D:/Facultad ITBA/Año 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/FPGA_TP4/source/FPGA_TP4/FPGA_TP4.pdc"
-prj_save 
-#Stop recording: 6/4/2024 18:31:20

@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Jun  4 19:25:59 2024
+Fri Jun  7 21:23:18 2024
 
 
 Command: bitgen -w -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/promote.xml -freq 0 TP3_E4_TP3_E4.udb D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/TP3_E4/TP3_E4_TP3_E4 

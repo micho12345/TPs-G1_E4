@@ -1,19 +1,21 @@
 import numpy as np
 
 # Parámetros
-num_samples = 20000
-amplitude = 2**7 - 1  # 8-bit amplitude (máximo valor positivo para 8 bits)
-offset = 128  # Offset para centrar la onda sinusoidal en 8 bits sin signo
+num_samples = 10000  # Número de muestras para medio ciclo
+amplitude = 2**11 - 1  # Amplitud máxima para 16 bits signados (32767)
 
-# Generar las muestras de la onda sinusoidal
-t = np.linspace(0, 2 * np.pi, num_samples, endpoint=False)
-sine_wave = amplitude * np.sin(t) + offset
+# Generar las muestras de medio ciclo de la onda sinusoidal
+t = np.linspace(0, np.pi, num_samples, endpoint=False)
+sine_wave = amplitude * np.sin(t)
 
-# Convertir las muestras a enteros de 8 bits
-sine_wave_int = sine_wave.astype(np.uint8)
+# Convertir las muestras a enteros de 16 bits signados
+sine_wave_int = sine_wave.astype(np.int16)
 
 # Guardar las muestras en un archivo .mem
-with open("sine_wave_8bit.mem", "w") as f:
+with open("sine_wave_lut.mem", "w") as f:
     for sample in sine_wave_int:
-        # Escribir cada muestra en formato hexadecimal de 2 dígitos
-        f.write(f"{sample:02X}\n")
+        # Escribir cada muestra en formato binario de 16 bits
+        binary_sample = format(sample, '012b')  # Asegurarse de que cada muestra tenga 15 bits
+        f.write(f"{binary_sample}\n")
+
+print("Archivo 'sine_wave_lut.mem' generado correctamente.")

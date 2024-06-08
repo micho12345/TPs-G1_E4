@@ -9,8 +9,8 @@ module Comparator
           );
 
 
-  input   signed [7:0] sen;  
-  input   signed [7:0] triang;  
+  input   signed [11:0] sen;  
+  input   signed [11:0] triang;  
   output  Signal;
   output  Signal_n;
 

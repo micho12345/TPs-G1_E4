@@ -4,7 +4,6 @@
 
 module Main (
     input wire clk,        // Clock input
-    input wire reset,      // Reset signal
     output wire Va,        // Output signal for phase A
 	output wire Van,       // Output signal for phase A negado
     output wire Vb,        // Output signal for phase B

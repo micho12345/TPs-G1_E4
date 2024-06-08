@@ -1,78 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Synthesis">
+    <Task name="Export">
         <Message>
-            <ID>35001045</ID>
-            <Severity>16</Severity>
-        </Message>
-        <Message>
-            <ID>35001045</ID>
-            <Severity>16</Severity>
-        </Message>
-        <Message>
-            <ID>35001045</ID>
-            <Severity>16</Severity>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address3_i0</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address2_i1</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address2_i3</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address2_i9</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address2_i11</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address2_i12</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address3_i2</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address3_i4</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address3_i10</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address3_i12</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>16</Severity>
-            <Dynamic>\sine_gen/address3_i13</Dynamic>
-        </Message>
-    </Task>
-    <Task name="Map">
-        <Message>
-            <ID>51001122</ID>
-            <Severity>4096</Severity>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
         </Message>
     </Task>
 </BaliMessageLog>

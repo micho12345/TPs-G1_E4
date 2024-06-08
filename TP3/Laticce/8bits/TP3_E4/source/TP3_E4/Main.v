@@ -13,13 +13,13 @@ module main (
 );
 
     // Internal signals
-    wire [7:0] tri_wave;
-    wire [7:0] sine_wave1, sine_wave2, sine_wave3;
+    wire [11:0] tri_wave;
+    wire [11:0] sine_wave1, sine_wave2, sine_wave3;
     
     // Instantiate the triangular wave generator
-    triangular_wave tw_gen (
+    TriangularWave tw_gen (
         .clk(clk),
-        .count(tri_wave)
+        .triangular_wave(tri_wave)
     );
 
     // Instantiate the sine wave generator
@@ -44,7 +44,7 @@ module main (
         .Signal(Vb),
 		.Signal_n(Vbn)
     );
-
+//
     Comparator comp3 (
         .sen(sine_wave3),
         .triang(tri_wave),

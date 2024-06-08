@@ -3,56 +3,54 @@ Report for cell main
    Instance path: main
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	      21956        100.0
-                               LUTGATE	      21548        100.0
-                                LUTCCU	        408        100.0
+                                  LUT4	       2660        100.0
+                               LUTGATE	       2606        100.0
+                                LUTCCU	         54        100.0
                                  IOBUF	          7        100.0
-                                PFUREG	        103        100.0
-                                   DSP	          1        100.0
+                                PFUREG	         64        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                            Comparator	          1         0.0
-                         Comparator_U0	          1         0.0
-                         Comparator_U1	          1         0.0
-                     SineWaveGenerator	          1        95.6
-                       triangular_wave	          1         2.6
+                            Comparator	          1         0.2
+                         Comparator_U0	          1         0.2
+                         Comparator_U1	          1         0.2
+                     SineWaveGenerator	          1        97.4
+                        TriangularWave	          1         0.9
 ---------------------------------------------------
-Report for cell triangular_wave
+Report for cell TriangularWave
    Instance path: main/tw_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        564         2.6
-                               LUTGATE	        204         0.9
-                                LUTCCU	        360        88.2
-                                PFUREG	         17        16.5
-                                   DSP	          1        100.0
----------------------------------------------------
-Report for cell Comparator_U0
-   Instance path: main/comp2
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          8         0.0
-                               LUTGATE	          8         0.0
+                                  LUT4	         24         0.9
+                               LUTGATE	         12         0.5
+                                LUTCCU	         12        22.2
+                                PFUREG	         12        18.8
 ---------------------------------------------------
 Report for cell Comparator_U1
    Instance path: main/comp1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          8         0.0
-                               LUTGATE	          8         0.0
+                                  LUT4	          4         0.2
+                               LUTGATE	          4         0.2
+---------------------------------------------------
+Report for cell Comparator_U0
+   Instance path: main/comp2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.2
+                               LUTGATE	          5         0.2
 ---------------------------------------------------
 Report for cell SineWaveGenerator
    Instance path: main/sine_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	      20987        95.6
-                               LUTGATE	      20939        97.2
-                                LUTCCU	         48        11.8
-                                PFUREG	         86        83.5
+                                  LUT4	       2592        97.4
+                               LUTGATE	       2550        97.9
+                                LUTCCU	         42        77.8
+                                PFUREG	         52        81.2
 ---------------------------------------------------
 Report for cell Comparator
    Instance path: main/comp3
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          8         0.0
-                               LUTGATE	          8         0.0
+                                  LUT4	          6         0.2
+                               LUTGATE	          6         0.2
