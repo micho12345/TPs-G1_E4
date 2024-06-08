@@ -12,13 +12,10 @@
         <Source name="source/TP3_E4/TriangularWaves.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="source/TP3_E4/SineWaveLUT.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
         <Source name="source/TP3_E4/Main.v" type="Verilog" type_short="Verilog">
             <Options top_module="Main"/>
         </Source>
-        <Source name="source/TP3_E4/ModulatingWaves.ldc" type="LSE Design Constraints File" type_short="LDC" excluded="TRUE">
+        <Source name="source/TP3_E4/SineWaveLUT.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="source/TP3_E4/TP3_E4.pdc" type="Physical Constraints File" type_short="PDC">

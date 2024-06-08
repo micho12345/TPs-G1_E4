@@ -4,13 +4,13 @@
 set ret 0
 if {[catch {
 
-sys_set_attribute -gui on -msg {C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml}
-msg_load {C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml}
+sys_set_attribute -gui on -msg {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/promote.xml}
+msg_load {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/promote.xml}
 des_set_project_udb -in {TP3_E4_TP3_E4.udb} -milestone bit -pm ice40tp
 # bitgen option
 bit_set_option { output_format "binary" run_drc true  no_header false initialize_ebr_quadrant_0 true initialize_ebr_quadrant_1 true initialize_ebr_quadrant_2 true initialize_ebr_quadrant_3 true oscillator_frequency_range slow spi_flash_low_power_mode false enable_warm_boot false set_nvcm_security false }
 #-- write result file
-bit_generate -w {C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/TP3_E4/TP3_E4_TP3_E4}
+bit_generate -w {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/TP3_E4/TP3_E4_TP3_E4}
 
 } out]} {
    runtime_log $out

@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Place & Route Report</TITLE>
-<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/lscc/radiant/2023.2/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///D:/2023.2.0.38.1_Radiant/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///D:/2023.2.0.38.1_Radiant/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -42,7 +42,7 @@ if (a)
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Mon Jun  3 18:54:34 2024
+Fri Jun  7 17:45:57 2024
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
 	TP3_E4_TP3_E4_map.udb TP3_E4_TP3_E4.udb 
@@ -52,24 +52,24 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
 Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
 Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
 ----------   --------     -----------     ------       ---------------    -----------     ----     ------
-5_1   *      0            -               -            -                  -               19       Completed
+5_1   *      0            -               -            -                  -               53       Completed
 * : Design saved.
 
-Total (real) run time for 1-seed: 19 secs 
+Total (real) run time for 1-seed: 53 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;TP3_E4_TP3_E4_map.udb&quot;
-Mon Jun  3 18:54:34 2024
+Fri Jun  7 17:45:57 2024
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
-PAR: Place And Route Radiant Software (64-bit) 2023.2.1.288.0.
+PAR: Place And Route Radiant Software (64-bit) 2023.2.0.38.1.
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
 	TP3_E4_TP3_E4_map.udb TP3_E4_TP3_E4_par.dir/5_1.udb 
 
 Loading TP3_E4_TP3_E4_map.udb ...
-Loading device for application GENERIC from file &apos;itpa08.nph&apos; in environment: C:/lscc/radiant/2023.2/ispfpga.
+Loading device for application GENERIC from file &apos;itpa08.nph&apos; in environment: D:/2023.2.0.38.1_Radiant/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 
@@ -80,14 +80,14 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
-Number of Signals: 1883
-Number of Connections: 5702
+Number of Signals: 3510
+Number of Connections: 11773
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   SLICE (est.)     792/2640         30% used
-     LUT           1511/5280         29% used
-     REG            138/5280          3% used
+   SLICE (est.)    1642/2640         62% used
+     LUT           3125/5280         59% used
+     REG            151/5280          3% used
    PIO                8/56           14% used
                       8/36           22% bonded
    IOLOGIC            0/56            0% used
@@ -110,35 +110,35 @@ Number of Connections: 5702
 Pin Constraint Summary:
    8 out of 8 pins locked (100% locked).
 
-Finished Placer Phase 0 (HIER). CPU time: 3 secs , REAL time: 4 secs 
+Finished Placer Phase 0 (HIER). CPU time: 21 secs , REAL time: 23 secs 
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 3 secs , REAL time: 4 secs 
+Finished Placer Phase 0 (AP).  CPU time: 22 secs , REAL time: 23 secs 
 
-Starting Placer Phase 1. CPU time: 3 secs , REAL time: 4 secs 
+Starting Placer Phase 1. CPU time: 22 secs , REAL time: 23 secs 
 ..  ..
 ....................
 
-Placer score = 294476.
+Placer score = 574706.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE            787/2640         29% used
+   SLICE           1641/2640         62% used
 
-Finished Placer Phase 1. CPU time: 16 secs , REAL time: 16 secs 
+Finished Placer Phase 1. CPU time: 44 secs , REAL time: 47 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  685470
-Finished Placer Phase 2.  CPU time: 16 secs , REAL time: 16 secs 
+Placer score =  1275266
+Finished Placer Phase 2.  CPU time: 44 secs , REAL time: 47 secs 
 
 
 
 <A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
 
 Global Clocks :
-  PRIMARY &quot;clk_c&quot; from comp &quot;clk&quot; on PIO site &quot;21 (PL19B)&quot;, clk load = 74, ce load = 0, sr load = 0
+  PRIMARY &quot;clk_c&quot; from comp &quot;clk&quot; on CLK_PIN site &quot;35 (PR13B)&quot;, clk load = 80, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -155,15 +155,15 @@ I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 0 / 14 (  0%) | OFF        |            |            |
-| 1        | 6 / 14 ( 42%) | 3.3V       |            |            |
+| 0        | 1 / 14 (  7%) | 3.3V       |            |            |
+| 1        | 5 / 14 ( 35%) | 3.3V       |            |            |
 | 2        | 2 / 8 ( 25%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 16 secs , REAL time: 16 secs 
+Total Placer CPU time: 45 secs , REAL time: 48 secs 
 
 
-Checksum -- place: 483e05886473f13123c62e004f062d445407c88d
+Checksum -- place: 250a981d795345af58e349b62833a51cdb1c078
 Writing design to file TP3_E4_TP3_E4_par.dir/5_1.udb ...
 
 
@@ -172,7 +172,7 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 -----------------------------------------------------------------
 
 
-Start NBR router at 18:54:51 06/03/24
+Start NBR router at 17:46:45 06/07/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -190,78 +190,62 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-357 connections routed with dedicated routing resources
+370 connections routed with dedicated routing resources
 1 global clock signals routed
-431 connections routed (of 5610 total) (7.68%)
+450 connections routed (of 11688 total) (3.85%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
 #7  Signal &quot;clk_c&quot;
-       Clock   loads: 74    out of    74 routed (100.00%)
+       Clock   loads: 80    out of    80 routed (100.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 18:54:51 06/03/24
+Start NBR section for initial routing at 17:46:45 06/07/24
 Level 4, iteration 1
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-382(0.15%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+716(0.27%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 18:54:52 06/03/24
+Start NBR section for normal routing at 17:46:48 06/07/24
 Level 4, iteration 1
-169(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+332(0.13%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
 Level 4, iteration 2
-104(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+196(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 3
-85(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+88(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 4
-64(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+55(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 5
-46(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+32(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 6
-37(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+19(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 7
-21(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 8
-25(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 9
-12(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 10
-16(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 Level 4, iteration 11
-10(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 12
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 13
-2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 14
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 15
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 16
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 17
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 18
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
-Level 4, iteration 19
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 2 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 
-Start NBR section for post-routing at 18:54:53 06/03/24
+Start NBR section for post-routing at 17:46:49 06/07/24
 
 End NBR router with 0 unrouted connection
 
-Checksum -- route: ee8e821293d79925cd1bb91d529753fb16307c87
+Checksum -- route: 76dc4b52565f1815ad6c13434b11d0aac0a99173
 
-Total CPU time 2 secs 
-Total REAL time: 2 secs 
+Total CPU time 3 secs 
+Total REAL time: 5 secs 
 Completely routed.
-End of route.  5610 routed (100.00%); 0 unrouted.
+End of route.  11688 routed (100.00%); 0 unrouted.
 
 Writing design to file TP3_E4_TP3_E4_par.dir/5_1.udb ...
 
@@ -279,9 +263,9 @@ PAR_SUMMARY::Number of errors = 0
 
 Note: user must run &apos;timing&apos; for timing closure signoff.
 
-Total CPU  Time: 18 secs 
-Total REAL Time: 19 secs 
-Peak Memory Usage: 147.29 MB
+Total CPU  Time: 49 secs 
+Total REAL Time: 53 secs 
+Peak Memory Usage: 163.88 MB
 
 
 par done!

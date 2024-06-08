@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Export">
+    <Task name="Synthesis">
         <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
+            <ID>35001045</ID>
+            <Severity>16</Severity>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1026001</ID>
+            <Severity>16</Severity>
+            <Dynamic>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>No port matched 'reset'.</Dynamic>
+            <Navigation>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>1027013</ID>
+            <Severity>16</Severity>
+            <Dynamic>port</Dynamic>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>1014301</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+            <Dynamic>ldc_set_location -site {12} [get_ports reset]</Dynamic>
+        </Message>
+        <Message>
+            <ID>1011001</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {12} [get_ports reset]</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001122</ID>
+            <Severity>4096</Severity>
         </Message>
     </Task>
 </BaliMessageLog>

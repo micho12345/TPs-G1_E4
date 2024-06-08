@@ -4,10 +4,10 @@
 set ret 0
 if {[catch {
 
-sys_set_attribute -gui on -msg {C:/Users/pedro/OneDrive/Escritorio/ITBA/TP3/Laticce/16bits/TP3_E4/promote.xml}
-msg_load {C:/Users/pedro/OneDrive/Escritorio/ITBA/TP3/Laticce/16bits/TP3_E4/promote.xml}
+sys_set_attribute -gui on -msg {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/promote.xml}
+msg_load {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/promote.xml}
 des_set_project_udb -in {TP3_E4_TP3_E4_syn.udb} -out {TP3_E4_TP3_E4_map.udb} -milestone map -pm ice40tp
-map_set_option {pdc_file "C:/Users/pedro/OneDrive/Escritorio/ITBA/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.pdc"}
+map_set_option {pdc_file "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/source/TP3_E4/TP3_E4.pdc"}
 # map option
 map_set_option { report_symbol_cross_reference false report_signal_cross_reference false   ignore_constraint_errors false}
 map_run

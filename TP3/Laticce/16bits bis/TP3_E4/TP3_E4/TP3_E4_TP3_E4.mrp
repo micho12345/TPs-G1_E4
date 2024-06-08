@@ -7,25 +7,26 @@ Device:  iCE40UP5K
 Package: SG48
 Performance Grade:  High-Performance_1.2V
 
-Mapper:    version Radiant Software (64-bit) 2023.2.1.288.0
-Mapped on: Mon Jun  3 18:54:07 2024
+Mapper:    version Radiant Software (64-bit) 2023.2.0.38.1
+Mapped on: Fri Jun  7 18:33:48 2024
 
 Design Information
 ------------------
 
-Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc C:/Users/pedro/OneDrive/Escrit
-     orio/ITBA/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.pdc -o
-     TP3_E4_TP3_E4_map.udb -mp TP3_E4_TP3_E4.mrp -hierrpt -gui -msgset C:/Users/
-     pedro/OneDrive/Escritorio/ITBA/TP3/Laticce/16bits/TP3_E4/promote.xml
+Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc D:/Facultad ITBA/Ano
+     5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits
+     bis/TP3_E4/source/TP3_E4/TP3_E4.pdc -o TP3_E4_TP3_E4_map.udb -mp
+     TP3_E4_TP3_E4.mrp -hierrpt -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre
+     1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/promote.xml
 
 Design Summary
 --------------
 
-   Number of slice registers: 138 out of  5280 (3%)
+   Number of slice registers: 172 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           1511 out of  5280 (29%)
-      Number of logic LUT4s:             1210
-      Number of inserted feedthru LUT4s:  45
+   Number of LUT4s:           24642 out of  5280 (467%)
+      Number of logic LUT4s:             24305
+      Number of inserted feedthru LUT4s:  81
       Number of ripple logic:            128 (256 LUT4s)
    Number of IO sites used:   8 out of 39 (21%)
       Number of IO sites used for general PIO: 8
@@ -49,17 +50,16 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net clk_c: 117 loads, 117 rising, 0 falling (Driver: Port clk)
-   Number of Clock Enables:  5
-      Net sine_gen.n5139: 23 loads, 23 SLICEs
-      Net sine_gen.n5168: 15 loads, 15 SLICEs
-      Net sine_gen.n4479: 15 loads, 15 SLICEs
-      Net sine_gen.n5138: 15 loads, 15 SLICEs
-      Net tw_gen.n716: 15 loads, 15 SLICEs
-   Number of LSRs:  3
-      Net sine_gen.n5233: 8 loads, 8 SLICEs
-      Net sine_gen.lut.n4920: 14 loads, 14 SLICEs
+      Net clk_c: 160 loads, 160 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  1
+      Net tw_gen.n268: 15 loads, 15 SLICEs
+   Number of LSRs:  4
+      Net sine_gen.n84794: 18 loads, 18 SLICEs
+      Net sine_gen.n84793: 18 loads, 18 SLICEs
+      Net sine_gen.n84792: 18 loads, 18 SLICEs
       Pin reset: 16 loads, 16 SLICEs (Net: reset_c)
+   Top 10 highest fanout non-clock nets:
+      Net sine_gen.address2[2]: 1043 loads
 
                                     Page 1
 
@@ -69,85 +69,35 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-   Top 10 highest fanout non-clock nets:
-      Net sine_gen.address[3]: 393 loads
-      Net sine_gen.address[2]: 357 loads
-      Net sine_gen.address[1]: 352 loads
-      Net sine_gen.address[0]: 346 loads
-      Net sine_gen.address[4]: 244 loads
-      Net sine_gen.address[5]: 202 loads
-      Net VCC_net: 163 loads
-      Net sine_gen.address[6]: 104 loads
-      Net sine_gen.address[7]: 61 loads
-      Net sine_gen.state[0]: 47 loads
+      Net sine_gen.address3[2]: 1040 loads
+      Net sine_gen.address1[2]: 1038 loads
+      Net sine_gen.address2[3]: 1026 loads
+      Net sine_gen.address3[3]: 1026 loads
+      Net sine_gen.address1[3]: 1019 loads
+      Net sine_gen.address3[4]: 1015 loads
+      Net sine_gen.address1[4]: 1012 loads
+      Net sine_gen.address3[5]: 1010 loads
+      Net sine_gen.address2[5]: 1009 loads
 
 
 
 
 
    Number of warnings:  0
-   Number of errors:    0
+   Number of errors:    1
 
 Design Errors/Warnings
 ----------------------
 
-   No errors or warnings present.
-
-IO (PIO) Attributes
--------------------
-
-+---------------------+-----------+-----------+-------+-------+-----------+
-| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
-|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Van                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Va                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| reset               | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| clk                 | INPUT     |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vcn                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vc                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vbn                 | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| Vb                  | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-
-Removed logic
--------------
-
-Block i1 was optimized away.
-
-ASIC Components
----------------
-
-Instance Name: tw_gen/mult_17
-         Type: DSP
-
-                                    Page 2
-
-
-
-
-
-
-Constraint Summary
-------------------
-
-   Total number of constraints: 8
-   Total number of constraints dropped: 0
+ERROR <51001122> - map: Design doesn't fit into device specified, refer to the
+     design summary section for more details.
 
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 82 MB
-Checksum -- map: ae8e04dd6f5991ff3aac2169e0c35bad117b52d5
+   Total CPU Time: 49 secs
+   Total REAL Time: 50 secs
+   Peak Memory Usage: 539 MB
 
 
 
@@ -178,23 +128,7 @@ Checksum -- map: ae8e04dd6f5991ff3aac2169e0c35bad117b52d5
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 3
+                                    Page 2
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

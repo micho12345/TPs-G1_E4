@@ -5,7 +5,6 @@
 
 module triangular_wave (
     input wire clk,        // Clock input
-    input wire reset,      // Reset signal
     output reg [15:0] count // 16-bit counter
 );
 

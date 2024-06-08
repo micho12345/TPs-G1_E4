@@ -1,5 +1,6 @@
 
 
+
 module SineWaveLUT (
     input wire [14:0] address,
     output reg [15:0] data

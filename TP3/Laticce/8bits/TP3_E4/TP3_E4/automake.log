@@ -1,12 +1,12 @@
 
 timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "TP3_E4_TP3_E4.twr" "TP3_E4_TP3_E4.udb" 
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt TP3_E4_TP3_E4.twr TP3_E4_TP3_E4.udb -gui -msgset C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/promote.xml
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt TP3_E4_TP3_E4.twr TP3_E4_TP3_E4.udb -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/promote.xml
 Starting design reading...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/2023.2.0.38.1_Radiant/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 Loading udb::Database ...
-Design:  Main
+Design:  main
 Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
@@ -14,7 +14,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.12 seconds
+Successfully loading udb, 0.17 seconds
 
 Initializing timer
 Starting design annotation....
@@ -22,13 +22,13 @@ High-Performance_1.2V
 
 Starting full timing analysis...
 Performance Hardware Data Status:   Advanced       Version 1.0.
-Connections ignored  55  counted  6181  covered  0
+Connections ignored  37  counted  9762  covered  0
 Changing speed to m;   changing temperature to -40
 
 STA Runtime and Peak Memory Usage :
-Total CPU Time: 4 secs 
-Total REAL Time: 5 secs 
-Peak Memory Usage: 121 MB
+Total CPU Time: 5 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 129 MB
 
- 4.781812s wall, 4.296875s user + 0.125000s system = 4.421875s CPU (92.5%)
+ 5.278232s wall, 4.890625s user + 0.125000s system = 5.015625s CPU (95.0%)
 

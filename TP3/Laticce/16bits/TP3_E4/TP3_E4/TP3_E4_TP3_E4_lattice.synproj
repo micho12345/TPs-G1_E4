@@ -36,19 +36,18 @@
 
 -use_io_insertion 1
 -resolve_mixed_drivers 0
--sdc "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/TP3_E4.sdc"
--path "D:/2023.2.0.38.1_Radiant/ispfpga/ice40tp/data" "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/TP3_E4" "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4"
+-sdc "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TP3_E4.sdc"
+-path "D:/2023.2.0.38.1_Radiant/ispfpga/ice40tp/data" "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/TP3_E4" "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4"
 -ver "D:/2023.2.0.38.1_Radiant/ip/pmi/pmi_iCE40UP.v"
 -lib pmi -vhd "D:/2023.2.0.38.1_Radiant/ip/pmi/pmi_iCE40UP.vhd"
--ver "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/Comparator.v"
-"C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/ModulatingWaves.v"
-"C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/TriangularWaves.v"
-"C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/SineWaveLUT.v"
-"C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4/source/TP3_E4/Main.v"
+-ver "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/Comparator.v"
+"D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/ModulatingWaves.v"
+"D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/TriangularWaves.v"
+"D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/Main.v"
+"D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/SineWaveLUT.v"
 
 
--path "C:/Users/valen/Downloads/UPduino-v3.0-master/RTL/radiant-reveal/TP3_E4"
--top Main
+-path "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4"
 -udb "TP3_E4_TP3_E4_rtl.udb"
 -output_hdl "TP3_E4_TP3_E4.vm"
 
