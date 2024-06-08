@@ -132,7 +132,11 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=BTLHAGZE
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Inverter\Design Rule Check - InverterPCB.html
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
