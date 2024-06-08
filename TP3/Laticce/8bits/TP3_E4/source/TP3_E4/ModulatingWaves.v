@@ -14,10 +14,28 @@ module SineWaveGenerator (
 	reg [3:0] state = 0; // Estado para controlar el comportamiento de los índices
 
     reg [11:0] address1 = 0;
-    reg [11:0] address2 = 6666;  // 120 grados desfasado (1/3 de 20000 muestras)
-    reg [11:0] address3 = 3333; // -120 grados desfasado (2/3 de 20000 muestras)
-
+    reg [11:0] address2 = 6666;  	// 120 grados desfasado (1/3 de 20000 muestras)
+    reg [11:0] address3 = 3333; 	// -120 grados desfasado (2/3 de 20000 muestras)
+	
+	
+	reg [3:0] clk_divider = 0; 	// Divisor de reloj para reducir la frecuencia a 1 MHz
+    reg slow_clk = 0; 			// Reloj dividido a 1 MHz				
+								// Frecuencia de la senoide = 50Hz -> 0.02seg
+								// 0.02seg / 20.000 muestras -> 1useg -> 1MHz
+    
+	// Divisor de frecuencia
     always @(posedge clk) begin
+        if (clk_divider == 11) begin // 12 MHz / 12 ˜ 1 MHz
+            clk_divider <= 0;
+            slow_clk <= ~slow_clk;
+        end else begin
+            clk_divider <= clk_divider + 1;
+        end
+    end
+
+
+
+    always @(posedge slow_clk) begin
 		case(state) 
 			4'b0000: begin
 				// Incrementar las direcciones

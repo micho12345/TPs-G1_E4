@@ -46,7 +46,7 @@ if (a)
 <A name="Timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2023.2.0.38.1
 
-Fri Jun  7 21:23:13 2024
+Sat Jun  8 17:01:38 2024
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -148,13 +148,15 @@ Number of I/O ports without constraint  |                         7
 Nets without clock definition
 Define a clock on a top level port or a generated clock on a clock divider pin associated with this net(s).
 -------------------------------------------------------------------
-            Listing 1 Net(s)            |        Source pin        
+            Listing 3 Net(s)            |        Source pin        
 -------------------------------------------------------------------
+tw_gen.slow_clk                         |       tw_gen/slow_clk_c/Q
 clk_c                                   |         clk_pad.bb_inst/O
+sine_gen.slow_clk                       |     sine_gen/slow_clk_c/Q
 -------------------------------------------------------------------
                                         |                          
 Number of clock nets without clock defi |                          
-nition                                  |                         1
+nition                                  |                         3
                                         |                          
 -------------------------------------------------------------------
 

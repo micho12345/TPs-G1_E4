@@ -1,0 +1,12 @@
+<RadiantSimulationProject version="2.0" name="TP3_E4" path="." language="1" stage="0" simType="ModelSim">
+    <Source worklib="work" path="source/TP3_E4/Comparator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="source/TP3_E4/ModulatingWaves.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="source/TP3_E4/TriangularWaves.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="source/TP3_E4/Main.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="main_tf.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <SimLib value="pmi_work ovi_ice40up"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule instance="" name="main_tf" language="VERILOG"/>
+</RadiantSimulationProject>

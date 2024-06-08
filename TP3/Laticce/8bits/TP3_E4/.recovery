@@ -24,6 +24,9 @@
         <Source name="source/TP3_E4/TP3_E4.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
             <Options/>
         </Source>
+        <Source name="TP3_E4/TP3_E4.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
     </Implementation>
     <Strategy name="Strategy1" file="TP3_E41.sty"/>
 </RadiantProject>
