@@ -9,7 +9,13 @@ module main (
     output wire Vb,        // Output signal for phase B
 	output wire Vbn,       // Output signal for phase B negado
     output wire Vc,        // Output signal for phase C
-	output wire Vcn        // Output signal for phase C negado
+	output wire Vcn,       // Output signal for phase C negado
+	output wire pin1,		// Output to ground
+	output wire pin2,		// Output to ground
+	output wire pin3,		// Output to ground
+	output wire pin4,		// Output to ground
+	output wire pin5,		// Output to ground
+	output wire pin6		// Output to ground
 );
 
     // Internal signals

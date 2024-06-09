@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Sat Jun  8 17:01:29 2024
+Sun Jun  9 17:57:26 2024
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+------------------------------------------+
@@ -19,6 +19,12 @@ Pinout by Port Name:
 | Vc        | 46/2     | LVCMOS33_OUT | PL6A  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | Vcn       | 45/2     | LVCMOS33_OUT | PL8B  | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 | clk       | 35/0     | LVCMOS33_IN  | PR13B | DRIVE:NA IO_TYPE:LVCMOS33 PULLMODE:100K  |
+| pin1      | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pin2      | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pin3      | 32/0     | LVCMOS33_OUT | PR17A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pin4      | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pin5      | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
+| pin6      | 28/0     | LVCMOS33_OUT | PR18A | DRIVE:8mA IO_TYPE:LVCMOS33 PULLMODE:NA   |
 +-----------+----------+--------------+-------+------------------------------------------+
 
 Vccio by Bank:
@@ -51,13 +57,13 @@ Pinout by Pin Number:
 | 19/1     | Van                 | LOCATED    | LVCMOS33_OUT | PL22B |                  |
 | 20/1     |     unused, PULL:UP |            |              | PL20B | PCLKT1_0         |
 | 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
-| 23/0     |     unused, PULL:UP |            |              | PR20A |                  |
-| 25/0     |     unused, PULL:UP |            |              | PR20B |                  |
+| 23/0     | pin1                |            | LVCMOS33_OUT | PR20A |                  |
+| 25/0     | pin5                |            | LVCMOS33_OUT | PR20B |                  |
 | 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
-| 27/0     |     unused, PULL:UP |            |              | PR19B |                  |
-| 28/0     |     unused, PULL:UP |            |              | PR18A |                  |
-| 31/0     |     unused, PULL:UP |            |              | PR17B |                  |
-| 32/0     |     unused, PULL:UP |            |              | PR17A |                  |
+| 27/0     | pin2                |            | LVCMOS33_OUT | PR19B |                  |
+| 28/0     | pin6                |            | LVCMOS33_OUT | PR18A |                  |
+| 31/0     | pin4                |            | LVCMOS33_OUT | PR17B |                  |
+| 32/0     | pin3                |            | LVCMOS33_OUT | PR17A |                  |
 | 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
 | 35/0     | clk                 | LOCATED    | LVCMOS33_IN  | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
@@ -102,6 +108,12 @@ ldc_set_location -site {6} [ get_ports {Vbn} ]
 ldc_set_location -site {46} [ get_ports {Vc} ]
 ldc_set_location -site {45} [ get_ports {Vcn} ]
 ldc_set_location -site {35} [ get_ports {clk} ]
+ldc_set_location -site {23} [ get_ports {pin1} ]
+ldc_set_location -site {27} [ get_ports {pin2} ]
+ldc_set_location -site {32} [ get_ports {pin3} ]
+ldc_set_location -site {31} [ get_ports {pin4} ]
+ldc_set_location -site {25} [ get_ports {pin5} ]
+ldc_set_location -site {28} [ get_ports {pin6} ]
 
 
 
@@ -109,5 +121,5 @@ ldc_set_location -site {35} [ get_ports {clk} ]
 
 Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
 
-Sat Jun  8 17:01:29 2024
+Sun Jun  9 17:57:26 2024
 
