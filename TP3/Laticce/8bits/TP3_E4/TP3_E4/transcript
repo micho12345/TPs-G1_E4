@@ -2,74 +2,94 @@
 # do {D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/TP3_E4/TP3_E4.mdo}
 # Loading project TP3_E4
 # Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
-# Start time: 21:46:22 on Jun 07,2024
+# Start time: 15:22:55 on Jun 09,2024
 # vlog -reportprogress 300 "+incdir+D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4" -work work D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/Comparator.v -suppress 2388 
 # -- Compiling module Comparator
 # 
 # Top level modules:
 # 	Comparator
-# End time: 21:46:22 on Jun 07,2024, Elapsed time: 0:00:00
+# End time: 15:22:55 on Jun 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
-# Start time: 21:46:22 on Jun 07,2024
+# Start time: 15:22:55 on Jun 09,2024
 # vlog -reportprogress 300 "+incdir+D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4" -work work D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/ModulatingWaves.v -suppress 2388 
 # -- Compiling module SineWaveGenerator
 # 
 # Top level modules:
 # 	SineWaveGenerator
-# End time: 21:46:22 on Jun 07,2024, Elapsed time: 0:00:00
+# End time: 15:22:55 on Jun 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
-# Start time: 21:46:22 on Jun 07,2024
+# Start time: 15:22:55 on Jun 09,2024
 # vlog -reportprogress 300 "+incdir+D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4" -work work D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TriangularWaves.v -suppress 2388 
 # -- Compiling module TriangularWave
 # 
 # Top level modules:
 # 	TriangularWave
-# End time: 21:46:22 on Jun 07,2024, Elapsed time: 0:00:00
+# End time: 15:22:55 on Jun 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
-# Start time: 21:46:22 on Jun 07,2024
+# Start time: 15:22:55 on Jun 09,2024
 # vlog -reportprogress 300 "+incdir+D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4" -work work D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/Main.v -suppress 2388 
 # -- Compiling module main
 # 
 # Top level modules:
 # 	main
-# End time: 21:46:23 on Jun 07,2024, Elapsed time: 0:00:01
+# End time: 15:22:55 on Jun 09,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
-# Start time: 21:46:23 on Jun 07,2024
-# vlog -reportprogress 300 "+incdir+D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4" -work work D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v -suppress 2388 
-# -- Compiling module main_tf
-# 
-# Top level modules:
-# 	main_tf
-# End time: 21:46:23 on Jun 07,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -L work -L pmi_work -L ovi_ice40up -suppress vsim-7033,vsim-8630,3009,3389 main_tf 
-# Start time: 21:46:23 on Jun 07,2024
+# vsim -L work -L pmi_work -L ovi_ice40up -suppress vsim-7033,vsim-8630,3009,3389 main 
+# Start time: 15:22:56 on Jun 09,2024
 # ** License Issue: License request for latticemsim feature failed
 # ** License Issue: Cannot find license file. (C:\lscc\radiant\3.0\license\license.dat)
 # ** Error: Failure to obtain a Verilog simulation license. Unable to checkout any of these license features: 'latticemsim' or 'alteramtivlog'.
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO D:\Facultad ITBA\Ano 5\Cuatrimestre 1\E4\TPs-G1_E4\TP3\Laticce\8bits\TP3_E4\TP3_E4\TP3_E4.mdo PAUSED at line 21
-# Compile of Comparator.v was successful.
+# MACRO D:\Facultad ITBA\Ano 5\Cuatrimestre 1\E4\TPs-G1_E4\TP3\Laticce\8bits\TP3_E4\TP3_E4\TP3_E4.mdo PAUSED at line 19
 # Compile of Comparator.v was successful.
 # Compile of ModulatingWaves.v was successful.
 # Compile of TriangularWaves.v was successful.
 # Compile of Main.v was successful.
-# Compile of main_tf.v was successful.
-# 5 compiles, 0 failed with no errors.
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# Load canceled
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# error: CanCompile -> can't read "ProjectFiles(D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/main_tf.v)": no such element in array
-# End time: 21:49:47 on Jun 07,2024, Elapsed time: 0:03:24
-# Errors: 0, Warnings: 10
+# 4 compiles, 0 failed with no errors.
+vsim work.main
+# vsim work.main 
+# Start time: 15:22:56 on Jun 09,2024
+# ** License Issue: License request for latticemsim feature failed
+# ** License Issue: Cannot find license file. (C:\lscc\radiant\3.0\license\license.dat)
+# ** Error: Failure to obtain a Verilog simulation license. Unable to checkout any of these license features: 'latticemsim' or 'alteramtivlog'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO D:\Facultad ITBA\Ano 5\Cuatrimestre 1\E4\TPs-G1_E4\TP3\Laticce\8bits\TP3_E4\TP3_E4\TP3_E4.mdo PAUSED at line 19
+vsim work.main
+# vsim work.main 
+# Start time: 15:22:56 on Jun 09,2024
+# ** License Issue: License request for latticemsim feature failed
+# ** License Issue: Cannot find license file. (C:\lscc\radiant\3.0\license\license.dat)
+# ** Error: Failure to obtain a Verilog simulation license. Unable to checkout any of these license features: 'latticemsim' or 'alteramtivlog'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO D:\Facultad ITBA\Ano 5\Cuatrimestre 1\E4\TPs-G1_E4\TP3\Laticce\8bits\TP3_E4\TP3_E4\TP3_E4.mdo PAUSED at line 19
+vsim work.main
+# vsim work.main 
+# Start time: 15:22:56 on Jun 09,2024
+# ** License Issue: License request for latticemsim feature failed
+# ** License Issue: Cannot find license file. (C:\lscc\radiant\3.0\license\license.dat)
+# ** Error: Failure to obtain a Verilog simulation license. Unable to checkout any of these license features: 'latticemsim' or 'alteramtivlog'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO D:\Facultad ITBA\Ano 5\Cuatrimestre 1\E4\TPs-G1_E4\TP3\Laticce\8bits\TP3_E4\TP3_E4\TP3_E4.mdo PAUSED at line 19
+vsim work.Comparator
+# vsim work.Comparator 
+# Start time: 15:22:56 on Jun 09,2024
+# ** License Issue: License request for latticemsim feature failed
+# ** License Issue: Cannot find license file. (C:\lscc\radiant\3.0\license\license.dat)
+# ** Error: Failure to obtain a Verilog simulation license. Unable to checkout any of these license features: 'latticemsim' or 'alteramtivlog'.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO D:\Facultad ITBA\Ano 5\Cuatrimestre 1\E4\TPs-G1_E4\TP3\Laticce\8bits\TP3_E4\TP3_E4\TP3_E4.mdo PAUSED at line 19
+# End time: 15:26:02 on Jun 09,2024, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 8
