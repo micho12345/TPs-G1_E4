@@ -8,8 +8,12 @@ module SineWaveGenerator (
     output reg [11:0] Out3
 );
 
-    reg [12:0] sine_wave_lut [0:9999]; // Memoria para la LUT
-    initial $readmemh("sine_wave.mem", sine_wave_lut); // Leer datos desde el archivo .mem
+    reg [12:0] sine_wave_lut1 [0:9999]; // Memoria para la LUT
+    initial $readmemb("sine_wave.mem", sine_wave_lut1); // Leer datos desde el archivo .mem
+	reg [12:0] sine_wave_lut2 [0:9999]; // Memoria para la LUT
+    initial $readmemb("sine_wave.mem", sine_wave_lut2); // Leer datos desde el archivo .mem
+	reg [12:0] sine_wave_lut3 [0:9999]; // Memoria para la LUT
+    initial $readmemb("sine_wave.mem", sine_wave_lut3); // Leer datos desde el archivo .mem
 	
 	reg [3:0] state = 0; // Estado para controlar el comportamiento de los índices
 
@@ -60,9 +64,9 @@ module SineWaveGenerator (
 		address3 <= (direction3 == 0) ? address3 + 1 : address3 - 1;
 		
 		// Leer los valores de la LUT para cada direccion
-		Out1 <= (direction1 == 0) ? sine_wave_lut[address1] : -(sine_wave_lut[address1]);
-		Out2 <= (direction2 == 0) ? sine_wave_lut[address2] : -(sine_wave_lut[address2]);
-		Out3 <= (direction3 == 0) ? sine_wave_lut[address3] : -(sine_wave_lut[address3]);
+		Out1 <= (direction1 == 0) ? sine_wave_lut1[address1] : -(sine_wave_lut1[address1]);
+		Out2 <= (direction2 == 0) ? sine_wave_lut2[address2] : -(sine_wave_lut2[address2]);
+		Out3 <= (direction3 == 0) ? sine_wave_lut3[address3] : -(sine_wave_lut3[address3]);
     end
 	
 endmodule

@@ -4,10 +4,9 @@
 
 module TriangularWave (
     input wire clk, // Reloj de entrada a 12 MHz
-    output reg [11:0] triangular_wave // Salida de 12 bits	
+    output reg [11:0] count // Salida de 12 bits	
 );
 
-    reg [11:0] count = 12'b000000000000; // Contador para la onda triangular
     reg direction = 1; // Direcci?n del contador (1 para incrementar, 0 para decrementar)
     
     // Divisor de frecuencia
@@ -39,10 +38,6 @@ module TriangularWave (
         end else begin
             count <= count - 2;
         end
-    end
-
-    always @(*) begin
-        triangular_wave = count;
     end
 
 endmodule

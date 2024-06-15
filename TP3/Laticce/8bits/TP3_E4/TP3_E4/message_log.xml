@@ -2,6 +2,51 @@
 <BaliMessageLog>
     <Task name="Export">
         <Message>
+            <ID>1026001</ID>
+            <Severity>16</Severity>
+            <Dynamic>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Dynamic>No port matched 'pin1'.</Dynamic>
+            <Navigation>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>1026001</ID>
+            <Severity>16</Severity>
+            <Dynamic>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Dynamic>
+            <Dynamic>9</Dynamic>
+            <Dynamic>No port matched 'pin2'.</Dynamic>
+            <Navigation>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>1026001</ID>
+            <Severity>16</Severity>
+            <Dynamic>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Dynamic>
+            <Dynamic>10</Dynamic>
+            <Dynamic>No port matched 'pin3'.</Dynamic>
+            <Navigation>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Navigation>
+            <Navigation>10</Navigation>
+        </Message>
+        <Message>
+            <ID>1026001</ID>
+            <Severity>16</Severity>
+            <Dynamic>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Dynamic>
+            <Dynamic>11</Dynamic>
+            <Dynamic>No port matched 'pin4'.</Dynamic>
+            <Navigation>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Navigation>
+            <Navigation>11</Navigation>
+        </Message>
+        <Message>
+            <ID>1026001</ID>
+            <Severity>16</Severity>
+            <Dynamic>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Dynamic>
+            <Dynamic>12</Dynamic>
+            <Dynamic>No port matched 'pin5'.</Dynamic>
+            <Navigation>D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/source/TP3_E4/TP3_E4.pdc</Navigation>
+            <Navigation>12</Navigation>
+        </Message>
+        <Message>
             <ID>1191031</ID>
             <Severity>1</Severity>
         </Message>

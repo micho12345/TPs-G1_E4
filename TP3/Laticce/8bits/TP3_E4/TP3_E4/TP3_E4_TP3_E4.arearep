@@ -1,59 +1,57 @@
 ----------------------------------------------------------------------
 Report for cell main.TECH
-Register bits:  62 of 5280 (1.174%)
-I/O cells:      13
+Register bits:  88 of 5280 (1.667%)
+I/O cells:      7
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              EBR_B         4          100.0
                                CCU2        33          100.0
-                            FD1P3XZ        62          100.0
+                            FD1P3XZ        88          100.0
                                  IB         1          100.0
-                               LUT4      1674          100.0
-                                 OB        12          100.0
+                               LUT4      3771          100.0
+                                 OB         6          100.0
 SUB MODULES
                          Comparator         1
                       Comparator_U0         1
                       Comparator_U1         1
                   SineWaveGenerator         1
                      TriangularWave         1
-                              TOTAL      1791
+                              TOTAL      3904
 ----------------------------------------------------------------------
 Report for cell TriangularWave.v1
 Instance Path : tw_gen
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        12           36.4
-                            FD1P3XZ        14           22.6
-                               LUT4        22            1.3
-                              TOTAL        48
-----------------------------------------------------------------------
-Report for cell Comparator_U0.v1
-Instance Path : comp2
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4        10            0.6
-                              TOTAL        10
+                            FD1P3XZ        14           15.9
+                               LUT4        21            0.6
+                              TOTAL        47
 ----------------------------------------------------------------------
 Report for cell Comparator_U1.v1
 Instance Path : comp1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         3            0.2
-                              TOTAL         3
+                               LUT4        11            0.3
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell Comparator_U0.v1
+Instance Path : comp2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        11            0.3
+                              TOTAL        11
 ----------------------------------------------------------------------
 Report for cell SineWaveGenerator.v1
 Instance Path : sine_gen
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              EBR_B         4          100.0
                                 FA2        21           63.6
-                            FD1P3XZ        48           77.4
-                               LUT4      1633           97.6
-                              TOTAL      1706
+                            FD1P3XZ        74           84.1
+                               LUT4      3717           98.6
+                              TOTAL      3812
 ----------------------------------------------------------------------
 Report for cell Comparator.v1
 Instance Path : comp3
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         6            0.4
-                              TOTAL         6
+                               LUT4        11            0.3
+                              TOTAL        11
