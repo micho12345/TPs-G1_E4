@@ -1,0 +1,313 @@
+// Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2023.2.0.38.1
+// Netlist written on Tue Jun 18 16:34:01 2024
+// Source file index table: 
+// Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
+// file 0 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.v"
+// file 1 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.vhd"
+// file 2 "d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/16bits/triangular_test/source/triangular_test/main.v"
+// file 3 "d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/16bits/triangular_test/source/triangular_test/triangularwaves.v"
+// file 4 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/ccu2_b.v"
+// file 5 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
+// file 6 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
+// file 7 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
+// file 8 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
+// file 9 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/hsosc.v"
+// file 10 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
+// file 11 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/ib.v"
+// file 12 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
+// file 13 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/lsosc.v"
+// file 14 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
+// file 15 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/ob.v"
+// file 16 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/obz_b.v"
+// file 17 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
+// file 18 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/pdp4k.v"
+// file 19 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/rgb.v"
+// file 20 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
+// file 21 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/sp256k.v"
+// file 22 "d:/2023.2.0.38.1_radiant/cae_library/simulation/verilog/ice40up/legacy.v"
+// file 23 "d:/2023.2.0.38.1_radiant/ip/avant/fifo/rtl/lscc_fifo.v"
+// file 24 "d:/2023.2.0.38.1_radiant/ip/avant/fifo_dc/rtl/lscc_fifo_dc.v"
+// file 25 "d:/2023.2.0.38.1_radiant/ip/avant/ram_dp/rtl/lscc_ram_dp.v"
+// file 26 "d:/2023.2.0.38.1_radiant/ip/avant/ram_dq/rtl/lscc_ram_dq.v"
+// file 27 "d:/2023.2.0.38.1_radiant/ip/avant/rom/rtl/lscc_rom.v"
+// file 28 "d:/2023.2.0.38.1_radiant/ip/common/adder/rtl/lscc_adder.v"
+// file 29 "d:/2023.2.0.38.1_radiant/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
+// file 30 "d:/2023.2.0.38.1_radiant/ip/common/complex_mult/rtl/lscc_complex_mult.v"
+// file 31 "d:/2023.2.0.38.1_radiant/ip/common/counter/rtl/lscc_cntr.v"
+// file 32 "d:/2023.2.0.38.1_radiant/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
+// file 33 "d:/2023.2.0.38.1_radiant/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
+// file 34 "d:/2023.2.0.38.1_radiant/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
+// file 35 "d:/2023.2.0.38.1_radiant/ip/common/multiplier/rtl/lscc_multiplier.v"
+// file 36 "d:/2023.2.0.38.1_radiant/ip/common/subtractor/rtl/lscc_subtractor.v"
+// file 37 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_add.v"
+// file 38 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_addsub.v"
+// file 39 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_complex_mult.v"
+// file 40 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_counter.v"
+// file 41 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_dsp.v"
+// file 42 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_fifo.v"
+// file 43 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_fifo_dc.v"
+// file 44 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_mac.v"
+// file 45 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_mult.v"
+// file 46 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_multaddsub.v"
+// file 47 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_multaddsubsum.v"
+// file 48 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dp.v"
+// file 49 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dp_be.v"
+// file 50 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dq.v"
+// file 51 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ram_dq_be.v"
+// file 52 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_rom.v"
+// file 53 "d:/2023.2.0.38.1_radiant/ip/pmi/pmi_sub.v"
+
+//
+// Verilog Description of module main
+//
+
+module main (input clk, output [11:0]tri_wave);
+    
+    (* is_clock=1, lineinfo="@2(2[13],2[16])" *) wire clk_c;
+    
+    wire tri_wave_c_11, tri_wave_c_10, tri_wave_c_9, tri_wave_c_8, tri_wave_c_7, 
+        tri_wave_c_6, tri_wave_c_5, tri_wave_c_4, tri_wave_c_3, tri_wave_c_2, 
+        tri_wave_c_1, GND_net, VCC_net;
+    
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[0]  (.I(GND_net), .O(tri_wave[0]));
+    VLO i5 (.Z(GND_net));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[4]  (.I(tri_wave_c_4), 
+            .O(tri_wave[4]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[1]  (.I(tri_wave_c_1), 
+            .O(tri_wave[1]));
+    (* lineinfo="@2(2[13],2[16])" *) IB clk_pad (.I(clk), .O(clk_c));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[2]  (.I(tri_wave_c_2), 
+            .O(tri_wave[2]));
+    (* lineinfo="@2(8[17],11[6])" *) TriangularWave tw_gen (GND_net, tri_wave_c_4, 
+            tri_wave_c_5, tri_wave_c_3, clk_c, tri_wave_c_2, tri_wave_c_1, 
+            tri_wave_c_8, tri_wave_c_9, tri_wave_c_10, tri_wave_c_11, 
+            tri_wave_c_6, tri_wave_c_7);
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[5]  (.I(tri_wave_c_5), 
+            .O(tri_wave[5]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[6]  (.I(tri_wave_c_6), 
+            .O(tri_wave[6]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[7]  (.I(tri_wave_c_7), 
+            .O(tri_wave[7]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[8]  (.I(tri_wave_c_8), 
+            .O(tri_wave[8]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[9]  (.I(tri_wave_c_9), 
+            .O(tri_wave[9]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[10]  (.I(tri_wave_c_10), 
+            .O(tri_wave[10]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[11]  (.I(tri_wave_c_11), 
+            .O(tri_wave[11]));
+    (* lineinfo="@2(3[24],3[32])" *) OB \tri_wave_pad[3]  (.I(tri_wave_c_3), 
+            .O(tri_wave[3]));
+    VHI i280 (.Z(VCC_net));
+    
+endmodule
+
+//
+// Verilog Description of module TriangularWave
+//
+
+module TriangularWave (input GND_net, output tri_wave_c_4, output tri_wave_c_5, 
+            output tri_wave_c_3, input clk_c, output tri_wave_c_2, output tri_wave_c_1, 
+            output tri_wave_c_8, output tri_wave_c_9, output tri_wave_c_10, 
+            output tri_wave_c_11, output tri_wave_c_6, output tri_wave_c_7);
+    
+    (* is_clock=1, lineinfo="@2(2[13],2[16])" *) wire clk_c;
+    
+    wire n166, n491, n168;
+    wire [10:0]n62_adj_25;
+    
+    wire n17, n16, n249, direction, n21, n19, n20, n142;
+    wire [10:0]n62;
+    
+    wire clk_divider_N_13, n164, n485, n476, VCC_net, n152;
+    wire [10:0]n62_adj_26;
+    
+    wire n170, n503, n172, n509, n482, n144, n160, n506, clk_divider, 
+        n158, n500, n156, n494, n154, n488, n479, n497, GND_net_2;
+    
+    (* lineinfo="@3(27[14],27[23])" *) FA2 add_20_add_5_5 (.A0(GND_net), .B0(tri_wave_c_4), 
+            .C0(GND_net), .D0(n166), .CI0(n166), .A1(GND_net), .B1(tri_wave_c_5), 
+            .C1(GND_net), .D1(n491), .CI1(n491), .CO0(n491), .CO1(n168), 
+            .S0(n62_adj_25[3]), .S1(n62_adj_25[4]));
+    defparam add_20_add_5_5.INIT0 = "0xc33c";
+    defparam add_20_add_5_5.INIT1 = "0xc33c";
+    (* lut_function="(A (B (C (D))))" *) LUT4 i9_4_lut (.A(n17), .B(tri_wave_c_3), 
+            .C(n16), .D(tri_wave_c_4), .Z(n249));
+    defparam i9_4_lut.INIT = "0x8000";
+    (* lut_function="(A+!(B+(C+(D))))", lineinfo="@3(15[12],34[8])" *) LUT4 i54_4_lut (.A(direction), 
+            .B(n21), .C(n19), .D(n20), .Z(n142));
+    defparam i54_4_lut.INIT = "0xaaab";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i3 (.D(n62[1]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_2));
+    defparam count_i3.REGSET = "RESET";
+    defparam count_i3.SRMODE = "CE_OVER_LSR";
+    (* lineinfo="@3(27[14],27[23])" *) FA2 add_20_add_5_3 (.A0(GND_net), .B0(tri_wave_c_2), 
+            .C0(GND_net), .D0(n164), .CI0(n164), .A1(GND_net), .B1(tri_wave_c_3), 
+            .C1(GND_net), .D1(n485), .CI1(n485), .CO0(n485), .CO1(n166), 
+            .S0(n62_adj_25[1]), .S1(n62_adj_25[2]));
+    defparam add_20_add_5_3.INIT0 = "0xc33c";
+    defparam add_20_add_5_3.INIT1 = "0xc33c";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i2 (.D(n62[0]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_1));
+    defparam count_i2.REGSET = "RESET";
+    defparam count_i2.SRMODE = "CE_OVER_LSR";
+    (* lineinfo="@2(8[17],11[6])" *) FA2 add_19_add_5_1 (.A0(GND_net), .B0(GND_net), 
+            .C0(GND_net), .A1(GND_net), .B1(tri_wave_c_1), .C1(VCC_net), 
+            .D1(n476), .CI1(n476), .CO0(n476), .CO1(n152), .S1(n62_adj_26[0]));
+    defparam add_19_add_5_1.INIT0 = "0xc33c";
+    defparam add_19_add_5_1.INIT1 = "0xc33c";
+    (* lineinfo="@3(27[14],27[23])" *) FA2 add_20_add_5_9 (.A0(GND_net), .B0(tri_wave_c_8), 
+            .C0(GND_net), .D0(n170), .CI0(n170), .A1(GND_net), .B1(tri_wave_c_9), 
+            .C1(GND_net), .D1(n503), .CI1(n503), .CO0(n503), .CO1(n172), 
+            .S0(n62_adj_25[7]), .S1(n62_adj_25[8]));
+    defparam add_20_add_5_9.INIT0 = "0xc33c";
+    defparam add_20_add_5_9.INIT1 = "0xc33c";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i4_3_lut (.A(n62_adj_26[3]), 
+            .B(n62_adj_25[3]), .C(direction), .Z(n62[3]));
+    defparam mux_16_i4_3_lut.INIT = "0xcaca";
+    (* lineinfo="@3(27[14],27[23])" *) FA2 add_20_add_5_11 (.A0(GND_net), 
+            .B0(tri_wave_c_10), .C0(GND_net), .D0(n172), .CI0(n172), 
+            .A1(GND_net), .B1(tri_wave_c_11), .C1(GND_net), .D1(n509), 
+            .CI1(n509), .CO0(n509), .S0(n62_adj_25[9]), .S1(n62_adj_25[10]));
+    defparam add_20_add_5_11.INIT0 = "0xc33c";
+    defparam add_20_add_5_11.INIT1 = "0xc33c";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i1_3_lut (.A(n62_adj_26[0]), 
+            .B(n62_adj_25[0]), .C(direction), .Z(n62[0]));
+    defparam mux_16_i1_3_lut.INIT = "0xcaca";
+    (* lineinfo="@3(27[14],27[23])" *) FA2 add_20_add_5_1 (.A0(GND_net), .B0(GND_net), 
+            .C0(GND_net), .A1(GND_net), .B1(tri_wave_c_1), .C1(VCC_net), 
+            .D1(n482), .CI1(n482), .CO0(n482), .CO1(n164), .S1(n62_adj_25[0]));
+    defparam add_20_add_5_1.INIT0 = "0xc33c";
+    defparam add_20_add_5_1.INIT1 = "0xc33c";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i5 (.D(n62[3]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_4));
+    defparam count_i5.REGSET = "RESET";
+    defparam count_i5.SRMODE = "CE_OVER_LSR";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i2_3_lut (.A(n62_adj_26[1]), 
+            .B(n62_adj_25[1]), .C(direction), .Z(n62[1]));
+    defparam mux_16_i2_3_lut.INIT = "0xcaca";
+    (* lse_init_val=1, LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ direction_c (.D(n144), 
+            .SP(VCC_net), .CK(clk_c), .SR(GND_net_2), .Q(direction));
+    defparam direction_c.REGSET = "RESET";
+    defparam direction_c.SRMODE = "CE_OVER_LSR";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i6 (.D(n62[4]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_5));
+    defparam count_i6.REGSET = "RESET";
+    defparam count_i6.SRMODE = "CE_OVER_LSR";
+    (* lineinfo="@2(8[17],11[6])" *) FA2 add_19_add_5_11 (.A0(GND_net), .B0(tri_wave_c_10), 
+            .C0(VCC_net), .D0(n160), .CI0(n160), .A1(GND_net), .B1(tri_wave_c_11), 
+            .C1(VCC_net), .D1(n506), .CI1(n506), .CO0(n506), .S0(n62_adj_26[9]), 
+            .S1(n62_adj_26[10]));
+    defparam add_19_add_5_11.INIT0 = "0xc33c";
+    defparam add_19_add_5_11.INIT1 = "0xc33c";
+    (* lut_function="(!(A))", lineinfo="@3(16[7],16[23])" *) LUT4 i5_1_lut (.A(clk_divider), 
+            .Z(clk_divider_N_13));
+    defparam i5_1_lut.INIT = "0x5555";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i3_3_lut (.A(n62_adj_26[2]), 
+            .B(n62_adj_25[2]), .C(direction), .Z(n62[2]));
+    defparam mux_16_i3_3_lut.INIT = "0xcaca";
+    (* lineinfo="@2(8[17],11[6])" *) FA2 add_19_add_5_9 (.A0(GND_net), .B0(tri_wave_c_8), 
+            .C0(VCC_net), .D0(n158), .CI0(n158), .A1(GND_net), .B1(tri_wave_c_9), 
+            .C1(VCC_net), .D1(n500), .CI1(n500), .CO0(n500), .CO1(n160), 
+            .S0(n62_adj_26[7]), .S1(n62_adj_26[8]));
+    defparam add_19_add_5_9.INIT0 = "0xc33c";
+    defparam add_19_add_5_9.INIT1 = "0xc33c";
+    (* lineinfo="@2(8[17],11[6])" *) FA2 add_19_add_5_7 (.A0(GND_net), .B0(tri_wave_c_6), 
+            .C0(VCC_net), .D0(n156), .CI0(n156), .A1(GND_net), .B1(tri_wave_c_7), 
+            .C1(VCC_net), .D1(n494), .CI1(n494), .CO0(n494), .CO1(n158), 
+            .S0(n62_adj_26[5]), .S1(n62_adj_26[6]));
+    defparam add_19_add_5_7.INIT0 = "0xc33c";
+    defparam add_19_add_5_7.INIT1 = "0xc33c";
+    (* lineinfo="@2(8[17],11[6])" *) FA2 add_19_add_5_5 (.A0(GND_net), .B0(tri_wave_c_4), 
+            .C0(VCC_net), .D0(n154), .CI0(n154), .A1(GND_net), .B1(tri_wave_c_5), 
+            .C1(VCC_net), .D1(n488), .CI1(n488), .CO0(n488), .CO1(n156), 
+            .S0(n62_adj_26[3]), .S1(n62_adj_26[4]));
+    defparam add_19_add_5_5.INIT0 = "0xc33c";
+    defparam add_19_add_5_5.INIT1 = "0xc33c";
+    (* lineinfo="@2(8[17],11[6])" *) FA2 add_19_add_5_3 (.A0(GND_net), .B0(tri_wave_c_2), 
+            .C0(VCC_net), .D0(n152), .CI0(n152), .A1(GND_net), .B1(tri_wave_c_3), 
+            .C1(VCC_net), .D1(n479), .CI1(n479), .CO0(n479), .CO1(n154), 
+            .S0(n62_adj_26[1]), .S1(n62_adj_26[2]));
+    defparam add_19_add_5_3.INIT0 = "0xc33c";
+    defparam add_19_add_5_3.INIT1 = "0xc33c";
+    (* lse_init_val=0, LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ clk_divider_c (.D(clk_divider_N_13), 
+            .SP(VCC_net), .CK(clk_c), .SR(GND_net_2), .Q(clk_divider));
+    defparam clk_divider_c.REGSET = "RESET";
+    defparam clk_divider_c.SRMODE = "CE_OVER_LSR";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i7 (.D(n62[5]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_6));
+    defparam count_i7.REGSET = "RESET";
+    defparam count_i7.SRMODE = "CE_OVER_LSR";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i8 (.D(n62[6]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_7));
+    defparam count_i8.REGSET = "RESET";
+    defparam count_i8.SRMODE = "CE_OVER_LSR";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i9 (.D(n62[7]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_8));
+    defparam count_i9.REGSET = "RESET";
+    defparam count_i9.SRMODE = "CE_OVER_LSR";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i10 (.D(n62[8]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_9));
+    defparam count_i10.REGSET = "RESET";
+    defparam count_i10.SRMODE = "CE_OVER_LSR";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i11 (.D(n62[9]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_10));
+    defparam count_i11.REGSET = "RESET";
+    defparam count_i11.SRMODE = "CE_OVER_LSR";
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i12 (.D(n62[10]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_11));
+    defparam count_i12.REGSET = "RESET";
+    defparam count_i12.SRMODE = "CE_OVER_LSR";
+    (* lineinfo="@3(27[14],27[23])" *) FA2 add_20_add_5_7 (.A0(GND_net), .B0(tri_wave_c_6), 
+            .C0(GND_net), .D0(n168), .CI0(n168), .A1(GND_net), .B1(tri_wave_c_7), 
+            .C1(GND_net), .D1(n497), .CI1(n497), .CO0(n497), .CO1(n170), 
+            .S0(n62_adj_25[5]), .S1(n62_adj_25[6]));
+    defparam add_20_add_5_7.INIT0 = "0xc33c";
+    defparam add_20_add_5_7.INIT1 = "0xc33c";
+    (* lut_function="(A (B)+!A (B ((D)+!C)))", lineinfo="@3(15[12],34[8])" *) LUT4 i49_4_lut_4_lut (.A(clk_divider), 
+            .B(n142), .C(n249), .D(tri_wave_c_1), .Z(n144));
+    defparam i49_4_lut_4_lut.INIT = "0xcc8c";
+    (* lut_function="(A+(B+(C+(D))))", lineinfo="@3(15[12],34[8])" *) LUT4 i9_4_lut_adj_1 (.A(tri_wave_c_7), 
+            .B(tri_wave_c_3), .C(tri_wave_c_9), .D(tri_wave_c_4), .Z(n21));
+    defparam i9_4_lut_adj_1.INIT = "0xfffe";
+    (* lut_function="(A+(B+((D)+!C)))", lineinfo="@3(15[12],34[8])" *) LUT4 i7_4_lut (.A(tri_wave_c_10), 
+            .B(tri_wave_c_5), .C(tri_wave_c_1), .D(tri_wave_c_8), .Z(n19));
+    defparam i7_4_lut.INIT = "0xffef";
+    (* lut_function="(A+(B+(C+!(D))))", lineinfo="@3(15[12],34[8])" *) LUT4 i8_4_lut (.A(tri_wave_c_2), 
+            .B(clk_divider), .C(tri_wave_c_6), .D(tri_wave_c_11), .Z(n20));
+    defparam i8_4_lut.INIT = "0xfeff";
+    (* lut_function="(!(((C+!(D))+!B)+!A))" *) LUT4 i7_4_lut_adj_2 (.A(tri_wave_c_6), 
+            .B(tri_wave_c_7), .C(tri_wave_c_11), .D(tri_wave_c_9), .Z(n17));
+    defparam i7_4_lut_adj_2.INIT = "0x0800";
+    (* lut_function="(A (B (C (D))))" *) LUT4 i6_4_lut (.A(tri_wave_c_10), 
+            .B(tri_wave_c_8), .C(tri_wave_c_5), .D(tri_wave_c_2), .Z(n16));
+    defparam i6_4_lut.INIT = "0x8000";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i5_3_lut (.A(n62_adj_26[4]), 
+            .B(n62_adj_25[4]), .C(direction), .Z(n62[4]));
+    defparam mux_16_i5_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i6_3_lut (.A(n62_adj_26[5]), 
+            .B(n62_adj_25[5]), .C(direction), .Z(n62[5]));
+    defparam mux_16_i6_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i7_3_lut (.A(n62_adj_26[6]), 
+            .B(n62_adj_25[6]), .C(direction), .Z(n62[6]));
+    defparam mux_16_i7_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i8_3_lut (.A(n62_adj_26[7]), 
+            .B(n62_adj_25[7]), .C(direction), .Z(n62[7]));
+    defparam mux_16_i8_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i9_3_lut (.A(n62_adj_26[8]), 
+            .B(n62_adj_25[8]), .C(direction), .Z(n62[8]));
+    defparam mux_16_i9_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i10_3_lut (.A(n62_adj_26[9]), 
+            .B(n62_adj_25[9]), .C(direction), .Z(n62[9]));
+    defparam mux_16_i10_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B+!(C))+!A (B (C)))", lineinfo="@3(16[3],33[12])" *) LUT4 mux_16_i11_3_lut (.A(n62_adj_26[10]), 
+            .B(n62_adj_25[10]), .C(direction), .Z(n62[10]));
+    defparam mux_16_i11_3_lut.INIT = "0xcaca";
+    VLO i2 (.Z(GND_net_2));
+    (* LSE_LINE_FILE_ID=72, LSE_LCOL=17, LSE_RCOL=6, LSE_LLINE=8, LSE_RLINE=11, lineinfo="@3(15[12],34[8])" *) FD1P3XZ count_i4 (.D(n62[2]), 
+            .SP(clk_divider_N_13), .CK(clk_c), .SR(GND_net_2), .Q(tri_wave_c_3));
+    defparam count_i4.REGSET = "RESET";
+    defparam count_i4.SRMODE = "CE_OVER_LSR";
+    VHI i1 (.Z(VCC_net));
+    
+endmodule

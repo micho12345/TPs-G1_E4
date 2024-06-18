@@ -18,7 +18,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../TP3_E4/TP3_E4_TP3_E4.bin</File>
-			<FileTime>06/14/24 20:12:31</FileTime>
+			<FileTime>06/18/24 15:31:05</FileTime>
 			<JedecChecksum>0x20F4</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>

@@ -1,0 +1,208 @@
+
+                         Lattice Mapping Report File
+
+Design:  main
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2023.2.0.38.1
+Mapped on: Tue Jun 18 16:34:06 2024
+
+Design Information
+------------------
+
+Command line:   map -i triangular_test_triangular_test_syn.udb -pdc D:/Facultad
+     ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test/s
+     ource/triangular_test/triangular_test.pdc -o
+     triangular_test_triangular_test_map.udb -mp
+     triangular_test_triangular_test.mrp -hierrpt -gui -msgset D:/Facultad
+     ITBA/Ano 5/Cuatrimestre
+     1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test/promote.xml
+
+Design Summary
+--------------
+
+   Number of slice registers:  13 out of  5280 (<1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:            47 out of  5280 (1%)
+      Number of logic LUT4s:              22
+      Number of replicated LUT4s:          1
+      Number of ripple logic:             12 (24 LUT4s)
+   Number of IO sites used:   13 out of 39 (33%)
+      Number of IO sites used for general PIO: 13
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 13 out of 36 (36%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 13 out of 39 (33%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_c: 13 loads, 13 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  1
+      Net tw_gen.clk_divider_N_13: 11 loads, 11 SLICEs
+   Number of LSRs:  0
+   Top 10 highest fanout non-clock nets:
+      Net tri_wave_pad[0].vcc: 12 loads
+      Net tw_gen.direction: 12 loads
+      Net tw_gen.clk_divider_N_13: 11 loads
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net tri_wave_c_1: 5 loads
+      Net tri_wave_c_2: 5 loads
+      Net tri_wave_c_3: 5 loads
+      Net tri_wave_c_4: 5 loads
+      Net tri_wave_c_5: 5 loads
+      Net tri_wave_c_8: 5 loads
+      Net tri_wave_c_9: 5 loads
+
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[0]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[4]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[1]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[2]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[5]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[6]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[7]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[8]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[9]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[10]        | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[11]        | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| tri_wave[3]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 13
+
+                                    Page 2
+
+
+
+
+
+Constraint Summary (cont)
+-------------------------
+   Total number of constraints dropped: 0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 61 MB
+Checksum -- map: a1e608a0df22f9368d1f8cec68c069b036440deb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor
+     Corporation,  All rights reserved.

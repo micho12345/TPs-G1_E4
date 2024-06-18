@@ -1,0 +1,23 @@
+----------------------------------------------------------------------
+Report for cell main.TECH
+Register bits:  13 of 5280 (0.246%)
+I/O cells:      13
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        12          100.0
+                            FD1P3XZ        13          100.0
+                                 IB         1          100.0
+                               LUT4        20          100.0
+                                 OB        12          100.0
+SUB MODULES
+                     TriangularWave         1
+                              TOTAL        59
+----------------------------------------------------------------------
+Report for cell TriangularWave.v1
+Instance Path : tw_gen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12          100.0
+                            FD1P3XZ        13          100.0
+                               LUT4        20          100.0
+                              TOTAL        45

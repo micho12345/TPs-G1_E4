@@ -49,7 +49,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.2.0.38.1
-Mapped on: Sat Jun 15 12:05:56 2024
+Mapped on: Tue Jun 18 15:59:22 2024
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
@@ -62,11 +62,11 @@ Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc D:/Facultad ITBA/Ano
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of slice registers:  88 out of  5280 (2%)
+   Number of slice registers:  42 out of  5280 (1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           3838 out of  5280 (73%)
-      Number of logic LUT4s:             3772
-      Number of ripple logic:             33 (66 LUT4s)
+   Number of LUT4s:           1319 out of  5280 (25%)
+      Number of logic LUT4s:             1281
+      Number of ripple logic:             19 (38 LUT4s)
    Number of IO sites used:   7 out of 39 (18%)
       Number of IO sites used for general PIO: 7
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -92,25 +92,23 @@ Command line:   map -i TP3_E4_TP3_E4_syn.udb -pdc D:/Facultad ITBA/Ano
       Net tw_gen.slow_clk: 12 loads, 12 rising, 0 falling (Driver: Pin
      tw_gen.slow_clk_c/Q)
       Net clk_c: 7 loads, 7 rising, 0 falling (Driver: Port clk)
-      Net sine_gen.slow_clk: 54 loads, 54 rising, 0 falling (Driver: Pin
+      Net sine_gen.slow_clk: 18 loads, 18 rising, 0 falling (Driver: Pin
      sine_gen.slow_clk_c/Q)
    Number of Clock Enables:  0
-   Number of LSRs:  4
-      Net sine_gen.address3[11]: 1 loads, 1 SLICEs
-      Net sine_gen.address2[11]: 1 loads, 1 SLICEs
+   Number of LSRs:  2
+      Net sine_gen.n203173: 4 loads, 4 SLICEs
       Net sine_gen.address1[11]: 1 loads, 1 SLICEs
-      Net sine_gen.n609247: 4 loads, 4 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net sine_gen.address1[4]: 414 loads
-      Net sine_gen.address3[4]: 411 loads
-      Net sine_gen.address2[4]: 398 loads
-      Net sine_gen.address1[3]: 371 loads
-      Net sine_gen.address3[3]: 369 loads
-      Net sine_gen.address2[3]: 367 loads
-      Net sine_gen.address2[5]: 350 loads
-      Net sine_gen.address3[5]: 329 loads
-      Net sine_gen.address3[2]: 326 loads
-      Net sine_gen.address1[2]: 322 loads
+      Net sine_gen.address1[4]: 419 loads
+      Net sine_gen.address1[3]: 351 loads
+      Net sine_gen.address1[2]: 317 loads
+      Net sine_gen.address1[5]: 308 loads
+      Net sine_gen.address1[1]: 302 loads
+      Net sine_gen.address1[0]: 284 loads
+      Net sine_gen.address1[6]: 245 loads
+      Net sine_gen.address1[7]: 154 loads
+      Net sine_gen.address1[9]: 64 loads
+      Net sine_gen.address1[8]: 53 loads
 
    Number of warnings:  20
    Number of errors:    0
@@ -199,10 +197,10 @@ Block i1 was optimized away.
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 
-   Total CPU Time: 2 secs
+   Total CPU Time: 1 secs
    Total REAL Time: 2 secs
-   Peak Memory Usage: 123 MB
-Checksum -- map: b7a472cedcd54f84c751c033e06fae6c5d94a4a1
+   Peak Memory Usage: 81 MB
+Checksum -- map: 314245b54545eaddfb273ae32a6b0660980fedd0
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.

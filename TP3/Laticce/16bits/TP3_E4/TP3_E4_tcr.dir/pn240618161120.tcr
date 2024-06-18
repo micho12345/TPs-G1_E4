@@ -1,0 +1,9 @@
+#Start recording tcl command: 6/18/2024 16:07:38
+#Project Location: D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4; Project name: TP3_E4
+prj_open "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/TP3_E4.rdf"
+prj_remove_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/SineWaveLUT.v"
+prj_remove_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/ModulatingWaves.v"
+prj_remove_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/TP3_E4/source/TP3_E4/Comparator.v"
+prj_save 
+prj_close
+#Stop recording: 6/18/2024 16:11:20

@@ -15,7 +15,7 @@ Constraint Summary:
  
 Writing output file 'TP3_E4_TP3_E4_syn.udb'.
 POSTSYN finished successfully.
-Total CPU Time: 1 secs 
+Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 56 MB
-Checksum -- postsyn: 6512953fda4887c19602878d47fc20bc1f7aa3ee
+Peak Memory Usage: 41 MB
+Checksum -- postsyn: 3b47759ae5980825714b985d20c43ee56f4fea82

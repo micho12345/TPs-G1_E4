@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1718739264">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1718739264"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1718739264"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1718739265"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1718739247">
+            <Task name="Map" build_result="2" update_result="0" update_time="1718739247"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1718737881"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1718739257">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1718739257"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1718739258"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1718737881"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1718739242">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1718739242"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1718739258"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1718737932"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1718737932"/>
+        </Milestone>
+        <Report name="IBIS/triangular_test_triangular_test.ibs" last_build_time="1718739264" last_build_size="54493"/>
+        <Report name="triangular_test_triangular_test.bgn" last_build_time="1718739263" last_build_size="1361"/>
+        <Report name="triangular_test_triangular_test.bin" last_build_time="1718739263" last_build_size="104156"/>
+        <Report name="triangular_test_triangular_test.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="triangular_test_triangular_test.twr.html" last_build_time="1718739258" last_build_size="12721"/>
+        <Report name="triangular_test_triangular_test.udb" last_build_time="1718739257" last_build_size="9165"/>
+        <Report name="triangular_test_triangular_test_map.udb" last_build_time="1718739247" last_build_size="6110"/>
+        <Report name="triangular_test_triangular_test_rtl.udb" last_build_time="1718739241" last_build_size="3018"/>
+        <Report name="triangular_test_triangular_test_syn.udb" last_build_time="1718739242" last_build_size="3855"/>
+        <Report name="triangular_test_triangular_test_vo.sdf" last_build_time="1718739265" last_build_size="35521"/>
+        <Report name="triangular_test_triangular_test_vo.vo" last_build_time="1718739265" last_build_size="35491"/>
+    </Strategy>
+</BuildStatus>

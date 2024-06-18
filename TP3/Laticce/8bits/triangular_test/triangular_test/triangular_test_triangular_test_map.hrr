@@ -1,0 +1,22 @@
+---------------------------------------------------
+Report for cell main
+   Instance path: main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         47        100.0
+                               LUTGATE	         23        100.0
+                                LUTCCU	         24        100.0
+                                 IOBUF	         13        100.0
+                                PFUREG	         13        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                        TriangularWave	          1        93.6
+---------------------------------------------------
+Report for cell TriangularWave
+   Instance path: main/tw_gen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         44        93.6
+                               LUTGATE	         20        87.0
+                                LUTCCU	         24        100.0
+                                PFUREG	         13        100.0

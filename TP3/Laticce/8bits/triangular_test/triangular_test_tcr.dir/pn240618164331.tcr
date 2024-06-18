@@ -1,0 +1,26 @@
+#Start recording tcl command: 6/18/2024 16:11:21
+#Project Location: D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test; Project name: triangular_test
+prj_create -name "triangular_test" -impl "triangular_test" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test/source/triangular_test/triangular_test.sdc" "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test/source/triangular_test/triangular_test.pdc"
+prj_save 
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test/source/triangular_test/main.v"
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test/source/triangular_test/triangularWaves.v"
+prj_run PAR -impl triangular_test
+prj_run Export -impl triangular_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl triangular_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl triangular_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run PAR -impl triangular_test
+prj_run Export -impl triangular_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl triangular_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run PAR -impl triangular_test
+prj_run Export -impl triangular_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_save 
+prj_close
+#Stop recording: 6/18/2024 16:43:31

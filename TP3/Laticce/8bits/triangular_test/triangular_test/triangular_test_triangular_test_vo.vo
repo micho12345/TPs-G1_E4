@@ -1,0 +1,1019 @@
+
+// Verilog netlist produced by program backanno, Version Radiant Software (64-bit) 2023.2.0.38.1
+
+// backanno -o triangular_test_triangular_test_vo.vo -sp High-Performance_1.2V -w -neg -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits/triangular_test/promote.xml triangular_test_triangular_test.udb 
+// Netlist created on Tue Jun 18 16:34:17 2024
+// Netlist written on Tue Jun 18 16:34:25 2024
+// Design is for device iCE40UP5K
+// Design is for package SG48
+// Design is for performance grade High-Performance_1.2V
+
+`timescale 1 ns / 1 ps
+
+module main ( clk, tri_wave );
+  input  clk;
+  output [11:0] tri_wave;
+  wire   \tw_gen.n491 , tri_wave_c_5, \tw_gen.n166 , tri_wave_c_4, 
+         \tw_gen.n62_adj_25[3] , \tw_gen.n62_adj_25[4] , \tw_gen.n168 , 
+         \tw_gen.n485 , tri_wave_c_3, \tw_gen.n164 , tri_wave_c_2, 
+         \tw_gen.n62_adj_25[1] , \tw_gen.n62_adj_25[2] , \tw_gen.n476 , 
+         \tri_wave_pad[0].vcc , tri_wave_c_1, \tw_gen.n62_adj_26[0] , 
+         \tw_gen.n152 , \tw_gen.n503 , tri_wave_c_9, \tw_gen.n170 , 
+         tri_wave_c_8, \tw_gen.n62_adj_25[7] , \tw_gen.n62_adj_25[8] , 
+         \tw_gen.n172 , \tw_gen.n509 , tri_wave_c_11, tri_wave_c_10, 
+         \tw_gen.n62_adj_25[9] , \tw_gen.n62_adj_25[10] , \tw_gen.n482 , 
+         \tw_gen.n62_adj_25[0] , \tw_gen.n506 , \tw_gen.n160 , 
+         \tw_gen.n62_adj_26[9] , \tw_gen.n62_adj_26[10] , \tw_gen.n500 , 
+         \tw_gen.n158 , \tw_gen.n62_adj_26[7] , \tw_gen.n62_adj_26[8] , 
+         \tw_gen.n494 , tri_wave_c_7, \tw_gen.n156 , tri_wave_c_6, 
+         \tw_gen.n62_adj_26[5] , \tw_gen.n62_adj_26[6] , \tw_gen.n488 , 
+         \tw_gen.n154 , \tw_gen.n62_adj_26[3] , \tw_gen.n62_adj_26[4] , 
+         \tw_gen.n479 , \tw_gen.n62_adj_26[1] , \tw_gen.n62_adj_26[2] , 
+         \tw_gen.n497 , \tw_gen.n62_adj_25[5] , \tw_gen.n62_adj_25[6] , 
+         \tw_gen.n62[0] , \tw_gen.n62[1] , \tw_gen.direction , 
+         \tw_gen.clk_divider_N_13 , clk_c, \tw_gen.n62[2] , \tw_gen.n62[3] , 
+         \tw_gen.n62[5] , \tw_gen.n62[4] , \tw_gen.n62[7] , \tw_gen.n62[6] , 
+         \tw_gen.n62[9] , \tw_gen.n62[8] , \tw_gen.n62[10] , \tw_gen.n17 , 
+         \tw_gen.n16 , \tw_gen.n249 , \tw_gen.n19 , \tw_gen.n21 , \tw_gen.n20 , 
+         \tw_gen.n142 , \tw_gen.clk_divider_N_13$n0 , \tw_gen.clk_divider , 
+         GND_net, \tw_gen.n144 ;
+
+  tw_gen_SLICE_0 \tw_gen.SLICE_0 ( .D1(\tw_gen.n491 ), .B1(tri_wave_c_5), 
+    .D0(\tw_gen.n166 ), .B0(tri_wave_c_4), .CIN0(\tw_gen.n166 ), 
+    .CIN1(\tw_gen.n491 ), .F0(\tw_gen.n62_adj_25[3] ), 
+    .F1(\tw_gen.n62_adj_25[4] ), .COUT1(\tw_gen.n168 ), .COUT0(\tw_gen.n491 ));
+  tw_gen_SLICE_1 \tw_gen.SLICE_1 ( .D1(\tw_gen.n485 ), .B1(tri_wave_c_3), 
+    .D0(\tw_gen.n164 ), .B0(tri_wave_c_2), .CIN0(\tw_gen.n164 ), 
+    .CIN1(\tw_gen.n485 ), .F0(\tw_gen.n62_adj_25[1] ), 
+    .F1(\tw_gen.n62_adj_25[2] ), .COUT1(\tw_gen.n166 ), .COUT0(\tw_gen.n485 ));
+  tw_gen_SLICE_2 \tw_gen.SLICE_2 ( .D1(\tw_gen.n476 ), 
+    .C1(\tri_wave_pad[0].vcc ), .B1(tri_wave_c_1), .CIN1(\tw_gen.n476 ), 
+    .F1(\tw_gen.n62_adj_26[0] ), .COUT1(\tw_gen.n152 ), .COUT0(\tw_gen.n476 ));
+  tw_gen_SLICE_3 \tw_gen.SLICE_3 ( .D1(\tw_gen.n503 ), .B1(tri_wave_c_9), 
+    .D0(\tw_gen.n170 ), .B0(tri_wave_c_8), .CIN0(\tw_gen.n170 ), 
+    .CIN1(\tw_gen.n503 ), .F0(\tw_gen.n62_adj_25[7] ), 
+    .F1(\tw_gen.n62_adj_25[8] ), .COUT1(\tw_gen.n172 ), .COUT0(\tw_gen.n503 ));
+  tw_gen_SLICE_4 \tw_gen.SLICE_4 ( .D1(\tw_gen.n509 ), .B1(tri_wave_c_11), 
+    .D0(\tw_gen.n172 ), .B0(tri_wave_c_10), .CIN0(\tw_gen.n172 ), 
+    .CIN1(\tw_gen.n509 ), .F0(\tw_gen.n62_adj_25[9] ), 
+    .F1(\tw_gen.n62_adj_25[10] ), .COUT0(\tw_gen.n509 ));
+  tw_gen_SLICE_5 \tw_gen.SLICE_5 ( .D1(\tw_gen.n482 ), 
+    .C1(\tri_wave_pad[0].vcc ), .B1(tri_wave_c_1), .CIN1(\tw_gen.n482 ), 
+    .F1(\tw_gen.n62_adj_25[0] ), .COUT1(\tw_gen.n164 ), .COUT0(\tw_gen.n482 ));
+  tw_gen_SLICE_6 \tw_gen.SLICE_6 ( .D1(\tw_gen.n506 ), 
+    .C1(\tri_wave_pad[0].vcc ), .B1(tri_wave_c_11), .D0(\tw_gen.n160 ), 
+    .C0(\tri_wave_pad[0].vcc ), .B0(tri_wave_c_10), .CIN0(\tw_gen.n160 ), 
+    .CIN1(\tw_gen.n506 ), .F0(\tw_gen.n62_adj_26[9] ), 
+    .F1(\tw_gen.n62_adj_26[10] ), .COUT0(\tw_gen.n506 ));
+  tw_gen_SLICE_7 \tw_gen.SLICE_7 ( .D1(\tw_gen.n500 ), 
+    .C1(\tri_wave_pad[0].vcc ), .B1(tri_wave_c_9), .D0(\tw_gen.n158 ), 
+    .C0(\tri_wave_pad[0].vcc ), .B0(tri_wave_c_8), .CIN0(\tw_gen.n158 ), 
+    .CIN1(\tw_gen.n500 ), .F0(\tw_gen.n62_adj_26[7] ), 
+    .F1(\tw_gen.n62_adj_26[8] ), .COUT1(\tw_gen.n160 ), .COUT0(\tw_gen.n500 ));
+  tw_gen_SLICE_8 \tw_gen.SLICE_8 ( .D1(\tw_gen.n494 ), 
+    .C1(\tri_wave_pad[0].vcc ), .B1(tri_wave_c_7), .D0(\tw_gen.n156 ), 
+    .C0(\tri_wave_pad[0].vcc ), .B0(tri_wave_c_6), .CIN0(\tw_gen.n156 ), 
+    .CIN1(\tw_gen.n494 ), .F0(\tw_gen.n62_adj_26[5] ), 
+    .F1(\tw_gen.n62_adj_26[6] ), .COUT1(\tw_gen.n158 ), .COUT0(\tw_gen.n494 ));
+  tw_gen_SLICE_9 \tw_gen.SLICE_9 ( .D1(\tw_gen.n488 ), 
+    .C1(\tri_wave_pad[0].vcc ), .B1(tri_wave_c_5), .D0(\tw_gen.n154 ), 
+    .C0(\tri_wave_pad[0].vcc ), .B0(tri_wave_c_4), .CIN0(\tw_gen.n154 ), 
+    .CIN1(\tw_gen.n488 ), .F0(\tw_gen.n62_adj_26[3] ), 
+    .F1(\tw_gen.n62_adj_26[4] ), .COUT1(\tw_gen.n156 ), .COUT0(\tw_gen.n488 ));
+  tw_gen_SLICE_10 \tw_gen.SLICE_10 ( .D1(\tw_gen.n479 ), 
+    .C1(\tri_wave_pad[0].vcc ), .B1(tri_wave_c_3), .D0(\tw_gen.n152 ), 
+    .C0(\tri_wave_pad[0].vcc ), .B0(tri_wave_c_2), .CIN0(\tw_gen.n152 ), 
+    .CIN1(\tw_gen.n479 ), .F0(\tw_gen.n62_adj_26[1] ), 
+    .F1(\tw_gen.n62_adj_26[2] ), .COUT1(\tw_gen.n154 ), .COUT0(\tw_gen.n479 ));
+  tw_gen_SLICE_11 \tw_gen.SLICE_11 ( .D1(\tw_gen.n497 ), .B1(tri_wave_c_7), 
+    .D0(\tw_gen.n168 ), .B0(tri_wave_c_6), .CIN0(\tw_gen.n168 ), 
+    .CIN1(\tw_gen.n497 ), .F0(\tw_gen.n62_adj_25[5] ), 
+    .F1(\tw_gen.n62_adj_25[6] ), .COUT1(\tw_gen.n170 ), .COUT0(\tw_gen.n497 ));
+  tw_gen_SLICE_12 \tw_gen.SLICE_12 ( .DI1(\tw_gen.n62[0] ), 
+    .DI0(\tw_gen.n62[1] ), .D1(\tw_gen.n62_adj_25[0] ), 
+    .B1(\tw_gen.n62_adj_26[0] ), .A1(\tw_gen.direction ), 
+    .D0(\tw_gen.n62_adj_25[1] ), .C0(\tw_gen.n62_adj_26[1] ), 
+    .B0(\tw_gen.direction ), .CE(\tw_gen.clk_divider_N_13 ), .CLK(clk_c), 
+    .Q0(tri_wave_c_2), .Q1(tri_wave_c_1), .F0(\tw_gen.n62[1] ), 
+    .F1(\tw_gen.n62[0] ));
+  tw_gen_SLICE_14 \tw_gen.SLICE_14 ( .DI1(\tw_gen.n62[2] ), 
+    .DI0(\tw_gen.n62[3] ), .D1(\tw_gen.n62_adj_25[2] ), 
+    .C1(\tw_gen.direction ), .B1(\tw_gen.n62_adj_26[2] ), 
+    .D0(\tw_gen.direction ), .C0(\tw_gen.n62_adj_26[3] ), 
+    .A0(\tw_gen.n62_adj_25[3] ), .CE(\tw_gen.clk_divider_N_13 ), .CLK(clk_c), 
+    .Q0(tri_wave_c_4), .Q1(tri_wave_c_3), .F0(\tw_gen.n62[3] ), 
+    .F1(\tw_gen.n62[2] ));
+  tw_gen_SLICE_16 \tw_gen.SLICE_16 ( .DI1(\tw_gen.n62[5] ), 
+    .DI0(\tw_gen.n62[4] ), .C1(\tw_gen.n62_adj_25[5] ), 
+    .B1(\tw_gen.n62_adj_26[5] ), .A1(\tw_gen.direction ), 
+    .D0(\tw_gen.direction ), .C0(\tw_gen.n62_adj_26[4] ), 
+    .A0(\tw_gen.n62_adj_25[4] ), .CE(\tw_gen.clk_divider_N_13 ), .CLK(clk_c), 
+    .Q0(tri_wave_c_5), .Q1(tri_wave_c_6), .F0(\tw_gen.n62[4] ), 
+    .F1(\tw_gen.n62[5] ));
+  tw_gen_SLICE_19 \tw_gen.SLICE_19 ( .DI1(\tw_gen.n62[7] ), 
+    .DI0(\tw_gen.n62[6] ), .C1(\tw_gen.n62_adj_25[7] ), 
+    .B1(\tw_gen.n62_adj_26[7] ), .A1(\tw_gen.direction ), 
+    .D0(\tw_gen.n62_adj_26[6] ), .C0(\tw_gen.n62_adj_25[6] ), 
+    .B0(\tw_gen.direction ), .CE(\tw_gen.clk_divider_N_13 ), .CLK(clk_c), 
+    .Q0(tri_wave_c_7), .Q1(tri_wave_c_8), .F0(\tw_gen.n62[6] ), 
+    .F1(\tw_gen.n62[7] ));
+  tw_gen_SLICE_21 \tw_gen.SLICE_21 ( .DI1(\tw_gen.n62[9] ), 
+    .DI0(\tw_gen.n62[8] ), .D1(\tw_gen.direction ), 
+    .C1(\tw_gen.n62_adj_26[9] ), .A1(\tw_gen.n62_adj_25[9] ), 
+    .C0(\tw_gen.n62_adj_25[8] ), .B0(\tw_gen.direction ), 
+    .A0(\tw_gen.n62_adj_26[8] ), .CE(\tw_gen.clk_divider_N_13 ), .CLK(clk_c), 
+    .Q0(tri_wave_c_9), .Q1(tri_wave_c_10), .F0(\tw_gen.n62[8] ), 
+    .F1(\tw_gen.n62[9] ));
+  tw_gen_SLICE_23 \tw_gen.SLICE_23 ( .DI0(\tw_gen.n62[10] ), 
+    .D0(\tw_gen.direction ), .C0(\tw_gen.n62_adj_25[10] ), 
+    .A0(\tw_gen.n62_adj_26[10] ), .CE(\tw_gen.clk_divider_N_13 ), .CLK(clk_c), 
+    .Q0(tri_wave_c_11), .F0(\tw_gen.n62[10] ));
+  tw_gen_SLICE_25 \tw_gen.SLICE_25 ( .D1(tri_wave_c_3), .C1(\tw_gen.n17 ), 
+    .B1(tri_wave_c_4), .A1(\tw_gen.n16 ), .D0(tri_wave_c_9), 
+    .C0(tri_wave_c_11), .B0(tri_wave_c_7), .A0(tri_wave_c_6), 
+    .F0(\tw_gen.n17 ), .F1(\tw_gen.n249 ));
+  tw_gen_SLICE_26 \tw_gen.SLICE_26 ( .D1(tri_wave_c_10), .C1(tri_wave_c_1), 
+    .B1(tri_wave_c_5), .A1(tri_wave_c_8), .D0(tri_wave_c_10), 
+    .C0(tri_wave_c_5), .B0(tri_wave_c_8), .A0(tri_wave_c_2), .F0(\tw_gen.n16 ), 
+    .F1(\tw_gen.n19 ));
+  tw_gen_SLICE_27 \tw_gen.SLICE_27 ( .D1(\tw_gen.direction ), 
+    .C1(\tw_gen.n21 ), .B1(\tw_gen.n19 ), .A1(\tw_gen.n20 ), .D0(tri_wave_c_3), 
+    .C0(tri_wave_c_9), .B0(tri_wave_c_7), .A0(tri_wave_c_4), .F0(\tw_gen.n21 ), 
+    .F1(\tw_gen.n142 ));
+  tw_gen_SLICE_28 \tw_gen.SLICE_28 ( .DI1(\tw_gen.clk_divider_N_13$n0 ), 
+    .D1(\tw_gen.clk_divider ), .D0(tri_wave_c_2), .C0(\tw_gen.clk_divider ), 
+    .B0(tri_wave_c_11), .A0(tri_wave_c_6), .CLK(clk_c), 
+    .Q1(\tw_gen.clk_divider ), .F0(\tw_gen.n20 ), 
+    .F1(\tw_gen.clk_divider_N_13$n0 ));
+  SLICE_29 SLICE_29( .F0(GND_net));
+  tw_gen_SLICE_30 \tw_gen.SLICE_30 ( .DI1(\tw_gen.n144 ), 
+    .D1(\tw_gen.clk_divider ), .C1(tri_wave_c_1), .B1(\tw_gen.n249 ), 
+    .A1(\tw_gen.n142 ), .A0(\tw_gen.clk_divider ), .CLK(clk_c), 
+    .Q1(\tw_gen.direction ), .F0(\tw_gen.clk_divider_N_13 ), 
+    .F1(\tw_gen.n144 ));
+  tri_wave_pad_0__SLICE_34 \tri_wave_pad[0].SLICE_34 ( 
+    .F0(\tri_wave_pad[0].vcc ));
+  tri_wave_0_ \tri_wave[0]_I ( .PADDO(GND_net), .triwave0(tri_wave[0]));
+  tri_wave_4_ \tri_wave[4]_I ( .PADDO(tri_wave_c_4), .triwave4(tri_wave[4]));
+  tri_wave_1_ \tri_wave[1]_I ( .PADDO(tri_wave_c_1), .triwave1(tri_wave[1]));
+  clk clk_I( .PADDI(clk_c), .clk(clk));
+  tri_wave_2_ \tri_wave[2]_I ( .PADDO(tri_wave_c_2), .triwave2(tri_wave[2]));
+  tri_wave_5_ \tri_wave[5]_I ( .PADDO(tri_wave_c_5), .triwave5(tri_wave[5]));
+  tri_wave_6_ \tri_wave[6]_I ( .PADDO(tri_wave_c_6), .triwave6(tri_wave[6]));
+  tri_wave_7_ \tri_wave[7]_I ( .PADDO(tri_wave_c_7), .triwave7(tri_wave[7]));
+  tri_wave_8_ \tri_wave[8]_I ( .PADDO(tri_wave_c_8), .triwave8(tri_wave[8]));
+  tri_wave_9_ \tri_wave[9]_I ( .PADDO(tri_wave_c_9), .triwave9(tri_wave[9]));
+  tri_wave_10_ \tri_wave[10]_I ( .PADDO(tri_wave_c_10), 
+    .triwave10(tri_wave[10]));
+  tri_wave_11_ \tri_wave[11]_I ( .PADDO(tri_wave_c_11), 
+    .triwave11(tri_wave[11]));
+  tri_wave_3_ \tri_wave[3]_I ( .PADDO(tri_wave_c_3), .triwave3(tri_wave[3]));
+endmodule
+
+module tw_gen_SLICE_0 ( input D1, B1, D0, B0, CIN0, CIN1, output F0, F1, COUT1, 
+    COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_20_add_5_5 ( .A0(GNDI), .B0(B0), .C0(GNDI), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module fa2 ( input A0, B0, C0, D0, A1, B1, C1, D1, CI0, CI1, output S0, S1, 
+    CO0, CO1 );
+
+  FA2 inst1( .A0(A0), .B0(B0), .C0(C0), .D0(D0), .CI0(CI0), .A1(A1), .B1(B1), 
+    .C1(C1), .D1(D1), .CI1(CI1), .CO0(CO0), .CO1(CO1), .S0(S0), .S1(S1));
+  defparam inst1.INIT0 = "0xc33c";
+  defparam inst1.INIT1 = "0xc33c";
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module tw_gen_SLICE_1 ( input D1, B1, D0, B0, CIN0, CIN1, output F0, F1, COUT1, 
+    COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_20_add_5_3 ( .A0(GNDI), .B0(B0), .C0(GNDI), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_2 ( input D1, C1, B1, CIN1, output F1, COUT1, COUT0 );
+  wire   GNDI, VCCI;
+
+  fa2 \tw_gen/add_19_add_5_1 ( .A0(GNDI), .B0(GNDI), .C0(GNDI), .D0(VCCI), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(VCCI), .CI1(CIN1), .S0(), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module vcc ( output PWR1 );
+
+  VHI INST1( .Z(PWR1));
+endmodule
+
+module tw_gen_SLICE_3 ( input D1, B1, D0, B0, CIN0, CIN1, output F0, F1, COUT1, 
+    COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_20_add_5_9 ( .A0(GNDI), .B0(B0), .C0(GNDI), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_4 ( input D1, B1, D0, B0, CIN0, CIN1, output F0, F1, COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_20_add_5_11 ( .A0(GNDI), .B0(B0), .C0(GNDI), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_5 ( input D1, C1, B1, CIN1, output F1, COUT1, COUT0 );
+  wire   GNDI, VCCI;
+
+  fa2 \tw_gen/add_20_add_5_1 ( .A0(GNDI), .B0(GNDI), .C0(GNDI), .D0(VCCI), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(VCCI), .CI1(CIN1), .S0(), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_6 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, output F0, 
+    F1, COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_19_add_5_11 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1());
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_7 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_19_add_5_9 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), .A1(GNDI), 
+    .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), .S1(F1), 
+    .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_8 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_19_add_5_7 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), .A1(GNDI), 
+    .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), .S1(F1), 
+    .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_9 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_19_add_5_5 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), .A1(GNDI), 
+    .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), .S1(F1), 
+    .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_10 ( input D1, C1, B1, D0, C0, B0, CIN0, CIN1, output F0, 
+    F1, COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_19_add_5_3 ( .A0(GNDI), .B0(B0), .C0(C0), .D0(D0), .A1(GNDI), 
+    .B1(B1), .C1(C1), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), .S1(F1), 
+    .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (C1 => COUT1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (C0 => COUT0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_11 ( input D1, B1, D0, B0, CIN0, CIN1, output F0, F1, 
+    COUT1, COUT0 );
+  wire   GNDI;
+
+  fa2 \tw_gen/add_20_add_5_7 ( .A0(GNDI), .B0(B0), .C0(GNDI), .D0(D0), 
+    .A1(GNDI), .B1(B1), .C1(GNDI), .D1(D1), .CI0(CIN0), .CI1(CIN1), .S0(F0), 
+    .S1(F1), .CO0(COUT0), .CO1(COUT1));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (B1 => COUT1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (B0 => COUT0) = (0:0:0,0:0:0);
+    (CIN0 => COUT0) = (0:0:0,0:0:0);
+    (CIN1 => COUT1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tw_gen_SLICE_12 ( input DI1, DI0, D1, B1, A1, D0, C0, B0, CE, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly;
+
+  lut4 \tw_gen/mux_16_i1_3_lut ( .A(A1), .B(B1), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40001 \tw_gen/mux_16_i2_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  ffsre2 \tw_gen/count_i2 ( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  ffsre2 \tw_gen/count_i3 ( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xEE44") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFC30") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module ffsre2 ( input D0, SP, CK, LSR, output Q );
+
+  FD1P3XZ INST01( .D(D0), .SP(SP), .CK(CK), .SR(LSR), .Q(Q));
+  defparam INST01.REGSET = "RESET";
+  defparam INST01.SRMODE = "CE_OVER_LSR";
+endmodule
+
+module tw_gen_SLICE_14 ( input DI1, DI0, D1, C1, B1, D0, C0, A0, CE, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly;
+
+  lut40002 \tw_gen/mux_16_i3_3_lut ( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40003 \tw_gen/mux_16_i4_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  ffsre2 \tw_gen/count_i4 ( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  ffsre2 \tw_gen/count_i5 ( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFC0C") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAAF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_16 ( input DI1, DI0, C1, B1, A1, D0, C0, A0, CE, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly;
+
+  lut40004 \tw_gen/mux_16_i6_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40003 \tw_gen/mux_16_i5_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  ffsre2 \tw_gen/count_i7 ( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  ffsre2 \tw_gen/count_i6 ( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xE4E4") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_19 ( input DI1, DI0, C1, B1, A1, D0, C0, B0, CE, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly;
+
+  lut40004 \tw_gen/mux_16_i8_3_lut ( .A(A1), .B(B1), .C(C1), .D(GNDI), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40005 \tw_gen/mux_16_i7_3_lut ( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+  ffsre2 \tw_gen/count_i9 ( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  ffsre2 \tw_gen/count_i8 ( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q0));
+
+  specify
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF3C0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_21 ( input DI1, DI0, D1, C1, A1, C0, B0, A0, CE, CLK, 
+    output Q0, Q1, F0, F1 );
+  wire   GNDI, DI1_dly, CLK_dly, DI0_dly, CE_dly;
+
+  lut40006 \tw_gen/mux_16_i10_3_lut ( .A(A1), .B(GNDI), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40007 \tw_gen/mux_16_i9_3_lut ( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  ffsre2 \tw_gen/count_i11 ( .D0(DI1_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  ffsre2 \tw_gen/count_i10 ( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAAF0") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xE2E2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_23 ( input DI0, D0, C0, A0, CE, CLK, output Q0, F0 );
+  wire   GNDI, DI0_dly, CLK_dly, CE_dly;
+
+  lut40008 \tw_gen/mux_16_i11_3_lut ( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \tw_gen/count_i12 ( .D0(DI0_dly), .SP(CE_dly), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q0));
+
+  specify
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q0) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI0, 0:0:0, 0:0:0,,,, CLK_dly, DI0_dly);
+    $setuphold (posedge CLK, CE, 0:0:0, 0:0:0,,,, CLK_dly, CE_dly);
+  endspecify
+
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xF0AA") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_25 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40009 \tw_gen/i9_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40010 \tw_gen/i7_4_lut_adj_2 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0800") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_26 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40011 \tw_gen/i7_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40012 \tw_gen/i6_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFEF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x8000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_27 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40013 \tw_gen/i54_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40014 \tw_gen/i9_4_lut_adj_1 ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFF01") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFE") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_28 ( input DI1, D1, D0, C0, B0, A0, CLK, output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40015 \tw_gen.SLICE_28_K1 ( .A(GNDI), .B(GNDI), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40016 \tw_gen/i8_4_lut ( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+  ffsre2 \tw_gen/clk_divider_c ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x00FF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40016 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFB") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module SLICE_29 ( output F0 );
+  wire   GNDI;
+
+  lut40017 i5( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x0000") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tw_gen_SLICE_30 ( input DI1, D1, C1, B1, A1, A0, CLK, output Q1, F0, F1 );
+  wire   GNDI, VCCI, DI1_dly, CLK_dly;
+
+  lut40018 \tw_gen/i49_4_lut_4_lut ( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40019 \tw_gen/i5_1_lut ( .A(A0), .B(GNDI), .C(GNDI), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+  ffsre2 \tw_gen/direction_c ( .D0(DI1_dly), .SP(VCCI), .CK(CLK_dly), 
+    .LSR(GNDI), .Q(Q1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+    (CLK => Q1) = (0:0:0,0:0:0);
+    $setuphold (posedge CLK, DI1, 0:0:0, 0:0:0,,,, CLK_dly, DI1_dly);
+  endspecify
+
+endmodule
+
+module lut40018 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xAAA2") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module lut40019 ( input A, B, C, D, output Z );
+
+  LUT4 #("0x5555") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tri_wave_pad_0__SLICE_34 ( output F0 );
+  wire   GNDI;
+
+  lut40020 \tri_wave_pad[0].vhi_inst ( .A(GNDI), .B(GNDI), .C(GNDI), .D(GNDI), 
+    .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+  endspecify
+
+endmodule
+
+module lut40020 ( input A, B, C, D, output Z );
+
+  LUT4 #("0xFFFF") INST10( .A(A), .B(B), .C(C), .D(D), .Z(Z));
+endmodule
+
+module tri_wave_0_ ( input PADDO, output triwave0 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[0].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave0));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module BB_B_B ( input T_N, I, output O, inout B );
+
+  BB_B INST10( .T_N(T_N), .I(I), .O(O), .B(B));
+endmodule
+
+module tri_wave_4_ ( input PADDO, output triwave4 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[4].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave4));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave4) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_1_ ( input PADDO, output triwave1 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[1].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave1));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave1) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module clk ( output PADDI, input clk );
+  wire   GNDI;
+
+  BB_B_B \clk_pad.bb_inst ( .T_N(GNDI), .I(GNDI), .O(PADDI), .B(clk));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (clk => PADDI) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_2_ ( input PADDO, output triwave2 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[2].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave2));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave2) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_5_ ( input PADDO, output triwave5 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[5].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave5));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave5) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_6_ ( input PADDO, output triwave6 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[6].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave6));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave6) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_7_ ( input PADDO, output triwave7 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[7].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave7));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave7) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_8_ ( input PADDO, output triwave8 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[8].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave8));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave8) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_9_ ( input PADDO, output triwave9 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[9].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave9));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave9) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_10_ ( input PADDO, output triwave10 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[10].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(triwave10));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave10) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_11_ ( input PADDO, output triwave11 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[11].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), 
+    .B(triwave11));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave11) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module tri_wave_3_ ( input PADDO, output triwave3 );
+  wire   VCCI;
+
+  BB_B_B \tri_wave_pad[3].bb_inst ( .T_N(VCCI), .I(PADDO), .O(), .B(triwave3));
+  vcc DRIVEVCC( .PWR1(VCCI));
+
+  specify
+    (PADDO => triwave3) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule

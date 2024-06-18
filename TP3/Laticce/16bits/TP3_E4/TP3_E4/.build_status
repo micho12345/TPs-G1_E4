@@ -6,8 +6,8 @@
             <Task name="IBIS" build_result="0" update_result="2" update_time="1717705764"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1717705764"/>
         </Milestone>
-        <Milestone name="Map" build_result="1" build_time="1717706449">
-            <Task name="Map" build_result="1" update_result="2" update_time="1717706449"/>
+        <Milestone name="Map" build_result="0" build_time="1718737689">
+            <Task name="Map" build_result="0" update_result="2" update_time="1718737689"/>
             <Task name="MapTrace" build_result="0" update_result="2" update_time="1716926231"/>
         </Milestone>
         <Milestone name="PAR" build_result="0" build_time="1717705764">
@@ -15,11 +15,11 @@
             <Task name="PARTrace" build_result="0" update_result="2" update_time="1717705764"/>
             <Task name="IOTiming" build_result="0" update_result="2" update_time="1716926231"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1717706425">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1717706425"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1717706437"/>
-            <Task name="SynTrace" build_result="0" update_result="2" update_time="1717705949"/>
-            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1717705949"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1718737705">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1718737705"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1718737705"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1718737705"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1718737705"/>
         </Milestone>
         <Report name="IBIS/TP3_E4_TP3_E4.ibs" last_build_time="1717370219" last_build_size="54190"/>
         <Report name="TP3_E4_TP3_E4.bgn" last_build_time="1717370219" last_build_size="1201"/>
