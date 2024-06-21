@@ -1,0 +1,112 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  159 of 5280 (3.011%)
+I/O cells:      15
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        64          100.0
+                            FD1P3XZ       159          100.0
+                                 IB         1          100.0
+                              IOL_B         3          100.0
+                               LUT4      2583          100.0
+                                 OB        14          100.0
+SUB MODULES
+                         Comparator         1
+                      Comparator_U2         1
+                      Comparator_U3         1
+                  SineWaveGenerator         1
+                     TriangularWave         1
+                en_gen(LIMIT=1,N=1)         1
+                   en_gen(LIMIT=11)         1
+                                pwm         1
+                             pwm_U0         1
+                             pwm_U1         1
+                            rst_gen         1
+                              TOTAL      2835
+----------------------------------------------------------------------
+Report for cell TriangularWave.v1
+Instance Path : triangular_gen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        12           18.8
+                            FD1P3XZ        12            7.5
+                               LUT4        19            0.7
+                              TOTAL        43
+----------------------------------------------------------------------
+Report for cell pwm_U0.v1
+Instance Path : pwm_inst2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         7           10.9
+                            FD1P3XZ        13            8.2
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell pwm_U1.v1
+Instance Path : pwm_inst1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         7           10.9
+                            FD1P3XZ        13            8.2
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell en_gen(LIMIT=1,N=1).v1
+Instance Path : en_gen_tri
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         2            1.3
+                               LUT4         1            0.0
+                              TOTAL         3
+----------------------------------------------------------------------
+Report for cell en_gen(LIMIT=11).v1
+Instance Path : en_gen_sin
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         5            3.1
+                               LUT4         5            0.2
+                              TOTAL        10
+----------------------------------------------------------------------
+Report for cell Comparator_U2.v1
+Instance Path : comp2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        12            0.5
+                              TOTAL        12
+----------------------------------------------------------------------
+Report for cell Comparator_U3.v1
+Instance Path : comp1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        10            0.4
+                              TOTAL        10
+----------------------------------------------------------------------
+Report for cell SineWaveGenerator.v1
+Instance Path : sine_gen
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        31           48.4
+                            FD1P3XZ        97           61.0
+                               LUT4       314           12.2
+                              TOTAL       442
+----------------------------------------------------------------------
+Report for cell pwm.v1
+Instance Path : pwm_inst3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         7           10.9
+                            FD1P3XZ        13            8.2
+                              TOTAL        20
+----------------------------------------------------------------------
+Report for cell Comparator.v1
+Instance Path : comp3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        12            0.5
+                              TOTAL        12
+----------------------------------------------------------------------
+Report for cell rst_gen.v1
+Instance Path : rst_gen_inst
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ         4            2.5
+                               LUT4         9            0.3
+                              TOTAL        13

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2023.2.0.38.1" title="test_pablo" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="test_pablo">
+    <Options/>
+    <Implementation title="test_pablo" dir="test_pablo" description="test_pablo" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="top"/>
+        <Source name="C:/Users/valen/Downloads/top/en_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="C:/Users/valen/Downloads/top/ModulatingWaves.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="C:/Users/valen/Downloads/top/pwm.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="C:/Users/valen/Downloads/top/rst_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="C:/Users/valen/Downloads/top/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="source/test_pablo.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="source/test_pablo/test_pablo.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="test_pablo1.sty"/>
+</RadiantProject>

@@ -1,0 +1,18 @@
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Fri Jun 21 14:59:26 2024
+
+Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
+	sin_test_sin_test_map.udb sin_test_sin_test.udb 
+
+
+Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
+Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
+----------   --------     -----------     ------       ---------------    -----------     ----     ------
+5_1   *      0            -               -            -                  -               01:00    Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 1 mins 
+
+par done!

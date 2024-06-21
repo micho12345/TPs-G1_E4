@@ -1,21 +1,32 @@
-import numpy as np
+import math
 
-# Parámetros
-num_samples = 10000  # Número de muestras para medio ciclo
-amplitude = 2**11 - 1  # Amplitud máxima para 16 bits signados (32767)
+def generate_memory():
+    max_address = 10000
+    max_value = 2047
+    sine_wave = [int((max_value * math.sin(math.pi * i / (max_address - 1)))) for i in range(max_address)]
+    
+    with open("memory.v", "w") as f:
+        f.write("module memory (\n")
+        f.write("    input [13:0] addr1,\n")
+        f.write("    input [13:0] addr2,\n")
+        f.write("    input [13:0] addr3,\n")
+        f.write("    output reg [11:0] data1,\n")
+        f.write("    output reg [11:0] data2,\n")
+        f.write("    output reg [11:0] data3\n")
+        f.write(");\n\n")
+        
+        f.write("    reg [11:0] mem [0:9999];\n\n")
+        
+        f.write("    initial begin\n")
+        for addr in range(max_address):
+            f.write(f"        mem[{addr}] = 12'b{sine_wave[addr]:012b};\n")
+        f.write("    end\n\n")
+        
+        f.write("    always @(*) begin\n")
+        f.write("        data1 = mem[addr1];\n")
+        f.write("        data2 = mem[addr2];\n")
+        f.write("        data3 = mem[addr3];\n")
+        f.write("    end\n")
+        f.write("endmodule\n")
 
-# Generar las muestras de medio ciclo de la onda sinusoidal
-t = np.linspace(0, np.pi, num_samples, endpoint=False)
-sine_wave = amplitude * np.sin(t)
-
-# Convertir las muestras a enteros de 16 bits signados
-sine_wave_int = sine_wave.astype(np.int16)
-
-# Guardar las muestras en un archivo .mem
-with open("sine_wave_lut.mem", "w") as f:
-    for sample in sine_wave_int:
-        # Escribir cada muestra en formato binario de 16 bits
-        binary_sample = format(sample, '012b')  # Asegurarse de que cada muestra tenga 15 bits
-        f.write(f"{binary_sample}\n")
-
-print("Archivo 'sine_wave_lut.mem' generado correctamente.")
+generate_memory()

@@ -1,0 +1,69 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       3.00        100.0
+                                  LUT4	       2625        100.0
+                               LUTGATE	       2521        100.0
+                                LUTCCU	        104        100.0
+                                 IOREG	          3        100.0
+                                 IOBUF	          9        100.0
+                                PFUREG	        145        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     SineWaveGenerator	          1        12.6
+                      en_gen(LIMIT=11)	          1         0.2
+                                   pwm	          1         0.5
+                                pwm_U0	          1         0.5
+                                pwm_U1	          1         0.5
+                               rst_gen	          1         0.0
+---------------------------------------------------
+Report for cell SineWaveGenerator
+   Instance path: top/sine_gen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        332        12.6
+                               LUTGATE	        270        10.7
+                                LUTCCU	         62        59.6
+                                PFUREG	         97        66.9
+---------------------------------------------------
+Report for cell pwm_U1
+   Instance path: top/pwm_inst1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.5
+                                LUTCCU	         14        13.5
+                                PFUREG	         13         9.0
+---------------------------------------------------
+Report for cell en_gen(LIMIT=11)
+   Instance path: top/en_gen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          6         0.2
+                               LUTGATE	          6         0.2
+                                PFUREG	          5         3.4
+---------------------------------------------------
+Report for cell pwm_U0
+   Instance path: top/pwm_inst2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.5
+                                LUTCCU	         14        13.5
+                                PFUREG	         13         9.0
+---------------------------------------------------
+Report for cell pwm
+   Instance path: top/pwm_inst3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.5
+                                LUTCCU	         14        13.5
+                                PFUREG	         13         9.0
+---------------------------------------------------
+Report for cell rst_gen
+   Instance path: top/rst_gen_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          4         2.8

@@ -1,0 +1,11 @@
+#Start recording tcl command: 6/21/2024 14:48:33
+#Project Location: D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/sin_test; Project name: sin_test
+prj_open "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/sin_test/sin_test.rdf"
+prj_run PAR -impl sin_test
+prj_run Export -impl sin_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl sin_test
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_save 
+prj_close
+#Stop recording: 6/21/2024 15:08:47

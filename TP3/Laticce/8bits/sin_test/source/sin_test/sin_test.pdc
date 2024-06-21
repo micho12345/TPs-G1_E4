@@ -1,0 +1,2 @@
+ldc_set_location -site {2} [get_ports Va_gnd]
+ldc_set_location -site {46} [get_ports Va_p]

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="2" build_time="1718992840">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1718992840"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1718992841"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1718992849"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1718992761">
+            <Task name="Map" build_result="2" update_result="0" update_time="1718992761"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1718826381"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1718992826">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1718992826"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1718992834"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1718826381"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1718992335">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1718992335"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1718992403"/>
+            <Task name="SynTrace" build_result="0" update_result="2" update_time="1718826514"/>
+            <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1718826514"/>
+        </Milestone>
+        <Report name="IBIS/sin_test_sin_test.ibs" last_build_time="1718992841" last_build_size="54251"/>
+        <Report name="sin_test_sin_test.bgn" last_build_time="1718992840" last_build_size="1238"/>
+        <Report name="sin_test_sin_test.bin" last_build_time="1718992840" last_build_size="104156"/>
+        <Report name="sin_test_sin_test.lsedata" last_build_time="0" last_build_size="0"/>
+        <Report name="sin_test_sin_test.twr.html" last_build_time="1718992834" last_build_size="12270"/>
+        <Report name="sin_test_sin_test.udb" last_build_time="1718992826" last_build_size="326680"/>
+        <Report name="sin_test_sin_test_map.udb" last_build_time="1718992760" last_build_size="153314"/>
+        <Report name="sin_test_sin_test_rtl.udb" last_build_time="1718992254" last_build_size="15333"/>
+        <Report name="sin_test_sin_test_syn.udb" last_build_time="1718992335" last_build_size="91947"/>
+        <Report name="sin_test_sin_test_vo.sdf" last_build_time="1718992849" last_build_size="1579146"/>
+        <Report name="sin_test_sin_test_vo.vo" last_build_time="1718992848" last_build_size="1243784"/>
+    </Strategy>
+</BuildStatus>

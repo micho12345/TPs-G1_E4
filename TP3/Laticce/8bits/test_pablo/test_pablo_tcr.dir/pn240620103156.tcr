@@ -1,0 +1,42 @@
+#Start recording tcl command: 6/19/2024 17:21:45
+#Project Location: D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/test_pablo; Project name: test_pablo
+prj_create -name "test_pablo" -impl "test_pablo" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_add_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/test_pablo/source/test_pablo/test_pablo.sdc" "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/test_pablo/source/test_pablo/test_pablo.pdc"
+prj_save 
+prj_add_source "C:/Users/valen/Downloads/top/en_gen.v" "C:/Users/valen/Downloads/top/ModulatingWaves.v" "C:/Users/valen/Downloads/top/pwm.v" "C:/Users/valen/Downloads/top/rst_gen.v" "C:/Users/valen/Downloads/top/tbl.mem" "C:/Users/valen/Downloads/top/top.v"
+prj_remove_source "C:/Users/valen/Downloads/top/en_gen.v"
+prj_remove_source "C:/Users/valen/Downloads/top/pwm.v"
+prj_remove_source "C:/Users/valen/Downloads/top/ModulatingWaves.v"
+prj_remove_source "C:/Users/valen/Downloads/top/rst_gen.v"
+prj_remove_source "C:/Users/valen/Downloads/top/tbl.mem"
+prj_remove_source "C:/Users/valen/Downloads/top/top.v"
+prj_add_source "C:/Users/valen/Downloads/top/en_gen.v" "C:/Users/valen/Downloads/top/ModulatingWaves.v" "C:/Users/valen/Downloads/top/pwm.v" "C:/Users/valen/Downloads/top/rst_gen.v" "C:/Users/valen/Downloads/top/top.v"
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl test_pablo
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_remove_source "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/test_pablo/source/test_pablo/test_pablo.pdc"
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run PAR -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run Export -impl test_pablo
+prj_run Export -impl test_pablo
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_save 
+prj_close
+#Stop recording: 6/20/2024 10:31:56

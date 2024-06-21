@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2023.2.0.38.1" title="sin_test" device="iCE40UP5K-SG48I" performance_grade="High-Performance_1.2V" default_implementation="sin_test">
+    <Options/>
+    <Implementation title="sin_test" dir="sin_test" description="sin_test" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="top"/>
+        <Source name="source/sin_test/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="source/sin_test/ModulatingWaves.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/sin_test/en_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/sin_test/pwm.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/sin_test/rst_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="source/sin_test.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="source/sin_test/sin_test.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/sin_test/sin_test.sdc" type="Pre-Synthesis Constraints File" type_short="SDC">
+            <Options/>
+        </Source>
+        <Source name="source/sin_test/tbl.mem" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="sin_test1.sty"/>
+</RadiantProject>
