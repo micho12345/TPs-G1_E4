@@ -1,4 +1,0 @@
-ldc_set_location -site {2} [get_ports gpio_28]
-ldc_set_location -site {46} [get_ports gpio_36]
-ldc_set_location -site {47} [get_ports Va_p]
-ldc_set_location -site {45} [get_ports Va_gnd]

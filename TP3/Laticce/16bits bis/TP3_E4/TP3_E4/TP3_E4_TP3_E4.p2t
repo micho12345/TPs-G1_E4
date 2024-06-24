@@ -1,9 +1,0 @@
--w
--gui
--msgset "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/16bits bis/TP3_E4/promote.xml"
--n 1
--t 1
--s 1
--cores 1
--hsp m
--exp parPathBased=ON

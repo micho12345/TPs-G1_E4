@@ -1,1 +1,0 @@
-D:/2023.2.0.38.1_Radiant/bin/nt64/moduleparser.exe -PROJ TP3_E4 -pf D:/2023.2.0.38.1_Radiant/cae_library/synthesis/vhdl/iCE40UP.vhd -pf D:/2023.2.0.38.1_Radiant/cae_library/synthesis/verilog/iCE40UP.v -lib iCE40UP -sort -lst D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/TP3_E4/TP3_E4/source_files.lst
