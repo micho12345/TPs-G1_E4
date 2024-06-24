@@ -24,6 +24,9 @@
         <Source name="source/FPGA/Comparator.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="source/FPGA.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
         <Source name="source/FPGA/FPGA.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>
         </Source>

@@ -23,7 +23,7 @@ module SineWaveGenerator(
 	
 	reg direction1 = 0;
 	reg direction2 = 0;
-	reg direction3 = 0;
+	reg direction3 = 1;
 	
 	reg [1:0] state = 2'b00;
   
@@ -33,7 +33,10 @@ always @(posedge clk) begin
 		address <= 0;
 		address1 <= 0;
 		address2 <= 6666;
-		address3 <= 3333;
+		address3 <= 6666;
+		direction1 <= 0;
+		direction2 <= 0;
+		direction3 <= 1;
 		end
 	
 	case (state) 

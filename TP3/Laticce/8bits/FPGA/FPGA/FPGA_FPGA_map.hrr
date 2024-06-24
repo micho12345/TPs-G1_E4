@@ -4,8 +4,8 @@ Report for cell top
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                  IOLGC	       3.00        100.0
-                                  LUT4	       2714        100.0
-                               LUTGATE	       2586        100.0
+                                  LUT4	       2721        100.0
+                               LUTGATE	       2593        100.0
                                 LUTCCU	        128        100.0
                                  IOREG	          3        100.0
                                  IOBUF	         15        100.0
@@ -15,7 +15,7 @@ SUB MODULES
                             Comparator	          1         0.4
                          Comparator_U2	          1         0.4
                          Comparator_U3	          1         0.4
-                     SineWaveGenerator	          1        13.2
+                     SineWaveGenerator	          1        12.7
                         TriangularWave	          1         1.6
                    en_gen(LIMIT=1,N=1)	          1         0.0
                       en_gen(LIMIT=11)	          1         0.2
@@ -61,16 +61,16 @@ Report for cell en_gen(LIMIT=11)
    Instance path: top/en_gen_sin
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          5         0.2
-                               LUTGATE	          5         0.2
+                                  LUT4	          6         0.2
+                               LUTGATE	          6         0.2
                                 PFUREG	          5         3.1
 ---------------------------------------------------
 Report for cell Comparator_U2
    Instance path: top/comp2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         12         0.4
-                               LUTGATE	         12         0.5
+                                  LUT4	         10         0.4
+                               LUTGATE	         10         0.4
 ---------------------------------------------------
 Report for cell Comparator_U3
    Instance path: top/comp1
@@ -79,15 +79,6 @@ Report for cell Comparator_U3
                                   LUT4	         10         0.4
                                LUTGATE	         10         0.4
 ---------------------------------------------------
-Report for cell SineWaveGenerator
-   Instance path: top/sine_gen
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	        358        13.2
-                               LUTGATE	        296        11.4
-                                LUTCCU	         62        48.4
-                                PFUREG	         97        61.0
----------------------------------------------------
 Report for cell pwm
    Instance path: top/pwm_inst3
                      Cell usage:
@@ -95,6 +86,15 @@ Report for cell pwm
                                   LUT4	         14         0.5
                                 LUTCCU	         14        10.9
                                 PFUREG	         13         8.2
+---------------------------------------------------
+Report for cell SineWaveGenerator
+   Instance path: top/sine_gen
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        346        12.7
+                               LUTGATE	        284        11.0
+                                LUTCCU	         62        48.4
+                                PFUREG	         97        61.0
 ---------------------------------------------------
 Report for cell Comparator
    Instance path: top/comp3
@@ -107,6 +107,6 @@ Report for cell rst_gen
    Instance path: top/rst_gen_inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          4         0.1
-                               LUTGATE	          4         0.2
+                                  LUT4	          2         0.1
+                               LUTGATE	          2         0.1
                                 PFUREG	          4         2.5

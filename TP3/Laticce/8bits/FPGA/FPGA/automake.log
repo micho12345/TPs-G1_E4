@@ -29,8 +29,8 @@ Running general design DRC...
 Design Summary:
    Number of slice registers: 159 out of  5280 (3%)
    Number of I/O registers:      3 out of   117 (3%)
-   Number of LUT4s:           2714 out of  5280 (51%)
-      Number of logic LUT4s:             2584
+   Number of LUT4s:           2721 out of  5280 (52%)
+      Number of logic LUT4s:             2591
       Number of inserted feedthru LUT4s:   1
       Number of replicated LUT4s:          1
       Number of ripple logic:             64 (128 LUT4s)
@@ -57,32 +57,31 @@ Design Summary:
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
       Net clk_c: 126 loads, 126 rising, 0 falling (Driver: Port gpio_20)
-   Number of Clock Enables:  9
-      Net n606624: 11 loads, 11 SLICEs
+   Number of Clock Enables:  8
+      Net n606762: 11 loads, 11 SLICEs
       Net en_sin: 3 loads, 0 SLICEs
-      Net sine_gen.n604772: 11 loads, 11 SLICEs
-      Net sine_gen.n603896: 11 loads, 11 SLICEs
-      Net sine_gen.n604808: 14 loads, 14 SLICEs
-      Net sine_gen.n604420: 3 loads, 3 SLICEs
-      Net sine_gen.n604890: 24 loads, 24 SLICEs
-      Net sine_gen.n602855: 11 loads, 11 SLICEs
-      Net sine_gen.n612404: 1 loads, 1 SLICEs
+      Net sine_gen.n604901: 26 loads, 26 SLICEs
+      Net sine_gen.n604795: 11 loads, 11 SLICEs
+      Net sine_gen.n603900: 11 loads, 11 SLICEs
+      Net sine_gen.n604819: 14 loads, 14 SLICEs
+      Net sine_gen.n602859: 11 loads, 11 SLICEs
+      Net sine_gen.n612381: 1 loads, 1 SLICEs
    Number of LSRs:  4
       Net n590264: 11 loads, 11 SLICEs
-      Net n610548: 1 loads, 1 SLICEs
-      Net n589970: 4 loads, 4 SLICEs
-      Net sine_gen.n605056: 24 loads, 24 SLICEs
+      Net n79: 1 loads, 1 SLICEs
+      Net en_gen_sin.n589970: 4 loads, 4 SLICEs
+      Net sine_gen.n605073: 24 loads, 24 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net address[4]: 744 loads
-      Net address[5]: 730 loads
-      Net address[3]: 551 loads
-      Net address[6]: 460 loads
-      Net address[2]: 444 loads
-      Net address[1]: 425 loads
-      Net address[0]: 360 loads
-      Net address[7]: 357 loads
-      Net address[8]: 181 loads
-      Net address[9]: 117 loads
+      Net address[4]: 754 loads
+      Net address[5]: 734 loads
+      Net address[3]: 516 loads
+      Net address[2]: 432 loads
+      Net address[6]: 430 loads
+      Net address[1]: 418 loads
+      Net address[7]: 388 loads
+      Net address[0]: 374 loads
+      Net address[8]: 148 loads
+      Net address[9]: 130 loads
 Running physical design DRC...
 
  
@@ -98,15 +97,15 @@ Constraint Summary:
 
 Total CPU Time: 1 secs  
 Total REAL Time: 2 secs  
-Peak Memory Usage: 107 MB
+Peak Memory Usage: 106 MB
 
-Checksum -- map: 1469f20d40f546b9baeeaabe8e4e913cfad5b6f
+Checksum -- map: 8a507ab8fec77993fd0d7eeb567dfa4cc0776995
 Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /2 secs 
 
 pnmainc -run pnmain "FPGA_FPGA_par.tcl"
 
 Lattice Place and Route Report for Design "FPGA_FPGA_map.udb"
-Fri Jun 21 15:47:41 2024
+Mon Jun 24 19:39:27 2024
 
 PAR: Place And Route Radiant Software (64-bit) 2023.2.0.38.1.
 Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
@@ -124,12 +123,12 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
-Number of Signals: 2983
-Number of Connections: 10136
+Number of Signals: 2990
+Number of Connections: 10091
 Device utilization summary:
 
-   SLICE (est.)    1456/2640         55% used
-     LUT           2714/5280         51% used
+   SLICE (est.)    1459/2640         55% used
+     LUT           2721/5280         52% used
      REG            159/5280          3% used
    PIO               15/56           27% used
                      15/36           41% bonded
@@ -153,35 +152,35 @@ Device utilization summary:
 Pin Constraint Summary:
    7 out of 15 pins locked (46% locked).
 .
-.............
-Finished Placer Phase 0 (HIER). CPU time: 25 secs , REAL time: 27 secs 
+..............
+Finished Placer Phase 0 (HIER). CPU time: 12 secs , REAL time: 30 secs 
 
 
 ................
-Finished Placer Phase 0 (AP).  CPU time: 25 secs , REAL time: 28 secs 
+Finished Placer Phase 0 (AP).  CPU time: 12 secs , REAL time: 31 secs 
 
-Starting Placer Phase 1. CPU time: 25 secs , REAL time: 28 secs 
+Starting Placer Phase 1. CPU time: 12 secs , REAL time: 31 secs 
 ..  ..
 ....................
 
-Placer score = 487638.
+Placer score = 510397.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE           1456/2640         55% used
+   SLICE           1458/2640         55% used
 
-Finished Placer Phase 1. CPU time: 39 secs , REAL time: 42 secs 
+Finished Placer Phase 1. CPU time: 18 secs , REAL time: 46 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  1211816
-Finished Placer Phase 2.  CPU time: 39 secs , REAL time: 42 secs 
+Placer score =  1241813
+Finished Placer Phase 2.  CPU time: 18 secs , REAL time: 46 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clocks :
-  PRIMARY "clk_c" from comp "gpio_20" on CLK_PIN site "35 (PR13B)", clk load = 94, ce load = 0, sr load = 0
+  PRIMARY "clk_c" from comp "gpio_20" on PIO site "12 (PL19A)", clk load = 93, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -198,15 +197,15 @@ I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 1 / 14 (  7%) | 3.3V       |            |            |
-| 1        | 8 / 14 ( 57%) | 3.3V       |            |            |
-| 2        | 6 / 8 ( 75%)  | 3.3V       |            |            |
+| 0        | 5 / 14 ( 35%) | 3.3V       |            |            |
+| 1        | 3 / 14 ( 21%) | 3.3V       |            |            |
+| 2        | 7 / 8 ( 87%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 39 secs , REAL time: 42 secs 
+Total Placer CPU time: 18 secs , REAL time: 46 secs 
 
 
-Checksum -- place: 7f5c69a2ed2c2023de65e61c621d2ce562c675e7
+Checksum -- place: da074923e4cd43386af17e988d8215b3affac595
 Writing design to file FPGA_FPGA_par.dir/5_1.udb ...
 
 
@@ -215,7 +214,7 @@ INFO - par: ASE feature is off due to non timing-driven settings.
 -----------------------------------------------------------------
 
 
-Start NBR router at 15:48:24 06/21/24
+Start NBR router at 19:40:13 06/24/24
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -235,62 +234,64 @@ Preassignment Summary:
 --------------------------------------------------------------------------------
 272 connections routed with dedicated routing resources
 1 global clock signals routed
-366 connections routed (of 10069 total) (3.63%)
+365 connections routed (of 10023 total) (3.64%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
 #7  Signal "clk_c"
-       Clock   loads: 94    out of    94 routed (100.00%)
+       Clock   loads: 93    out of    93 routed (100.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 
-Start NBR section for initial routing at 15:48:24 06/21/24
+Start NBR section for initial routing at 19:40:14 06/24/24
 Level 4, iteration 1
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Routing in Serial Mode ......
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-754(0.29%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 3 secs 
+726(0.28%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 15:48:27 06/21/24
+Start NBR section for normal routing at 19:40:17 06/24/24
 Level 4, iteration 1
-507(0.19%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+489(0.19%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 2
-354(0.13%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 4 secs 
+343(0.13%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
 Level 4, iteration 3
-275(0.10%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+174(0.07%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 4
-156(0.06%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+206(0.08%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 5
-119(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 5 secs 
+115(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 6
-89(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+77(0.03%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 7
-35(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+56(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 8
-12(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+23(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
 Level 4, iteration 9
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+23(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 Level 4, iteration 10
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+9(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 Level 4, iteration 11
-1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 Level 4, iteration 12
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 6 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
+Level 4, iteration 13
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 7 secs 
 
-Start NBR section for post-routing at 15:48:30 06/21/24
+Start NBR section for post-routing at 19:40:20 06/24/24
 
 End NBR router with 0 unrouted connection
 
-Checksum -- route: f467277a5682875457d58cd67e8c3372bcd637cc
+Checksum -- route: bfc69099a69f84ec74492a75b32f44fba94dbadc
 
-Total CPU time 5 secs 
+Total CPU time 1 secs 
 Total REAL time: 7 secs 
 Completely routed.
-End of route.  10069 routed (100.00%); 0 unrouted.
+End of route.  10023 routed (100.00%); 0 unrouted.
 
 Writing design to file FPGA_FPGA_par.dir/5_1.udb ...
 
@@ -305,9 +306,9 @@ PAR_SUMMARY::Number of errors = 0
 
 Note: user must run 'timing' for timing closure signoff.
 
-Total CPU  Time: 45 secs 
-Total REAL Time: 50 secs 
-Peak Memory Usage: 167.41 MB
+Total CPU  Time: 20 secs 
+Total REAL Time: 54 secs 
+Peak Memory Usage: 167.48 MB
 
 
 par done!
@@ -317,7 +318,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /50 secs 
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /54 secs 
 
 timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "FPGA_FPGA.twr" "FPGA_FPGA.udb" 
 timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt FPGA_FPGA.twr FPGA_FPGA.udb -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/promote.xml
@@ -334,7 +335,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.16 seconds
+Successfully loading udb, 0.06 seconds
 
 Initializing timer
 Starting design annotation....
@@ -342,15 +343,15 @@ High-Performance_1.2V
 
 Starting full timing analysis...
 Performance Hardware Data Status:   Advanced       Version 1.0.
-Connections ignored  94  counted  9927  covered  0
+Connections ignored  93  counted  9882  covered  0
 Changing speed to m;   changing temperature to -40
 
 STA Runtime and Peak Memory Usage :
-Total CPU Time: 6 secs 
-Total REAL Time: 7 secs 
-Peak Memory Usage: 131 MB
+Total CPU Time: 2 secs 
+Total REAL Time: 8 secs 
+Peak Memory Usage: 132 MB
 
- 6.860779s wall, 6.437500s user + 0.156250s system = 6.593750s CPU (96.1%)
+ 7.572130s wall, 2.312500s user + 0.062500s system = 2.375000s CPU (31.4%)
 
 
 tmcheck -par "FPGA_FPGA.par" 
@@ -395,7 +396,7 @@ Creating bit map...
 Saving bit stream in "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/FPGA/FPGA_FPGA.bin".
 Bitstream generation complete!
 
-Total CPU Time: 1 secs 
+Total CPU Time: 0 secs 
 Total REAL Time: 2 secs 
 Peak Memory Usage: 149 MB
 
@@ -404,7 +405,7 @@ Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /2 secs
 ibisgen "FPGA_FPGA.udb" "D:/2023.2.0.38.1_Radiant/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 2023.2.0.38.1
 
-Fri Jun 21 15:48:44 2024
+Mon Jun 24 19:40:35 2024
 
 Loading FPGA_FPGA.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/2023.2.0.38.1_Radiant/ispfpga.
@@ -453,6 +454,6 @@ Writing a verilog netlist based on the FPGA_FPGA design file.
 Writing Verilog netlist to file FPGA_FPGA_vo.vo
 Writing SDF timing to file FPGA_FPGA_vo.sdf
 Backanno finished with 0 posted error messages.
-Total CPU Time: 6 secs 
+Total CPU Time: 2 secs 
 Total REAL Time: 8 secs 
-Peak Memory Usage: 165 MB
+Peak Memory Usage: 164 MB

@@ -48,11 +48,12 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Jun 20 11:22:38 2024
+Mon Jun 24 19:22:38 2024
 
 
 Command Line:  D:\2023.2.0.38.1_Radiant\ispfpga\bin\nt64\synthesis.exe -f FPGA_FPGA_lattice.synproj -gui -msgset D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/promote.xml 
 
+The -top option is not used.
 Synthesis options:
 The -a option is iCE40UP.
 The -t option is SG48.
@@ -81,7 +82,6 @@ The -p option is iCE40UP5K.
 
 INFO <35001786> - synthesis: User-Selected Strategy Settings
 Optimization goal = Area
-Top-level module name = top.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3 (default)
@@ -115,6 +115,7 @@ The -syn option is FALSE.
 -path D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA (searchpath added)
 -path D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/FPGA (searchpath added)
 Mixed language design
+CRITICAL <35001476> - synthesis: A top-level module has not been specified for the mixed language design.
 Verilog design file = D:/2023.2.0.38.1_Radiant/ip/pmi/pmi_iCE40UP.v
 Verilog design file = D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/source/FPGA/TriangularWaves.v
 Verilog design file = D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/source/FPGA/pwm.v
@@ -184,6 +185,7 @@ Analyzing VHDL file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.vhd
 
 INFO <35921014> - synthesis: d:/2023.2.0.38.1_radiant/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+WARNING <35001200> - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
 INFO <35921504> - synthesis: The default VHDL library search path is now "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/FPGA". VHDL-1504
 Top module language type = Verilog.
 Top module name (Verilog, mixed language): top
@@ -194,9 +196,9 @@ WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_
 INFO <35901018> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/en_gen.v(3): compiling module en_gen(LIMIT=1,N=1). VERI-1018
 WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/en_gen.v(18): expression size 32 truncated to fit in target size 1. VERI-1209
 INFO <35901018> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(6): compiling module SineWaveGenerator. VERI-1018
-WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(54): expression size 32 truncated to fit in target size 14. VERI-1209
-WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(55): expression size 32 truncated to fit in target size 14. VERI-1209
-WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(56): expression size 32 truncated to fit in target size 14. VERI-1209
+WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(57): expression size 32 truncated to fit in target size 14. VERI-1209
+WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(58): expression size 32 truncated to fit in target size 14. VERI-1209
+WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(59): expression size 32 truncated to fit in target size 14. VERI-1209
 WARNING <35931002> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/modulatingwaves.v(15): net sine_wave_lut does not have a driver. VDB-1002
 INFO <35901018> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/triangularwaves.v(3): compiling module TriangularWave. VERI-1018
 WARNING <35901209> - synthesis: d:/facultad itba/ano 5/cuatrimestre 1/e4/tps-g1_e4/tp3/laticce/8bits/fpga/source/fpga/triangularwaves.v(35): expression size 32 truncated to fit in target size 12. VERI-1209
@@ -258,7 +260,7 @@ CCU2 => 64
 FD1P3XZ => 159
 IB => 1
 IOL_B => 3
-LUT4 => 2583
+LUT4 => 2590
 OB => 14
 ################### End Area Report ##################
 Number of odd-length carry chains : 2
@@ -275,25 +277,25 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : sine_gen/address[4], loads : 724
-  Net : sine_gen/address[5], loads : 712
-  Net : sine_gen/address[3], loads : 526
-  Net : sine_gen/address[6], loads : 452
-  Net : sine_gen/address[2], loads : 423
-  Net : sine_gen/address[1], loads : 412
-  Net : sine_gen/address[7], loads : 353
-  Net : sine_gen/address[0], loads : 347
-  Net : sine_gen/address[8], loads : 178
-  Net : sine_gen/address[9], loads : 115
+  Net : sine_gen/address[4], loads : 733
+  Net : sine_gen/address[5], loads : 720
+  Net : sine_gen/address[3], loads : 501
+  Net : sine_gen/address[6], loads : 423
+  Net : sine_gen/address[2], loads : 418
+  Net : sine_gen/address[1], loads : 403
+  Net : sine_gen/address[7], loads : 385
+  Net : sine_gen/address[0], loads : 361
+  Net : sine_gen/address[8], loads : 146
+  Net : sine_gen/address[9], loads : 129
 ################### End Clock Report ##################
 
-Peak Memory Usage: 1038 MB
+Peak Memory Usage: 1043 MB
 
 --------------------------------------------------------------
-Total CPU Time: 1 mins 34 secs 
-Total REAL Time: 1 mins 36 secs 
+Total CPU Time: 37 secs 
+Total REAL Time: 1 mins 34 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 69c0f23ff7a3fb5beff60eea54dc1ed580b4f4b
+Checksum -- synthesis -- netlist: e0f6f291c3de6ce9d6e982ca8de9f9af16a08b48
 
 
 

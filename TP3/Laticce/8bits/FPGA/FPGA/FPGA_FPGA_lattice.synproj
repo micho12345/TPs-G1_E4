@@ -50,7 +50,6 @@
 
 
 -path "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA"
--top top
 -udb "FPGA_FPGA_rtl.udb"
 -output_hdl "FPGA_FPGA.vm"
 

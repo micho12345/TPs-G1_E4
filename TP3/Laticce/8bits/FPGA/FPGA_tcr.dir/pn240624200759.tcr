@@ -1,0 +1,24 @@
+#Start recording tcl command: 6/24/2024 18:59:36
+#Project Location: D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA; Project name: FPGA
+prj_open "D:/Facultad ITBA/Ano 5/Cuatrimestre 1/E4/TPs-G1_E4/TP3/Laticce/8bits/FPGA/FPGA.rdf"
+prj_run Export -impl FPGA
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl FPGA
+prj_run Export -impl FPGA
+prj_run Export -impl FPGA
+prj_run Export -impl FPGA
+prj_run Export -impl FPGA
+prj_run PAR -impl FPGA
+prj_run Export -impl FPGA
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl FPGA
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl FPGA
+prj_run Export -impl FPGA
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl FPGA
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+prj_run Export -impl FPGA
+launch_programmer_prj "D:/2023.2.0.38.1_Radiant"
+#Stop recording: 6/24/2024 20:07:59

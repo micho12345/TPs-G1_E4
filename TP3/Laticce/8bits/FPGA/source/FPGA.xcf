@@ -18,8 +18,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../FPGA/FPGA_FPGA.bin</File>
-			<FileTime>06/21/24 15:10:08</FileTime>
-			<JedecChecksum>0xF0EE</JedecChecksum>
+			<FileTime>06/24/24 19:03:06</FileTime>
+			<JedecChecksum>0xF633</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>
 			<Option>

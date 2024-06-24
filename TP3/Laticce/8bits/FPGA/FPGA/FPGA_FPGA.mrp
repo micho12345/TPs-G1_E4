@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2023.2.0.38.1
-Mapped on: Fri Jun 21 15:47:35 2024
+Mapped on: Mon Jun 24 19:39:21 2024
 
 Design Information
 ------------------
@@ -23,8 +23,8 @@ Design Summary
 
    Number of slice registers: 159 out of  5280 (3%)
    Number of I/O registers:      3 out of   117 (3%)
-   Number of LUT4s:           2714 out of  5280 (51%)
-      Number of logic LUT4s:             2584
+   Number of LUT4s:           2721 out of  5280 (52%)
+      Number of logic LUT4s:             2591
       Number of inserted feedthru LUT4s:   1
       Number of replicated LUT4s:          1
       Number of ripple logic:             64 (128 LUT4s)
@@ -51,15 +51,15 @@ Design Summary
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
       Net clk_c: 126 loads, 126 rising, 0 falling (Driver: Port gpio_20)
-   Number of Clock Enables:  9
-      Net n606624: 11 loads, 11 SLICEs
+   Number of Clock Enables:  8
+      Net n606762: 11 loads, 11 SLICEs
       Net en_sin: 3 loads, 0 SLICEs
-      Net sine_gen.n604772: 11 loads, 11 SLICEs
-      Net sine_gen.n603896: 11 loads, 11 SLICEs
-      Net sine_gen.n604808: 14 loads, 14 SLICEs
-      Net sine_gen.n604420: 3 loads, 3 SLICEs
-      Net sine_gen.n604890: 24 loads, 24 SLICEs
-      Net sine_gen.n602855: 11 loads, 11 SLICEs
+      Net sine_gen.n604901: 26 loads, 26 SLICEs
+      Net sine_gen.n604795: 11 loads, 11 SLICEs
+      Net sine_gen.n603900: 11 loads, 11 SLICEs
+      Net sine_gen.n604819: 14 loads, 14 SLICEs
+      Net sine_gen.n602859: 11 loads, 11 SLICEs
+      Net sine_gen.n612381: 1 loads, 1 SLICEs
 
                                     Page 1
 
@@ -69,23 +69,22 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net sine_gen.n612404: 1 loads, 1 SLICEs
    Number of LSRs:  4
       Net n590264: 11 loads, 11 SLICEs
-      Net n610548: 1 loads, 1 SLICEs
-      Net n589970: 4 loads, 4 SLICEs
-      Net sine_gen.n605056: 24 loads, 24 SLICEs
+      Net n79: 1 loads, 1 SLICEs
+      Net en_gen_sin.n589970: 4 loads, 4 SLICEs
+      Net sine_gen.n605073: 24 loads, 24 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net address[4]: 744 loads
-      Net address[5]: 730 loads
-      Net address[3]: 551 loads
-      Net address[6]: 460 loads
-      Net address[2]: 444 loads
-      Net address[1]: 425 loads
-      Net address[0]: 360 loads
-      Net address[7]: 357 loads
-      Net address[8]: 181 loads
-      Net address[9]: 117 loads
+      Net address[4]: 754 loads
+      Net address[5]: 734 loads
+      Net address[3]: 516 loads
+      Net address[2]: 432 loads
+      Net address[6]: 430 loads
+      Net address[1]: 418 loads
+      Net address[7]: 388 loads
+      Net address[0]: 374 loads
+      Net address[8]: 148 loads
+      Net address[9]: 130 loads
 
 
 
@@ -127,6 +126,7 @@ IO (PIO) Attributes
 | Vb_gnd              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | Vb_p                | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
 
@@ -136,7 +136,6 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+-------+-------+-----------+
 | Va_gnd              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | Va_p                | OUTPUT    |           | O     |       |           |
@@ -167,8 +166,9 @@ Run Time and Memory Usage
 
    Total CPU Time: 1 secs
    Total REAL Time: 2 secs
-   Peak Memory Usage: 107 MB
-Checksum -- map: 1469f20d40f546b9baeeaabe8e4e913cfad5b6f
+   Peak Memory Usage: 106 MB
+Checksum -- map: 8a507ab8fec77993fd0d7eeb567dfa4cc0776995
+
 
 
 
